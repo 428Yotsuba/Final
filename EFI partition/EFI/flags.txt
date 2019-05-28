@@ -1,0 +1,11 @@
+Notes
+•Initial working install flags “dart=0 nv_disable=1 -v UseKernelCache=No busratio=32 cpus=1 npci=0x2000 darkmode=8"
+•Audio: VoodooHDA.kext (Audio Midi 96Khz 16-bit 8Channel)
+•Ethernet: IntelMausiEthernet.kext
+•iCloud worked immediately out-of-the-box, and iMessage worked within 30 minutes (without changing anything after successful iCloud sign-in)
+•Sleep-Wake works flawlessly.
+•This B360 board requires OsxAptioFix2Drv-free2000.efi and EmuVariableUefi-64.efi
+•In order to take advantage of the 6 Cores, remove "cpus=1” boot flag. Once installed, booting should be very straightforward, and you’ll Love all six cores.
+•FakeCPUID set to 0x0906E9 (i7 Kaby Lake)
+•Current boot flags: "dart=0 npci=0x2000 darkwake=8 busratio=32 UseKernelCache=No"
+•FakeSMC is working flawlessly - currently using iStat Menu for monitoring

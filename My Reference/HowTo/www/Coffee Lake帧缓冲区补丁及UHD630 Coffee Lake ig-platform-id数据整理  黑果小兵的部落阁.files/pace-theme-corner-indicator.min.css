@@ -1,0 +1,21 @@
+.pace {
+	pointer-events: none; -webkit-pointer-events: none; -webkit-user-select: none; -moz-user-select: none; user-select: none;
+}
+.pace .pace-activity {
+	background: rgb(248, 79, 158); transition:transform 0.3s; top: 0px; width: 300px; height: 300px; right: 0px; display: block; position: fixed; z-index: 2000; pointer-events: none; transform: translateX(100%) translateY(-100%) rotate(45deg); -webkit-transition: -webkit-transform .3s; -webkit-transform: translateX(100%) translateY(-100%) rotate(45deg);
+}
+.pace-active.pace .pace-activity {
+	transform: translateX(50%) translateY(-50%) rotate(45deg); -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
+}
+.pace .pace-activity::after {
+	border-radius: 50%; border: 5px solid rgb(255, 255, 255); border-image: none; left: 50%; bottom: 30px; display: block; position: absolute; content: ""; box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.pace .pace-activity::before {
+	border-radius: 50%; border: 5px solid rgb(255, 255, 255); border-image: none; left: 50%; bottom: 30px; display: block; position: absolute; content: ""; box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.pace .pace-activity::before {
+	animation:pace-theme-corner-indicator-spin 3s linear infinite; width: 80px; height: 80px; margin-left: -40px; border-right-color: rgba(0, 0, 0, 0.2); border-left-color: rgba(0, 0, 0, 0.2); -webkit-animation: pace-theme-corner-indicator-spin 3s linear infinite;
+}
+.pace .pace-activity::after {
+	animation:pace-theme-corner-indicator-spin 1s linear infinite; width: 40px; height: 40px; bottom: 50px; margin-left: -20px; border-top-color: rgba(0, 0, 0, 0.2); border-bottom-color: rgba(0, 0, 0, 0.2); -webkit-animation: pace-theme-corner-indicator-spin 1s linear infinite;
+}

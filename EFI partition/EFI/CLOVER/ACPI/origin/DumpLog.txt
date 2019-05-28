@@ -1,0 +1,150 @@
+8:504  2:018  Found BIOS RSDP at F05B0
+8:513  0:008  Printing ACPI tables from RSDP F05B0 ...
+8:520  0:007   F05B0: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+8:550  0:030    (Rsdt: 8556E028)
+8:558  0:007    8556E028: 'RSDT', 'A M I', Rev: 1, Len: 120
+8:580  0:022    Tables in Rsdt: 21
+8:588  0:008    0. 8556E180: 'FACP', 'A M I', Rev: 2, Len: 132
+8:616  0:027        (Dsdt: 8556E208, Facs: 855F8040)
+8:630  0:014        8556E208: 'DSDT', 'A M I', Rev: 2, Len: 252066
+8:666  0:035        855F8040: 'FACS', Ver: 0, Len: 64
+8:681  0:015    1. 855ABBC8: 'APIC', 'A M I', Rev: 4, Len: 132
+8:703  0:021    2. 855ABC50: 'FPDT', 'A M I', Rev: 1, Len: 68
+8:726  0:023    3. 855ABC98: 'FIDT', 'A M I', Rev: 1, Len: 156
+8:748  0:022    4. 855ABD38: 'MCFG', 'A M I', Rev: 1, Len: 60
+8:770  0:022    5. 855ABD78: 'SSDT', 'A M I', Rev: 1, Len: 820
+8:798  0:027    6. 855AC0B0: 'SSDT', 'A M I', Rev: 2, Len: 6091
+8:820  0:022    7. 855AD880: 'SSDT', 'A M I', Rev: 1, Len: 26981
+8:843  0:022    8. 855B41E8: 'SSDT', 'A M I', Rev: 2, Len: 12743
+8:865  0:022    9. 855B73B0: 'HPET', 'A M I', Rev: 1, Len: 56
+8:887  0:021    10. 855B73E8: 'SSDT', 'A M I', Rev: 2, Len: 9010
+8:910  0:023    11. 855B9720: 'SSDT', 'A M I', Rev: 2, Len: 3998
+8:932  0:022    12. 855BA6C0: 'SSDT', 'A M I', Rev: 2, Len: 10652
+8:955  0:022    13. 855BD060: 'UEFI', 'A M I', Rev: 1, Len: 66
+8:983  0:027    14. 855BD0A8: 'LPIT', 'A M I', Rev: 1, Len: 92
+9:005  0:022    15. 855BD108: 'SSDT', 'A M I', Rev: 2, Len: 10206
+9:029  0:023    16. 855BF8E8: 'SSDT', 'A M I', Rev: 2, Len: 4094
+9:050  0:021    17. 855C08E8: 'DBGP', 'A M I', Rev: 1, Len: 52
+9:073  0:022    18. 855C0920: 'DBG2', 'A M I', Rev: 0, Len: 84
+9:095  0:022    19. 855C0978: 'BGRT', 'A M I', Rev: 1, Len: 56
+9:118  0:022    20. 855C09B0: 'WSMT', 'A M I', Rev: 1, Len: 40
+9:141  0:022  Found UEFI Acpi 2.0 RSDP at 8556E000
+9:154  0:013  Saving ACPI tables from RSDP 8556E000 to EFI\CLOVER\ACPI\origin ...
+9:161  0:007   8556E000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+9:230  0:068    (Xsdt: 8556E0A8, Rsdt: 8556E028)
+9:236  0:006    8556E0A8: 'XSDT', 'A M I', Rev: 1, Len: 204 -> XSDT.aml
+9:296  0:059    8556E028: 'RSDT', 'A M I', Rev: 1, Len: 120 -> RSDT.aml
+9:354  0:058    Tables in Xsdt: 21
+9:361  0:007    0. 855ABAB0: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+9:426  0:065        (Dsdt: 8556E208, Facs: 855F8080, XDsdt: 8556E208, XFacs: 0)
+9:447  0:021        8556E208: 'DSDT', 'A M I', Rev: 2, Len: 252066 -> DSDT.aml
+9:522  0:075        855F8080: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+9:567  0:045    1. 855ABBC8: 'APIC', 'A M I', Rev: 4, Len: 132 -> APIC.aml
+9:619  0:051    2. 855ABC50: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+9:672  0:052    3. 855ABC98: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+9:728  0:055    4. 855ABD38: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+9:825  0:097    5. 855ABD78: 'SSDT', 'A M I', Rev: 1, Len: 820 -> SSDT-0-A M I.aml
+9:879  0:053    6. 855AC0B0: 'SSDT', 'A M I', Rev: 2, Len: 6091 -> SSDT-1-A M I.aml (Found hidden SSDT 7 pcs)
+9:950  0:071        * 85487298: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1899  53 53 44 54 6B 07 00 00 02 94 50 6D 52 65 66 00 Internal length = 1899 -> SSDT-x1_0-Cpu0Ist.aml
+10:157  0:207        * 85475018: 'SSDT', 'ApIst', Rev: 2, Len: 3825  53 53 44 54 F1 0E 00 00 02 ED 50 6D 52 65 66 00 Internal length = 3825 -> SSDT-x1_1-ApIst.aml
+10:332  0:174        * 85476C18: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 902  53 53 44 54 86 03 00 00 02 33 50 6D 52 65 66 00 Internal length = 902 -> SSDT-x1_2-Cpu0Cst.aml
+10:508  0:175        * 85474018: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 E9 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x1_3-ApCst.aml
+10:679  0:171        * 85476018: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 266  53 53 44 54 0A 01 00 00 02 9F 50 6D 52 65 66 00 Internal length = 266 -> SSDT-x1_4-Cpu0Hwp.aml
+10:859  0:180        * 85474418: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 E3 50 6D 52 65 66 00 Internal length = 791 -> SSDT-x1_5-ApHwp.aml
+11:031  0:172        * 85476198: 'SSDT', 'HwpLvt', Rev: 2, Len: 1828  53 53 44 54 24 07 00 00 02 CA 50 6D 52 65 66 00 Internal length = 1828 -> SSDT-x1_6-HwpLvt.aml
+11:202  0:170  
+11:210  0:007    7. 855AD880: 'SSDT', 'A M I', Rev: 1, Len: 26981 -> SSDT-2-A M I.aml
+11:262  0:052    8. 855B41E8: 'SSDT', 'A M I', Rev: 2, Len: 12743 -> SSDT-3-A M I.aml
+11:323  0:060    9. 855B73B0: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+11:376  0:052    10. 855B73E8: 'SSDT', 'A M I', Rev: 2, Len: 9010 -> SSDT-4-A M I.aml
+11:429  0:053    11. 855B9720: 'SSDT', 'A M I', Rev: 2, Len: 3998 -> SSDT-5-A M I.aml
+11:481  0:052    12. 855BA6C0: 'SSDT', 'A M I', Rev: 2, Len: 10652 -> SSDT-6-A M I.aml
+11:531  0:050    13. 855BD060: 'UEFI', 'A M I', Rev: 1, Len: 66 -> UEFI.aml
+11:584  0:052    14. 855BD0A8: 'LPIT', 'A M I', Rev: 1, Len: 92 -> LPIT.aml
+11:642  0:057    15. 855BD108: 'SSDT', 'A M I', Rev: 2, Len: 10206 -> SSDT-7-A M I.aml
+11:698  0:056    16. 855BF8E8: 'SSDT', 'A M I', Rev: 2, Len: 4094 -> SSDT-8-A M I.aml
+11:751  0:053    17. 855C08E8: 'DBGP', 'A M I', Rev: 1, Len: 52 -> DBGP.aml
+11:803  0:052    18. 855C0920: 'DBG2', 'A M I', Rev: 0, Len: 84 -> DBG2.aml
+11:855  0:051    19. 855C0978: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+11:907  0:052    20. 855C09B0: 'WSMT', 'A M I', Rev: 1, Len: 40 -> WSMT.aml
+11:958  0:051    Tables in Rsdt: 21
+11:971  0:012    0. 8556E180: 'FACP', 'A M I', Rev: 2, Len: 132 -> RSDT-FACP.aml
+12:022  0:051        (Dsdt: 8556E208, Facs: 855F8040)
+12:037  0:014        8556E208: 'DSDT', 'A M I', Rev: 2, Len: 252066
+12:064  0:026        855F8040: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+12:128  0:064    1. 855ABBC8: 'APIC', 'A M I', Rev: 4, Len: 132
+12:151  0:022    2. 855ABC50: 'FPDT', 'A M I', Rev: 1, Len: 68
+12:184  0:032    3. 855ABC98: 'FIDT', 'A M I', Rev: 1, Len: 156
+12:216  0:032    4. 855ABD38: 'MCFG', 'A M I', Rev: 1, Len: 60
+12:253  0:037    5. 855ABD78: 'SSDT', 'A M I', Rev: 1, Len: 820
+12:275  0:021    6. 855AC0B0: 'SSDT', 'A M I', Rev: 2, Len: 6091
+12:308  0:033    7. 855AD880: 'SSDT', 'A M I', Rev: 1, Len: 26981
+12:340  0:032    8. 855B41E8: 'SSDT', 'A M I', Rev: 2, Len: 12743
+12:372  0:031    9. 855B73B0: 'HPET', 'A M I', Rev: 1, Len: 56
+12:394  0:022    10. 855B73E8: 'SSDT', 'A M I', Rev: 2, Len: 9010
+12:417  0:023    11. 855B9720: 'SSDT', 'A M I', Rev: 2, Len: 3998
+12:440  0:022    12. 855BA6C0: 'SSDT', 'A M I', Rev: 2, Len: 10652
+12:467  0:027    13. 855BD060: 'UEFI', 'A M I', Rev: 1, Len: 66
+12:490  0:022    14. 855BD0A8: 'LPIT', 'A M I', Rev: 1, Len: 92
+12:513  0:022    15. 855BD108: 'SSDT', 'A M I', Rev: 2, Len: 10206
+12:536  0:023    16. 855BF8E8: 'SSDT', 'A M I', Rev: 2, Len: 4094
+12:558  0:021    17. 855C08E8: 'DBGP', 'A M I', Rev: 1, Len: 52
+12:581  0:022    18. 855C0920: 'DBG2', 'A M I', Rev: 0, Len: 84
+12:603  0:022    19. 855C0978: 'BGRT', 'A M I', Rev: 1, Len: 56
+12:631  0:027    20. 855C09B0: 'WSMT', 'A M I', Rev: 1, Len: 40
+12:653  0:022  Found UEFI Acpi 1.0 RSDP at 8556E000
+12:660  0:006  Printing ACPI tables from RSDP 8556E000 ...
+12:667  0:007   8556E000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+12:697  0:030    (Xsdt: 8556E0A8, Rsdt: 8556E028)
+12:705  0:007    8556E0A8: 'XSDT', 'A M I', Rev: 1, Len: 204
+12:728  0:023    8556E028: 'RSDT', 'A M I', Rev: 1, Len: 120
+12:751  0:022    Tables in Xsdt: 21
+12:758  0:007    0. 855ABAB0: 'FACP', 'A M I', Rev: 6, Len: 276
+12:786  0:028        (Dsdt: 8556E208, Facs: 855F8080, XDsdt: 8556E208, XFacs: 0)
+12:808  0:022        8556E208: 'DSDT', 'A M I', Rev: 2, Len: 252066
+12:835  0:026        855F8080: 'FACS', Ver: 2, Len: 64
+12:849  0:014    1. 855ABBC8: 'APIC', 'A M I', Rev: 4, Len: 132
+12:872  0:023    2. 855ABC50: 'FPDT', 'A M I', Rev: 1, Len: 68
+12:895  0:022    3. 855ABC98: 'FIDT', 'A M I', Rev: 1, Len: 156
+12:917  0:021    4. 855ABD38: 'MCFG', 'A M I', Rev: 1, Len: 60
+12:940  0:023    5. 855ABD78: 'SSDT', 'A M I', Rev: 1, Len: 820
+12:967  0:027    6. 855AC0B0: 'SSDT', 'A M I', Rev: 2, Len: 6091
+12:989  0:022    7. 855AD880: 'SSDT', 'A M I', Rev: 1, Len: 26981
+13:012  0:022    8. 855B41E8: 'SSDT', 'A M I', Rev: 2, Len: 12743
+13:035  0:023    9. 855B73B0: 'HPET', 'A M I', Rev: 1, Len: 56
+13:057  0:022    10. 855B73E8: 'SSDT', 'A M I', Rev: 2, Len: 9010
+13:080  0:022    11. 855B9720: 'SSDT', 'A M I', Rev: 2, Len: 3998
+13:103  0:022    12. 855BA6C0: 'SSDT', 'A M I', Rev: 2, Len: 10652
+13:126  0:023    13. 855BD060: 'UEFI', 'A M I', Rev: 1, Len: 66
+13:153  0:027    14. 855BD0A8: 'LPIT', 'A M I', Rev: 1, Len: 92
+13:176  0:022    15. 855BD108: 'SSDT', 'A M I', Rev: 2, Len: 10206
+13:198  0:022    16. 855BF8E8: 'SSDT', 'A M I', Rev: 2, Len: 4094
+13:220  0:022    17. 855C08E8: 'DBGP', 'A M I', Rev: 1, Len: 52
+13:244  0:023    18. 855C0920: 'DBG2', 'A M I', Rev: 0, Len: 84
+13:266  0:022    19. 855C0978: 'BGRT', 'A M I', Rev: 1, Len: 56
+13:288  0:022    20. 855C09B0: 'WSMT', 'A M I', Rev: 1, Len: 40
+13:315  0:026    Tables in Rsdt: 21
+13:323  0:007    0. 8556E180: 'FACP', 'A M I', Rev: 2, Len: 132
+13:347  0:023        (Dsdt: 8556E208, Facs: 855F8040)
+13:362  0:014        8556E208: 'DSDT', 'A M I', Rev: 2, Len: 252066
+13:397  0:035        855F8040: 'FACS', Ver: 0, Len: 64
+13:412  0:015    1. 855ABBC8: 'APIC', 'A M I', Rev: 4, Len: 132
+13:445  0:032    2. 855ABC50: 'FPDT', 'A M I', Rev: 1, Len: 68
+13:478  0:032    3. 855ABC98: 'FIDT', 'A M I', Rev: 1, Len: 156
+13:501  0:022    4. 855ABD38: 'MCFG', 'A M I', Rev: 1, Len: 60
+13:538  0:037    5. 855ABD78: 'SSDT', 'A M I', Rev: 1, Len: 820
+13:571  0:033    6. 855AC0B0: 'SSDT', 'A M I', Rev: 2, Len: 6091
+13:605  0:033    7. 855AD880: 'SSDT', 'A M I', Rev: 1, Len: 26981
+13:627  0:022    8. 855B41E8: 'SSDT', 'A M I', Rev: 2, Len: 12743
+13:659  0:032    9. 855B73B0: 'HPET', 'A M I', Rev: 1, Len: 56
+13:692  0:032    10. 855B73E8: 'SSDT', 'A M I', Rev: 2, Len: 9010
+13:714  0:021    11. 855B9720: 'SSDT', 'A M I', Rev: 2, Len: 3998
+13:738  0:024    12. 855BA6C0: 'SSDT', 'A M I', Rev: 2, Len: 10652
+13:765  0:026    13. 855BD060: 'UEFI', 'A M I', Rev: 1, Len: 66
+13:787  0:022    14. 855BD0A8: 'LPIT', 'A M I', Rev: 1, Len: 92
+13:810  0:022    15. 855BD108: 'SSDT', 'A M I', Rev: 2, Len: 10206
+13:833  0:022    16. 855BF8E8: 'SSDT', 'A M I', Rev: 2, Len: 4094
+13:856  0:022    17. 855C08E8: 'DBGP', 'A M I', Rev: 1, Len: 52
+13:878  0:022    18. 855C0920: 'DBG2', 'A M I', Rev: 0, Len: 84
+13:901  0:022    19. 855C0978: 'BGRT', 'A M I', Rev: 1, Len: 56
+13:924  0:022    20. 855C09B0: 'WSMT', 'A M I', Rev: 1, Len: 40

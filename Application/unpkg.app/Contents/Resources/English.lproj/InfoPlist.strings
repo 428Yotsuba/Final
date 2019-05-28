@@ -1,0 +1,4 @@
+CFBundleName = "unpkg";
+CFBundleShortVersionString = "4.5";
+CFBundleGetInfoString = "unpkg version 4.5 Copyright 2010 timdoug";
+NSHumanReadableCopyright = "Copyright 2010 timdoug.";

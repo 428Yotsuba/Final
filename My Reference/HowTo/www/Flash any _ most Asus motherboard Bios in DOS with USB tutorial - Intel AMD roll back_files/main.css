@@ -1,0 +1,46 @@
+.pcSpecs {
+background-color: #9E0000;
+padding: 2px 5px;
+margin: 5px 0;
+display: inline-block;
+font-weight: 800;
+color: #FFF;
+text-decoration: none;
+background-image: url(../images/misc/white_downward_arrow.png);
+background-position: right center;
+background-repeat: no-repeat;
+padding-right: 18px;
+}
+.pcSpecs:hover{
+color: #FFF;
+}
+
+.pcSpecs_table {
+position: absolute;
+background-color: #FFF;
+width: 380px;
+display: none;
+border-collapse: inherit;
+border-spacing: 1px;
+color: #fff;
+z-index: 1;
+}
+
+.pcSpecs_table  td{ 
+background-color: #000000;
+}
+
+.pcSpecs_table .tp{ 
+width: 150px;
+}
+
+.pcSpecs_table .tt td,.pcSpecs_table .tp{ 
+background-color: #9E0000;
+}
+
+
+
+.pcSpecs_table td{ 
+padding: 3px;
+background-color: #000000;
+}

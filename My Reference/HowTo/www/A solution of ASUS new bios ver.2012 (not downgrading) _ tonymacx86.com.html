@@ -1,0 +1,4945 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/ -->
+<html id="XF" lang="en-US" dir="LTR" data-app="public" data-template="thread_view" data-container-key="node-173" data-content-key="thread-273151" data-logged-in="false" data-cookie-prefix="xf_" class="has-js template-thread_view has-no-touchevents has-passiveeventlisteners has-no-hiddenscroll has-pointer-nav"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+
+(function() {
+	if(typeof amzn_assoc_utils==="undefined"){amzn_assoc_utils={};}if(typeof amzn_assoc_utils.parse==="undefined"){amzn_assoc_utils.parse=(function(){var d,b,a={'"':'"',"\\":"\\","/":"/",b:"\b",f:"\f",n:"\n",r:"\r",t:"\t"},m,k=function(n){throw {name:"SyntaxError",message:n,at:d,text:m};},g=function(n){if(n&&n!==b){k("Expected '"+n+"' instead of '"+b+"'");}b=m.charAt(d);d+=1;return b;},f=function(){var o,n="";if(b==="-"){n="-";g("-");}while(b>="0"&&b<="9"){n+=b;g();}if(b==="."){n+=".";while(g()&&b>="0"&&b<="9"){n+=b;}}if(b==="e"||b==="E"){n+=b;g();if(b==="-"||b==="+"){n+=b;g();}while(b>="0"&&b<="9"){n+=b;g();}}o=+n;if(!isFinite(o)){k("Bad number");}else{return o;}},h=function(){var q,p,o="",n;if(b==='"'){while(g()){if(b==='"'){g();return o;}if(b==="\\"){g();if(b==="u"){n=0;for(p=0;p<4;p+=1){q=parseInt(g(),16);if(!isFinite(q)){break;}n=n*16+q;}o+=String.fromCharCode(n);}else{if(typeof a[b]==="string"){o+=a[b];}else{break;}}}else{o+=b;}}}k("Bad string");},j=function(){while(b&&b<=" "){g();}},c=function(){switch(b){case"t":g("t");g("r");g("u");g("e");return true;case"f":g("f");g("a");g("l");g("s");g("e");return false;case"n":g("n");g("u");g("l");g("l");return null;}k("Unexpected '"+b+"'");},l,i=function(){var n=[];if(b==="["){g("[");j();if(b==="]"){g("]");return n;}while(b){n.push(l());j();if(b==="]"){g("]");return n;}g(",");j();}}k("Bad array");},e=function(){var o,n={};if(b==="{"){g("{");j();if(b==="}"){g("}");return n;}while(b){o=h();j();g(":");if(Object.hasOwnProperty.call(n,o)){k('Duplicate key "'+o+'"');}n[o]=l();j();if(b==="}"){g("}");return n;}g(",");j();}}k("Bad object");};l=function(){j();switch(b){case"{":return e();case"[":return i();case'"':return h();case"-":return f();default:return b>="0"&&b<="9"?f():c();}};return function(p,o){var n;m=p;d=0;b=" ";n=l();j();if(b){k("Syntax error");}return n;};}());}if(typeof amzn_assoc_utils.stringify==="undefined"){amzn_assoc_utils.stringify=function(b){var a="";if(typeof JSON!=="undefined"){a=JSON.stringify(b);}return a;};}if(typeof amzn_assoc_utils.addCssRules==="undefined"){amzn_assoc_utils.addCssRules=function(g,n){var h=document.createElement("style"),m,e=0,k="";h.appendChild(document.createTextNode(""));document.head.appendChild(h);m=h.sheet;for(e=0,rl=n.length;e<rl;e++){var d=1,l=n[e],b=n[e][0],f="";if(Object.prototype.toString.call(l[1][0])==="[object Array]"){l=l[1];d=0;}for(var c=l.length;d<c;d++){var a=l[d];f+=a[0]+":"+a[1]+(a[2]?" !important":"")+";\n";}if(typeof g==="string"){m.insertRule(g+"{"+b+"{"+f+"}}",m.cssRules.length);}else{m.insertRule(b+"{"+f+"}",m.cssRules.length);}}};}window.trackingUtils=function(l,c,e,o,p,h,d,r,t,n,q){var g={},j=new RegExp("/(ref=[\\w]+)/?","i"),a="assocPayloadId",i=function(u){return u&&encodeURIComponent(u).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");},m=(function(){var u=document.createElement("a");u.href=(window.location!==window.parent.location)?document.referrer:document.location;return u.protocol+"//"+u.hostname+((u.port===""||u.port==="80"||u.port==="443")?"":(":"+u.port))+(u.pathname.indexOf("/")!==0?("/"+u.pathname):u.pathname);}()),s=(function(){return i(m);}()),k=function(u,w,x,v){if(typeof x==="string"&&x!==""){if(u.search===""){u.search="?"+w+"="+x;}else{if(!u.search.match(new RegExp("[?&]"+w+"="))){u.search=u.search.replace(/\?/,"?"+w+"="+x+"&");}else{if(v){u.search=u.search.replace(new RegExp(w+"=([^&]*)"),w+"="+x);}}}}return u;},f=function(w,u,v){if(typeof v==="string"&&v!==""){if(!w.match(/\?/)){w=w+"?"+u+"="+v;}else{if(!w.match(u)){w=w.replace(/\?/,"?"+u+"="+v+"&");}}}return w;},b=function(v){var u=(typeof d!=="undefined")?d:0;if(typeof v!=="undefined"){u=v;}return u;};g.addRefUrls=function(z,A,v,u){var B=new RegExp("^http://.*(amazon|endless|myhabit|amazonwireless|javari|smallparts)\\.(com|ca|co\\.jp|de|fr|co\\.uk|cn|it|es)/.*","i"),w,y,x;for(x=0;x<z.length;x++){z[x].rel="nofollow";w=String(z[x].href);if(y=w.match(B)){z[x].href=g.addTrackingParameters(z[x],A,v,u);}}};g.addRefRefUrl=function(u){return k(u,"ref-refURL",s);};g.getRefRefUrl=function(){return s;};g.getRawRefUrl=function(){return m;};g.addSignature=function(v,u,w){return k(k(v,"sig",u),"sigts",w);};g.addLinkCode=function(v,u){return k(v,"linkCode",u);};g.addTrackingId=function(v,u){return k(v,"tag",u);};g.addLinkId=function(u,v){return k(u,"linkId",v);};g.addSubtag=function(u,v){return k(u,"ascsubtag",v);};g.addCreativeAsin=function(u,v){return k(k(u,"creativeASIN",v),"adId",v);};g.addAdType=function(v,u){return k(v,"adType",u);};g.addAdMode=function(u,v){return k(u,"adMode",v);};g.addAdFormat=function(v,u){return k(v,"adFormat",u);};g.addImpressionTimestamp=function(u,v){if(typeof v==="number"){v=v.toString();}return k(u,"impressionTimestamp",v);};g.convertToRedirectedUrl=function(u,x,v){var w=document.createElement("a");w.setAttribute("href",x);if(typeof v!=="undefined"){k(w,v,i(u.getAttribute("href")),true);}else{w.setAttribute("href",x+"/"+w.getAttribute("href"));}u.setAttribute("href",w.getAttribute("href"));return u;};g.getImpressionToken=function(){return h;};g.generateTransitId=function(){return g.getHashedImpressionToken();};g.getHashedImpressionToken=function(){var u=o.split("/");var v=u[u.length-2];return v;};g.getTransitId=function(){if(typeof assoc_session_storage!=="undefined"){var u=assoc_session_storage.get(a);return u;}return null;};g.getClickUrl=function(){return p;};g.addImpressionToken=function(v,w){var u=b(w);if(typeof h==="string"&&h!==""){k(v,"imprToken",h);if(typeof u!=="undefined"){k(v,"slotNum",u);}}return v;};g.addImpressionTokenStr=function(w,v){var u=b(v);if(typeof h==="string"&&h!==""){w=f(w,"imprToken",h);if(typeof u!=="undefined"){w=f(w,"slotNum",u);}}return w;};g.addTrackingParameters=function(A,B,z,E,x,u,y,w,v,F,D,C){return g.addSignature(g.addCreativeAsin(g.addLinkId(g.addTrackingId(g.addSubtag(g.addLinkCode(g.addRefRefUrl(g.addImpressionToken(g.addRefMarker(g.addAdType(g.addAdMode(g.addAdFormat(g.addImpressionTimestamp(A,C),D),F),v),x))),z),r),E),B),u),y,w);};g.addRefMarker=function(v,x){var w,u=false;if(typeof x==="undefined"){return v;}if(w=v.pathname.match(j)){v.pathname=v.pathname.replace(w[1],"ref="+x);}else{u=(v.pathname.charAt(v.pathname.length-1)==="/");v.pathname=v.pathname+(u?"":"/")+"ref="+x;}return v;};g.getRefMarker=function(u){var v;if(v=u.pathname.match(j)){return v[1].substr(4);}else{return undefined;}};g.getCurrentURL=function(){return(window.location!==window.parent.location)?document.referrer:document.location.href;};g.makeForesterCall=function(w){var u=undefined,v;if(typeof JSON!=="undefined"){v=JSON.stringify(w);}else{if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){v=amzn_assoc_utils.stringify(w);}else{return;}}if(typeof o==="string"){u=o+"?assoc_payload="+encodeURIComponent(v);g.generateImage(u);}};g.recordImpression=function(w,u,z,x,B){z.linkCode=w;z.trackingId=u;z.refUrl=g.getCurrentURL();if(n||!t){g.makeForesterCall(z);}else{g.addABPFlag(z,g.makeForesterCall);}if(typeof x==="undefined"||!x){var y=(new Date()).getTime();var A=(typeof B!=="undefined")?B:"";var v=e+"?l="+w+"&t="+u+"&o="+l+"&cb="+y+A;g.generateImage(v);}};g.createAssocPayload=function(y,w,v,u){y.linkCode=w;y.trackingId=v;y.refUrl=u;var x="";if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){x=amzn_assoc_utils.stringify(y);}return x;};g.recordAESImpression=function(w,u,x){if(typeof q==="string"){var z=g.createAssocPayload(x,w,u,g.getRefRefUrl());var v=g.getHashedImpressionToken();var y=q+v+"/pixel?assoc_payload="+encodeURIComponent(z);g.generateImage(y);}};g.recordTransit=function(){if(!(g.getTransitId())||g.isUTMParamPresentInUrl(g.getCurrentURL())){assoc_session_storage.set(a,g.generateTransitId());}};g.isUTMParamPresentInUrl=function(v){var u=v.match(/utm_source=/i);return(u!==null);};g.addAAXClickUrls=function(v){var x,w,u;if(typeof v==="undefined"||typeof p==="undefined"){return;}for(w=0;w<v.length;w++){u=String(v[w].href);if(u.indexOf(p)<0){x=p+u;v[w].href=x;}}};g.addAAXClickUrl=function(u){if(typeof u==="undefined"||u.indexOf(p)===0){return u;}return p+u;};g.updateLinks=function(v,x){var w,u;if(typeof x!=="function"){return;}for(w=0;w<v.length;w++){u=String(v[w].href);v[w].href=x(u);}};g.elementInViewPort=function(u){var v=u.getBoundingClientRect(),w=(v.top>=0&&v.left>=0&&v.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&v.right<=(window.innerWidth||document.documentElement.clientWidth));return{posX:v.left+window.pageXOffset,posY:v.top+window.pageYOffset,inViewPort:w};};g.recordViewability=function(z,y,v,w){if(typeof o==="string"){var x=g.createViewbilityPayload(z,y,v,w);var u=o+x+"&cb="+(new Date()).getTime();g.generateImage(u);}};g.recordAESViewability=function(B,A,v,w){if(typeof q==="string"){var x=g.createViewbilityPayload(B,A,v,w);var u=g.getHashedImpressionToken();var z=encodeURIComponent(x);var y=q+u+"/pixel/"+z+"&cb="+(new Date()).getTime();g.generateImage(y);}};g.createViewbilityPayload=function(z,y,v,x){var w={};if(typeof y!=="undefined"){w.above_the_fold=y;}if(typeof v!=="undefined"){w.topPos=v;}if(typeof x!=="undefined"){w.leftPos=x;}if(typeof z!=="undefined"){if(Object.keys(w).length===0){w.viewable=true;}w.slotNum=z;}var u="";if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){u=amzn_assoc_utils.stringify({adViewability:[w]});}return u;};g.generateImage=function(u){if(typeof u!=="undefined"){(new Image()).src=u;}};g.addABPFlag=function(x,F){var z=false,y=2,w=document.body?document.body.appendChild(new Image()):new Image(),v=document.body?document.body.appendChild(new Image()):new Image(),C=false,A=false,u=Math.random()*11,E=t+"?ch=*&rn=*",D=function(H,G){if(y===0||G>1000){x.supplySideMetadata={ABPInstalled:y===0&&z};H(x);}else{setTimeout(function(){D(H,G*2);},G*2);}},B=function(){if(--y){return;}z=!C&&A;};w.style.display="none";v.style.display="none";w.onload=B;w.onerror=function(){C=true;B();};w.src=E.replace(/\*/,1).replace(/\*/,u);v.onload=B;v.onerror=function(){A=true;B();};v.src=E.replace(/\*/,2).replace(/\*/,u);D(F,250);};return g;};var assoc_session_storage=(function(){var a={};a.get=function(c){var d=null;if(typeof(window.sessionStorage)!=="undefined"){try{d=window.sessionStorage.getItem(c);}catch(b){}}return d;};a.set=function(c,d){if(typeof(window.sessionStorage)!=="undefined"){try{window.sessionStorage.setItem(c,d);}catch(b){}}};return a;}());window.elemTracker=function(b){var a={};a.trackElements=function(d,c){var f,e;if(typeof d!=="undefined"&&d.length>0&&typeof c==="function"){window.addEventListener("scroll",function(){for(f=0;f<d.length;f++){e=b.elementInViewPort(d[f]);if(e.inViewPort){c();}}},false);}};return a;};
+	var amznAutoTaggerMaker=function(h,v,B){var D={CA:"ca",CN:"cn",IN:"in",DE:"de",FR:"fr",GB:"co.uk",JP:"co.jp",US:"com"},j={CA:[],CN:[],IN:[],DE:["javari"],FR:["javari"],GB:["javari"],JP:["javari"],US:["smallparts","amazonwireless","endless","myhabit"]},F=(function(){var P=-1,O={};O.getNextSlotNum=function(){return ++P;};return O;}()),q,o,e=Math.max(document.body.scrollHeight,document.body.offsetHeight,document.documentElement.clientHeight,document.documentElement.scrollHeight,document.documentElement.offsetHeight),m=Math.max(document.body.scrollWidth,document.body.offsetWidth,document.documentElement.clientWidth,document.documentElement.scrollWidth,document.documentElement.offsetWidth),y={totalDocWidth:m,totalDocHeight:e,logType:"onetag_pageload",pageTitle:document.title},a="w50",J="w61",H="g12",C={},b=new RegExp("%3F"),w=new Object(),x=false,l="",s="",u=0,L=0,d=0,G=new RegExp("amzn.to"),r=new RegExp(h.redirectorEndPoint),E=["kdp.amazon.com"],N=[],I="assocPayloadId",c=function(P){var Q,O=false;for(Q=0;Q<E.length;Q++){if(P.match(E[Q])){O=true;break;}}return O;},p=function(O){return O.nextSibling&&O.nextSibling.tagName==="IMG"&&O.nextSibling.hasAttribute("src")&&(O.nextSibling.getAttribute("src").search(/ir-[a-z]{2}\.amazon-adsystem\.com/)>-1||O.nextSibling.getAttribute("src").search(/www\.assoc-amazon\.*/)>-1);},n=function(O){if(!O.href.match(r)){O.href=h.redirectorEndPoint+O.href;}},k=function(Y,ae){var Z=new RegExp("/(ref=[\\w]+)/?","i"),U,ad=false,P,S,T=false,X=Y.search.match(/\?tag=([^&]+)|&tag=([^&]+)|\?tag-value=([^&]+)|&tag-value=([^&]+)|\?tag_value=([^&]+)|&tag_value=([^&]+)|\?t=([^&]+)|&t=([^&]+)/),R=Y.search.match(/\?tag=|&tag=|\?tag-value=|&tag-value=|\?tag_value=|&tag_value=|\?t=|&t=/),O=Y.search.match(/(linkCode|link_code|lc)=([^&]+)/i),W=v.elementInViewPort(Y),ac={autoTagged:false,overwritten:false,geoRedirected:false,atf:W.inViewPort},Q=F.getNextSlotNum(),V={destinationURL:Y.href,slotNum:Q,atfInFirstLoad:W.inViewPort,posX:W.posX,posY:W.posY,logType:"onetag_textlink"},ab=p(Y),aa;ac.slotNum=Q;if(Y.search===""){Y.search="?imprToken="+v.getImpressionToken()+"&slotNum="+Q;}else{Y.search=Y.search.replace(/\?/,"?imprToken="+v.getImpressionToken()+"&slotNum="+Q+"&");}if(h.enableAutoTagging){ac.autoTagged=true;if(X){if(h.overwrite){for(S=1;S<9;S++){if(X[S]!=undefined){Y.search=Y.search.replace(X[S],ae);break;}}ac.overwritten=true;ad=true;}}else{if(R){Y.search=Y.search.replace(/tag=/,"tag="+ae);ad=true;}else{Y.search=Y.search.replace(/\?/,"?tag="+ae+"&");ad=true;}}}if(O&&typeof h.overridableLinkCodes[O[2]]!=="undefined"){T=true;}if(O&&!T){P=O[2];}else{P=ad?a:J;}if(O){V.oldLinkCode=O[2];Y.search=Y.search.replace(O[2],P);}else{Y.search=Y.search.replace(/\?/,"?linkCode="+P+"&");}if(ad){aa=ae;}else{if(typeof X!=="undefined"&&X instanceof Array&&X.length>=S+1&&typeof X[S]==="string"){aa=X[S];}else{aa="";}}if(C.shouldBeGeoRedirected()){ac.geoRedirected=true;n(Y);}if(Y.hasAttribute("data-amzn-asin")&&!Y.search.match("creativeASIN")){Y.search=Y.search.replace(/\?/,"?creativeASIN="+Y.getAttribute("data-amzn-asin")+"&");}if(C.shouldTrackTransit(h)){v.recordTransit();V[I]=v.getTransitId();}N.push({pos:W,slotNum:Q,linkCode:P,linkInfo:V,skipIRCall:ab,imprTag:aa});Y.href=v.addAAXClickUrl(Y.href);return ac;},A=function(O){if(O.href.match(b)){o=O.href.split(b);O.href=o[0]+"?"+decodeURIComponent(o[1]);}},t=function(P,O,S){var R,Q;for(R=0;R<P.length;R++){for(Q=0;Q<O.length;Q++){if(window.addEventListener){P[R].addEventListener(O[Q],S,false);}else{P[R].attachEvent("on"+O[Q],S);}}}},K=function(O,P){var Q=false;t([O],["touchstart"],function(){Q=false;});t([O],["touchmove"],function(){Q=true;});t([O],["click","touchend"],function(R){if(Q){return;}O.setAttribute("href",P);});t([O],["auxclick","contextmenu"],function(R){O.setAttribute("href",P);});t([O],["mouseup"],function(R){if(R.button===1||R.ctrlKey){O.setAttribute("href",P);}});},M=function(){var O="";for(i=0;i<h.itemRefs.length;i++){if(typeof h.itemRefs[i].type!=="undefined"&&h.itemRefs[i].type==="ASIN"&&typeof h.itemRefs[i].sourceLink!=="undefined"&&String(h.itemRefs[i].sourceLink).match(G)!==null&&typeof h.itemRefs[i].destinationLink!=="undefined"){w[h.itemRefs[i].sourceLink]=h.itemRefs[i].destinationLink;if(l!==""){O=",";}l=l+O+h.itemRefs[i].sourceLink;u++;}}},f=function(P,O){B.trackElements([P],function(){if(typeof O!==undefined&&O.slotNum!==undefined&&(O.viewed===undefined||!O.viewed)){v.recordViewability(O.slotNum);if(C.shouldInteractWithAES(h)){v.recordAESViewability(O.slotNum);}O.viewed=true;}});},g=function(O,P){K(O,O.getAttribute("href"));O.setAttribute("href",P);},z=function(){var Q,P,O;for(Q=0;Q<N.length;Q++){P=N[Q];O=P.pos;v.recordImpression(P.linkCode,P.imprTag,P.linkInfo,P.skipIRCall,P.slotNum);v.recordViewability(P.slotNum,O.inViewPort,O.posX,O.posY);if(C.shouldInteractWithAES(h)){v.recordAESImpression(P.linkCode,P.imprTag,P.linkInfo);v.recordAESViewability(P.slotNum,O.inViewPort,O.posX,O.posY);}}N=[];};if(h.locale!=undefined){q=h.locale;}else{q="US";}C.shouldBeGeoRedirected=function(){return h.enableGeoRedirection&&(h.region!==""&&h.region!==h.viewerCountry);};C.publisherCallBack=function(){window["amzn_assoc_client_cb_"+h.adUnitSlotNum]({type:"onload",data:{},widget:C});};C.decorateLinkElement=function(O){A(O);linkProperties=k(O,h.trackingId);f(O,linkProperties);return linkProperties;};C.shouldTrackTransit=function(O){return((typeof O.disableTransitTracking==="undefined")||!O.disableTransitTracking);};C.shouldInteractWithAES=function(O){return((typeof O.enableAESInteraction!=="undefined")&&O.enableAESInteraction);};C.tagLinks=function(af){var ah,ag,P,aa,aj,ac=[],al=0,X,Z,ai,ae,ak,O,Y,V=0,R=0,ab=0,Q=0,U=0,S=0,T,W,ad="";P=D[q];aa=j[q];aj=new RegExp("^(http|https)://(www|[\\w\\-\\.]+)?amazon\\.("+P+")/","i");if(aa){for(al=0;al<aa.length;al++){X=P;if(P=="co.jp"){X="co.jp|jp";}ac[al]=new RegExp("^(http|https)://(www\\.)?("+aa[al]+")\\.("+X+")/","i");}}Z=af.getElementsByTagName("a");if(!x){M();x=true;}for(ah=0;ah<Z.length;ah++){Y=undefined;ai=String(Z[ah].href);if(ae=ai.match(aj)&&!c(ai)){Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}else{if(h.isShortLinksSupported&&(ak=ai.match(G))!==null){L++;if(s!==""){ad=",";}s=s+ad+Z[ah].href;T=w[Z[ah].href];if(typeof T!=="undefined"){d++;Z[ah].setAttribute("href",T);Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}else{if(C.shouldBeGeoRedirected()){Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}}}else{for(O=0;O<ac.length;O++){if(ae=ai.match(ac[O])){C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}}}}if(typeof Y!=="undefined"){if(Y.autoTagged){R++;}if(Y.overwritten){S++;}if(Y.geoRedirected){ab++;}if(Y.atf){Q++;}else{U++;}V++;}}y.numLinks=V;y.numAutoTaggedLinks=R;y.autoTaggingEnabled=h.enableAutoTagging;y.geoRedirectEnabled=h.enableGeoRedirection;y.disableTransitTracking=h.disableTransitTracking;y.numLinksATF=Q;y.numLinksBTF=U;y.shortLinksInLivePool=l;y.shortLinksInPage=s;y.shortLinksInLivePoolCount=u;y.shortLinksInPageCount=L;y.shortLinksMatchCount=d;if(C.shouldTrackTransit(h)){v.recordTransit();y[I]=v.getTransitId();}v.recordImpression(h.linkCode,h.trackingId,y);if(C.shouldInteractWithAES(h)){v.recordAESImpression(h.linkCode,h.trackingId,y);}t([window],["load"],z);};return C;};
+    var spec = {
+        trackingId : "tonymacx86com-20",
+        region : "US",
+        overwrite : false,
+        enableAutoTagging : false,
+        linkCode : "w49",
+        overridableLinkCodes :  {   "am1": ""   , "am2": ""   , "am3": ""   , "as1": ""   , "as2": ""   , "as3": ""   , "as4": ""   , "li1": ""   , "li2": ""   , "li3": ""   , "ll1": ""   , "ll2": ""   },
+        enableGeoRedirection : true,
+        redirectorEndPoint : "https://assoc-redirect.amazon.com/g/r/",
+        adUnitSlotNum : "0",
+        itemRefs : [{"type":"ASIN","id":"B004ZQ6F54","destUrl":{},"sourceType":{}},{"type":"ASIN","id":"B004EBUXSU","destUrl":{},"sourceType":{}},{"type":"ASIN","id":"B002SP113K","destUrl":{},"sourceType":{}},{"type":"ASIN","id":"B0764BVTPQ","destUrl":{},"sourceType":{}},{"type":"ASIN","id":"B07HHN6KBZ","destUrl":{},"sourceType":{}}],
+        isShortLinksSupported : true,
+        viewerCountry : "JP",
+        disableTransitTracking : false,
+        enableAESInteraction : true
+    }, trackingUtils = window.trackingUtils(
+        "1",
+        "//fls-na.amazon-adsystem.com/1/associates-ads/1/OP/r/json",
+        "//ir-na.amazon-adsystem.com/e/ir",
+        "https://aax-us-east.amazon-adsystem.com/x/px/QkLZE2ZFxaenXLo_4uiln-gAAAFpk-QDvQEAAAFKAe34Gvc/", "https://aax-us-east.amazon-adsystem.com/x/c/QkLZE2ZFxaenXLo_4uiln-gAAAFpk-QDvQEAAAFKAe34Gvc/", "ds2iJRUTa6fqfxZQdY-khA", undefined, undefined, undefined, true,
+        "https://assoc-na.associate-amazon.com/onetag/"
+    );
+
+    window.amznAutoTagger = amznAutoTaggerMaker(spec, trackingUtils, window.elemTracker(trackingUtils));
+    window.amznAutoTagger.tagLinks(document);
+    window.amznAutoTagger.publisherCallBack();
+}());
+
+ //# sourceURL=dynscript-0.js</script>
+	<!-- -->
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+	
+	
+	
+
+	<title>A solution of ASUS new bios ver.2012 (not downgrading) | tonymacx86.com</title>
+
+	
+		
+		<meta name="description" content="Sorry for my bad English. It&#39;s not my native language.
+
+I&#39;m using ASUS ROG Strix B360-i Gaming motherboard with Samsung PM961 Nvme SSD.
+After I update the...">
+		<meta property="og:description" content="Sorry for my bad English. It&#39;s not my native language.
+
+I&#39;m using ASUS ROG Strix B360-i Gaming motherboard with Samsung PM961 Nvme SSD.
+After I update the BIOS to version 2012, I have also ran into the problem that my hackintosh never boot again.
+It just stucks at the progress bar with Apple...">
+		<meta property="twitter:description" content="Sorry for my bad English. It&#39;s not my native language.
+
+I&#39;m using ASUS ROG Strix B360-i Gaming motherboard with Samsung PM961 Nvme SSD.
+After I update the BIOS to version 2012, I have also ran...">
+	
+	
+		<meta property="og:url" content="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/">
+	
+		<link rel="canonical" href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/">
+	
+
+	
+		
+	
+	
+	<meta property="og:site_name" content="tonymacx86.com">
+
+
+	
+	
+		
+	
+	
+	<meta property="og:type" content="website">
+
+
+	
+	
+		
+	
+	
+	
+		<meta property="og:title" content="A solution of ASUS new bios ver.2012 (not downgrading)">
+		<meta property="twitter:title" content="A solution of ASUS new bios ver.2012 (not downgrading)">
+	
+
+
+	
+	
+	
+	
+		
+	
+	
+	
+		<meta property="og:image" content="https://www.tonymacx86.com/images/tonymacx86-logo.png">
+		<meta property="twitter:image" content="https://www.tonymacx86.com/images/tonymacx86-logo.png">
+		<meta property="twitter:card" content="summary">
+	
+
+
+	
+
+	
+
+	
+	
+
+	
+	<link rel="preload" href="https://www.tonymacx86.com/styles/fonts/fa/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+
+	<link rel="preload" href="https://www.tonymacx86.com/styles/fonts/fa/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+
+<link rel="preload" href="https://www.tonymacx86.com/styles/fonts/fa/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/css.php">
+
+	<link rel="stylesheet" href="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/css(2).php">
+
+	
+		<script src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/osd.js.ダウンロード"></script><script src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/ca-pub-9762329074683820.js.ダウンロード"></script><script async="" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/analytics.js.ダウンロード"></script><script src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/preamble.min.js.ダウンロード"></script>
+	
+
+
+	
+	
+		<link rel="apple-touch-icon" href="https://www.tonymacx86.com/images/tonymacx86-logo.png">
+	
+	
+
+	<!-- GoogleAnalytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-12440482-1', 'auto');
+
+	// Replace the following lines with the plugins you want to use.
+	ga('require', 'eventTracker');
+	ga('require', 'cleanUrlTracker');
+	ga('require', 'outboundLinkTracker');
+	ga('require', 'urlChangeTracker');
+	ga('require', 'pageVisibilityTracker');
+	ga('require', 'socialWidgetTracker');
+	ga('require', 'outboundFormTracker');
+	ga('require', 'mediaQueryTracker');
+	ga('require', 'impressionTracker');
+
+	ga('send', 'pageview');
+	
+</script>
+<script async="" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/autotrack.js.ダウンロード"></script>
+
+	<script>
+		var newestId = 1552964384;
+		//var newestID = ;
+	</script>
+	<meta name="google-site-verification" content="uYzpOey6RMQp0RESonRdDtD1E6J46HwLHuTE5_HLwho">
+<link rel="preload" href="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/f(4).txt" as="script"><script type="text/javascript" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/f(4).txt"></script><link rel="preload" href="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/f(5).txt" as="script"><script type="text/javascript" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/f(5).txt"></script><link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/r20190313/r20190131/show_ads_impl.js" as="script"></head>
+<body data-template="thread_view">
+
+<div class="p-pageWrapper" id="top">
+
+<div class="p-staffBar">
+	<div class="p-staffBar-inner hScroller" data-xf-init="h-scroller">
+		<div class="hScroller-scroll is-calculated" style="margin-bottom: -47px;">
+			<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=CC3JC8VG8ETHQ" class="p-staffBar-link hideMobile" target="_blank">
+				Contribute
+			</a>
+			
+
+			
+
+			
+
+			
+		
+			<div class="p-search-right">
+				
+					<a href="https://www.tonymacx86.com/login/" class="p-staffBar-link p-navgroup-link--logIn" rel="nofollow" data-xf-click="overlay">
+						<span class="p-navgroup-linkText">Log in</span>
+					</a>
+					<a href="https://www.tonymacx86.com/register/" class="p-staffBar-link p-navgroup-link--register" rel="nofollow" data-xf-click="overlay">
+						<span class="p-navgroup-linkText">Register</span>
+					</a>
+				
+				
+					<a href="https://www.tonymacx86.com/search/" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--search" data-xf-click="menu" data-xf-key="/" aria-label="Search" aria-expanded="false" aria-haspopup="true" title="Search">
+						<i aria-hidden="true"></i>
+						
+					</a>
+					<div class="menu menu--structural menu--wide" data-menu="menu" aria-hidden="true">
+						<form action="https://www.tonymacx86.com/search/search" method="post" class="menu-content" data-xf-init="quick-search">
+		
+							<h3 class="menu-header">Search</h3>
+							
+							<div class="menu-row">
+								
+									<div class="inputGroup inputGroup--joined">
+										<input type="text" class="input" name="keywords" placeholder="Search…" aria-label="Search" data-menu-autofocus="true">
+										
+			<select name="constraints" class="js-quickSearch-constraint input" aria-label="Search within" style="width: 119px; flex-grow: 0; flex-shrink: 0;">
+				<option value="">Everywhere</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;}">Threads</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;,&quot;c&quot;:{&quot;nodes&quot;:[173],&quot;child_nodes&quot;:1}}">This forum</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;,&quot;c&quot;:{&quot;thread&quot;:273151}}">This thread</option>
+
+			</select>
+		
+									</div>
+									
+							</div>
+		
+							
+							<div class="menu-row">
+								<label class="iconic"><input type="checkbox" name="c[title_only]" value="1"><i aria-hidden="true"></i><span class="iconic-label">Search titles only</span></label>
+
+							</div>
+							
+							<div class="menu-row">
+								<div class="inputGroup">
+									<span class="inputGroup-text">By:</span>
+									<input class="input" name="c[users]" data-xf-init="auto-complete" placeholder="Member" autocomplete="off">
+								</div>
+							</div>
+							<div class="menu-footer">
+								<span class="menu-footer-controls">
+									<button type="submit" class="button--primary button button--icon button--icon--search"><span class="button-text">Search</span></button>
+									<a href="https://www.tonymacx86.com/search/" class="button" rel="nofollow"><span class="button-text">Advanced search…</span></a>
+								</span>
+							</div>
+		
+							<input type="hidden" name="_xfToken" value="1552964386,3ba66cb718e22593510c575d85d08d75">
+						</form>
+					</div>
+				
+			</div>
+		</div><i class="hScroller-action hScroller-action--end" aria-hidden="true"></i><i class="hScroller-action hScroller-action--start" aria-hidden="true"></i>
+	</div>
+</div>
+	
+<div class="p-body">
+	<div class="p-body-inner">
+		<header class="p-header" id="header">
+			<div class="p-header-inner">
+				<div class="p-header-content">
+		
+					<div class="p-header-logo p-header-logo--image">
+						<a href="https://www.tonymacx86.com/">
+							<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/newlogo.png" alt="tonymacx86.com">
+						</a>
+					</div>
+					
+					<div class="responsiveGoogleAdHorizontal">
+		<script async="" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/f(6).txt"></script>
+		<!-- Responsive Ad -->
+		<ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-9762329074683820" data-ad-slot="8238137946" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:728px;height:90px;" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/saved_resource(2).html"></iframe></ins></ins></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+</div>
+					
+					
+					
+				</div>
+			</div>
+		</header>
+
+		
+		
+
+		
+			<div class="p-navSticky p-navSticky--primary is-sticky" data-xf-init="sticky-header">
+				
+			<nav class="p-nav">
+				<div class="p-nav-inner">
+					<a class="p-nav-menuTrigger" data-xf-click="off-canvas" data-menu=".js-headerOffCanvasMenu" role="button" tabindex="0">
+						<i aria-hidden="true"></i>
+						<span class="p-nav-menuText">Menu</span>
+					</a>
+		
+					<div class="p-nav-smallLogo">
+						<a href="https://www.tonymacx86.com/">
+							<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/newlogo.png" alt="tonymacx86.com" srcset="/images/misc/newlogo.png 2x">
+						</a>
+					</div>
+		
+					<div class="p-nav-scroller hScroller" data-xf-init="h-scroller">
+						<div class="hScroller-scroll is-calculated" style="margin-bottom: -47px;">
+							<ul class="p-nav-list js-offCanvasNavSource">
+							
+								<li>
+									
+	<div class="p-navEl ">
+		
+			
+				
+	
+	<a href="https://www.tonymacx86.com/" class="p-navEl-link " data-xf-key="1" data-nav-id="home">Home</a>
+
+			
+
+		
+		
+	</div>
+
+								</li>
+							
+								<li>
+									
+	<div class="p-navEl ">
+		
+			
+				
+	
+	<a href="https://www.tonymacx86.com/buyersguide/building-a-customac-hackintosh-the-ultimate-buyers-guide/" class="p-navEl-link " data-xf-key="2" data-nav-id="buyersGuide">Buyer's Guide</a>
+
+			
+
+		
+		
+	</div>
+
+								</li>
+							
+								<li>
+									
+	<div class="p-navEl ">
+		
+			
+				
+	
+	<a href="https://www.tonymacx86.com/threads/unibeast-install-macos-mojave-on-any-supported-intel-based-pc.259381/" class="p-navEl-link " data-xf-key="3" data-nav-id="installationGuide">Installation Guide</a>
+
+			
+
+		
+		
+	</div>
+
+								</li>
+							
+								<li>
+									
+	<div class="p-navEl " data-has-children="true">
+		
+			
+				<a data-xf-key="4" data-xf-click="menu" data-menu-pos-ref="&lt; .p-navEl" class="p-navEl-splitTrigger" role="button" tabindex="0" aria-label="Toggle expanded" aria-expanded="false" aria-haspopup="true" href="https://www.tonymacx86.com/forums/">Forum</a>
+			
+
+		
+		
+			<div class="menu menu--structural tmx-menu-container" data-menu="menu" aria-hidden="true">
+				<div class="menu-content tmx">
+					<ul class="tmx-menu">
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/the-build.4/" class="menu-linkRow js-offCanvasCopy " data-nav-id="theBuild">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/thebuild.png" width="84" height="84">
+		
+		The Build
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-0">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/buying-advice.17/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Buying Advice
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/deals-of-the-day.80/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Deals of the Day
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/desktop-compatibility.113/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Desktop Compatibility
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/general-hardware-discussion.91/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		General Hardware Discussion
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/golden-builds.87/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Golden Builds
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/user-builds.28/" class="menu-linkRow js-offCanvasCopy " data-nav-id="5">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		User Builds
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/installation.128/" class="menu-linkRow js-offCanvasCopy " data-nav-id="installation">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/installation.png" width="84" height="84">
+		
+		Installation
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-0">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/the-basics.165/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		The Basics
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mojave-desktop-support.194/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mojave Desktop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mojave-desktop-guides.195/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mojave Desktop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/high-sierra-desktop-support.190/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		High Sierra Desktop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/high-sierra-desktop-guides.191/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		High Sierra Desktop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/sierra-desktop-support.186/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Sierra Desktop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/sierra-desktop-guides.187/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Sierra Desktop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/el-capitan-desktop-support.180/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		El Capitan Desktop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/el-capitan-desktop-guides.182/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		El Capitan Desktop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/yosemite-desktop-support.175/" class="menu-linkRow js-offCanvasCopy " data-nav-id="5">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Yosemite Desktop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/yosemite-desktop-guides.176/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Yosemite Desktop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mavericks-desktop-support.164/" class="menu-linkRow js-offCanvasCopy " data-nav-id="6">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mavericks Desktop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mavericks-desktop-guides.167/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mavericks Desktop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/lion-desktop-support.63/" class="menu-linkRow js-offCanvasCopy " data-nav-id="7">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Lion Desktop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/lion-desktop-guides.62/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Lion Desktop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mountain-lion-desktop-support.96/" class="menu-linkRow js-offCanvasCopy " data-nav-id="8">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mountain Lion Desktop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mountain-lion-desktop-guides.98/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mountain Lion Desktop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/snow-leopard-desktop-support.9/" class="menu-linkRow js-offCanvasCopy " data-nav-id="9">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Snow Leopard Desktop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/snow-leopard-desktop-guides.35/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Snow Leopard Desktop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/bios-uefi.173/" class="menu-linkRow js-offCanvasCopy " data-nav-id="10">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		BIOS/UEFI
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/dsdt.12/" class="menu-linkRow js-offCanvasCopy " data-nav-id="11">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		DSDT
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/ssdt.92/" class="menu-linkRow js-offCanvasCopy " data-nav-id="12">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		SSDT
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/other-operating-systems.131/" class="menu-linkRow js-offCanvasCopy " data-nav-id="13">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Other Operating Systems
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/linux.133/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Linux
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/multi-booting.153/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Multi Booting
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/windows.132/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Windows
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/post-installation.26/" class="menu-linkRow js-offCanvasCopy " data-nav-id="postInstallation">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/post_installation.png" width="84" height="84">
+		
+		Post Installation
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-0">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/audio.14/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Audio
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/hdmi-audio.59/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		HDMI Audio
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/general-help.10/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		General Help
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/graphics.13/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Graphics
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/network.15/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Network
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/hardware-troubleshooting.154/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Hardware Troubleshooting
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/os-x-updates.32/" class="menu-linkRow js-offCanvasCopy " data-nav-id="5">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		OS X Updates
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/the-workshop.121/" class="menu-linkRow js-offCanvasCopy " data-nav-id="theWorkshop">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/workshop.png" width="84" height="84">
+		
+		The Workshop
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-0">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/bootloaders.158/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Bootloaders
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/customization.33/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Customization
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/overclocking.25/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Overclocking
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/case-mods.111/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Case Mods
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/completed-mods.134/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Completed Mods
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/imac-mods.135/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		iMac Mods
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mac-pro-mods.140/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mac Pro Mods
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/powermac-g3-b-w.136/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		PowerMac G3 B&amp;W
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/powermac-g4.137/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		PowerMac G4
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/powermac-g4-cube.138/" class="menu-linkRow js-offCanvasCopy " data-nav-id="5">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		PowerMac G4 Cube
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/powermac-g5.139/" class="menu-linkRow js-offCanvasCopy " data-nav-id="6">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		PowerMac G5
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/others.142/" class="menu-linkRow js-offCanvasCopy " data-nav-id="7">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Others
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/retail-cases.141/" class="menu-linkRow js-offCanvasCopy " data-nav-id="8">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Retail Cases
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/modders-tools.143/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Modders Tools
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/cnc-templates.144/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		CNC Templates
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/pcb-templates.145/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		PCB Templates
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/hardware-parts.149/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Hardware/Parts
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/hand-tools.146/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Hand Tools
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/power-tools.147/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Power Tools
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/the-tools.118/" class="menu-linkRow js-offCanvasCopy " data-nav-id="theTools">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/toolshed.png" width="84" height="84">
+		
+		The Tools
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-0">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/announcements.170/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Announcements
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/unibeast.120/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		UniBeast
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/unibeast-archived-threads.150/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		UniBeast Archived Threads
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/multibeast.84/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		MultiBeast
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/multibeast-bug-reports.85/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		MultiBeast Bug Reports
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/multibeast-feature-requests.86/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		MultiBeast Feature Requests
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/multibeast-archived-threads.151/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		MultiBeast Archived Threads
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/chimera.38/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Chimera
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/chimera-bug-reports.39/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Chimera Bug Reports
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/chimera-feature-requests.40/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Chimera Feature Requests
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/general.41/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		General
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/link-forums/source.43/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Source
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/chimera-archived-threads.152/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Chimera Archived Threads
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/iboot-rboot.119/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		iBoot / rBoot
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/link-forums/downloads.129/" class="menu-linkRow js-offCanvasCopy " data-nav-id="5">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Downloads
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/the-clubhouse.5/" class="menu-linkRow js-offCanvasCopy " data-nav-id="theClubhouse">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/clubhouse.png" width="84" height="84">
+		
+		The Clubhouse
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-0">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/bat-cave.11/" class="menu-linkRow js-offCanvasCopy " data-nav-id="batCave">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Bat Cave
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/forum-news.31/" class="menu-linkRow js-offCanvasCopy " data-nav-id="forumNews">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Forum News
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/polls.34/" class="menu-linkRow js-offCanvasCopy " data-nav-id="polls">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Polls
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/site-suggestions.16/" class="menu-linkRow js-offCanvasCopy " data-nav-id="siteSuggestions">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Site Suggestions
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/system-usage.19/" class="menu-linkRow js-offCanvasCopy " data-nav-id="systemUsage">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		System Usage
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/development.20/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Development
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/gaming.27/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Gaming
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/htpc.37/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		HTPC
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/music.21/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Music
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/photography.22/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Photography
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/servers.29/" class="menu-linkRow js-offCanvasCopy " data-nav-id="5">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Servers
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/video.23/" class="menu-linkRow js-offCanvasCopy " data-nav-id="6">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Video
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/infinite-loop.7/" class="menu-linkRow js-offCanvasCopy " data-nav-id="infiniteLoop">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/infiniteloop.png" width="84" height="84">
+		
+		Infinite Loop
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-0">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/apple-news-rumors.44/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Apple News &amp; Rumors
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/ios.53/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		iOS
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/ipad.56/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		iPad
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/iphone.54/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		iPhone
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/ipod-touch.55/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		iPod Touch
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/ios-development.58/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		iOS Development
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/mac-hardware.47/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mac Hardware
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/imac.48/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		iMac
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mac-pro.49/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mac Pro
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mac-mini.50/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mac mini
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/macbook-pro.51/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		MacBook Pro
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/macbook-air.52/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		MacBook Air
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mac-os-x-support.46/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mac OS X Support
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mac-software.45/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mac Software
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/other-apple-hardware.57/" class="menu-linkRow js-offCanvasCopy " data-nav-id="5">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Other Apple Hardware
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/categories/laptops.116/" class="menu-linkRow js-offCanvasCopy " data-nav-id="laptops">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/laptops.png" width="84" height="84">
+		
+		Laptops
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-0">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/laptop-compatibility.114/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Laptop Compatibility
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mojave-laptop-support.196/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mojave Laptop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mojave-laptop-guides.197/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mojave Laptop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/high-sierra-laptop-support.192/" class="menu-linkRow js-offCanvasCopy " data-nav-id="2">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		High Sierra Laptop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/high-sierra-laptop-guides.193/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		High Sierra Laptop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/sierra-laptop-support.188/" class="menu-linkRow js-offCanvasCopy " data-nav-id="3">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Sierra Laptop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/sierra-laptop-guides.189/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Sierra Laptop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/el-capitan-laptop-support.181/" class="menu-linkRow js-offCanvasCopy " data-nav-id="4">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		El Capitan Laptop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/el-capitan-laptop-guides.183/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		El Capitan Laptop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/yosemite-laptop-support.177/" class="menu-linkRow js-offCanvasCopy " data-nav-id="5">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Yosemite Laptop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/hp-probook-yosemite.178/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		HP ProBook - Yosemite
+		</a>
+
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/yosemite-laptop-guides.179/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Yosemite Laptop Guides
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mavericks-laptop-support.168/" class="menu-linkRow js-offCanvasCopy " data-nav-id="6">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mavericks Laptop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/hp-probook-mavericks.169/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		HP ProBook - Mavericks
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/mountain-lion-laptop-support.97/" class="menu-linkRow js-offCanvasCopy " data-nav-id="7">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Mountain Lion Laptop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/hp-probook.99/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		HP ProBook
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/lion-laptop-support.64/" class="menu-linkRow js-offCanvasCopy " data-nav-id="8">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Lion Laptop Support
+		</a>
+
+		
+			<ul class="nav-sub-menu nav-depth-1">
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/hp-probook-4530s.83/" class="menu-linkRow js-offCanvasCopy " data-nav-id="0">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		HP ProBook 4530s
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+				
+					
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/forums/snow-leopard-laptop-support.18/" class="menu-linkRow js-offCanvasCopy " data-nav-id="9">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Snow Leopard Laptop Support
+		</a>
+
+		
+	</li>
+
+				
+			</ul>
+		
+	</li>
+
+					
+					</ul>
+				</div>
+			</div>
+		
+	</div>
+
+								</li>
+							
+								<li>
+									
+	<div class="p-navEl " data-has-children="true">
+		
+			
+				<a data-xf-key="5" data-xf-click="menu" data-menu-pos-ref="&lt; .p-navEl" class="p-navEl-splitTrigger" role="button" tabindex="0" aria-label="Toggle expanded" aria-expanded="false" aria-haspopup="true" href="https://www.tonymacx86.com/categories/installation.128/">Guides</a>
+			
+
+		
+		
+			<div class="menu menu--structural tmx-menu-container" data-menu="menu" aria-hidden="true">
+				<div class="menu-content tmx">
+					<ul class="tmx-menu">
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/threads/im-new-to-everything-where-do-i-start.104542/" class="menu-linkRow js-offCanvasCopy " data-nav-id="startHere">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Start Here!
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/threads/unibeast-install-macos-mojave-on-any-supported-intel-based-pc.259381/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1014Installation">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/10.14.png" width="84" height="84">
+		
+		10.14 Installation
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/threads/unibeast-install-macos-high-sierra-on-any-supported-intel-based-pc.235474/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1013Installation">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/10.13.png" width="84" height="84">
+		
+		10.13 Installation
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/threads/unibeast-install-macos-sierra-on-any-supported-intel-based-pc.200564/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1012Installation">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/10.12.png" width="84" height="84">
+		
+		10.12 Installation
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/threads/unibeast-install-os-x-el-capitan-any-supported-intel-based-pc.172672/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1011Installation">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/10.11.png" width="84" height="84">
+		
+		10.11 Installation
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/threads/unibeast-install-os-x-yosemite-on-any-supported-intel-based-pc.143976/" class="menu-linkRow js-offCanvasCopy " data-nav-id="1010Installation">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/10.10.png" width="84" height="84">
+		
+		10.10 Installation
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/threads/unibeast-install-os-x-mavericks-on-any-supported-intel-based-pc.112389/" class="menu-linkRow js-offCanvasCopy " data-nav-id="109Installation">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/10.9.png" width="84" height="84">
+		
+		10.9 Installation
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/threads/unibeast-install-os-x-mountain-lion-on-any-supported-intel-based-pc.60584/" class="menu-linkRow js-offCanvasCopy " data-nav-id="108Installation">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/10.8.png" width="84" height="84">
+		
+		10.8 Installation
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://tonymacx86.blogspot.com/2011/10/unibeast-install-mac-os-x-lion-using.html" class="menu-linkRow js-offCanvasCopy " data-nav-id="107Installation">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/10.7.png" width="84" height="84">
+		
+		10.7 Installation
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://tonymacx86.blogspot.com/2010/04/iboot-multibeast-install-mac-os-x-on.html" class="menu-linkRow js-offCanvasCopy " data-nav-id="106Installation">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/10.6.png" width="84" height="84">
+		
+		10.6 Installation
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/" class="menu-linkRow js-offCanvasCopy " data-nav-id="fixiMessage">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/messagesYo.png" width="84" height="84">
+		
+		Fix iMessage
+		</a>
+
+		
+	</li>
+
+					
+					</ul>
+				</div>
+			</div>
+		
+	</div>
+
+								</li>
+							
+								<li>
+									
+	<div class="p-navEl " data-has-children="true">
+		
+			
+				<a data-xf-key="6" data-xf-click="menu" data-menu-pos-ref="&lt; .p-navEl" class="p-navEl-splitTrigger" role="button" tabindex="0" aria-label="Toggle expanded" aria-expanded="false" aria-haspopup="true" href="https://www.tonymacx86.com/resources/categories/tonymacx86-downloads.3">Downloads</a>
+			
+
+		
+		
+			<div class="menu menu--structural tmx-menu-container" data-menu="menu" aria-hidden="true">
+				<div class="menu-content tmx">
+					<ul class="tmx-menu">
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/resources/categories/tonymacx86-downloads.3" class="menu-linkRow js-offCanvasCopy " data-nav-id="downloadsIndex">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/menuicon.png" width="84" height="84">
+		
+		tonymacx86 Tools
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/nvidia-drivers/" class="menu-linkRow js-offCanvasCopy " data-nav-id="nvidiaDrivers">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/nvidia.jpg" width="84" height="84">
+		
+		NVIDIA Drivers
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/resources/categories/clover-builds.12/" class="menu-linkRow js-offCanvasCopy " data-nav-id="cloverBuilds">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/cloverbuilds.png" width="84" height="84">
+		
+		Clover Builds
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/resources/categories/kexts.11" class="menu-linkRow js-offCanvasCopy " data-nav-id="kexts">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/kexts.png" width="84" height="84">
+		
+		Kexts
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/resources/categories/community-software.10/" class="menu-linkRow js-offCanvasCopy " data-nav-id="communitySoftware">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Community Software
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/dsdt-database/" class="menu-linkRow js-offCanvasCopy " data-nav-id="dsdtDatabase">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/crow.png" width="84" height="84">
+		
+		DSDT Database
+		</a>
+
+		
+	</li>
+
+					
+						
+	<li>
+		
+	
+	<a href="https://www.tonymacx86.com/resources/categories/archive.5/" class="menu-linkRow js-offCanvasCopy " data-nav-id="archive">
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/forum_new-48.png" width="84" height="84">
+		
+		Archive
+		</a>
+
+		
+	</li>
+
+					
+					</ul>
+				</div>
+			</div>
+		
+	</div>
+
+								</li>
+							
+								<li>
+									
+	<div class="p-navEl ">
+		
+			
+				
+	
+	<a href="https://www.tonymacx86.com/rules/" class="p-navEl-link " data-xf-key="7" data-nav-id="rules">Rules</a>
+
+			
+
+		
+		
+	</div>
+
+								</li>
+							
+								<li>
+									
+	<div class="p-navEl ">
+		
+			
+				
+	
+	<a href="https://www.tonymacx86.com/activity/" class="p-navEl-link " data-xf-key="8" data-nav-id="activity">Activity</a>
+
+			
+
+		
+		
+	</div>
+
+								</li>
+							
+							</ul>
+						</div><i class="hScroller-action hScroller-action--end" aria-hidden="true"></i><i class="hScroller-action hScroller-action--start" aria-hidden="true"></i>
+					</div>
+		
+					<div class="p-nav-opposite">
+						<div class="p-account p-navgroup--guest">
+							
+								
+							
+						</div>
+		
+						<div class="p-navgroup p-discovery">
+							<a href="https://www.tonymacx86.com/whats-new/" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--whatsnew" title="What&#39;s new">
+								<i aria-hidden="true"></i>
+								<span class="p-navgroup-linkText">What's new</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		
+			</div>
+			
+			
+				<div class="p-sectionLinks">
+					<div class="p-sectionLinks-inner hScroller" data-xf-init="h-scroller">
+						<div class="hScroller-scroll is-calculated" style="margin-bottom: -47px;">
+							<ul class="p-sectionLinks-list">
+							
+								<li>
+									
+	<div class="p-navEl ">
+		
+			
+				
+	
+	<a href="https://www.tonymacx86.com/whats-new/latest-activity" class="p-navEl-link " data-xf-key="alt+1" data-nav-id="defaultLatestActivity">Latest activity</a>
+
+			
+
+		
+		
+	</div>
+
+								</li>
+							
+								<li>
+									
+	<div class="p-navEl ">
+		
+			
+				
+	
+	<a href="https://www.tonymacx86.com/register/" class="p-navEl-link " data-xf-key="alt+2" data-nav-id="defaultRegister">Register</a>
+
+			
+
+		
+		
+	</div>
+
+								</li>
+							
+							</ul>
+						</div><i class="hScroller-action hScroller-action--end" aria-hidden="true"></i><i class="hScroller-action hScroller-action--start" aria-hidden="true"></i>
+					</div>
+				</div>
+			
+		
+		
+
+		<div class="offCanvasMenu offCanvasMenu--nav js-headerOffCanvasMenu" data-menu="menu" aria-hidden="true" data-ocm-builder="navigation">
+			<div class="offCanvasMenu-backdrop" data-menu-close="true"></div>
+			<div class="offCanvasMenu-content">
+				<div class="offCanvasMenu-header">
+					Menu
+					<a class="offCanvasMenu-closer" data-menu-close="true" role="button" tabindex="0" aria-label="Close"></a>
+				</div>
+				
+				<div class="js-offCanvasNavTarget">
+					<ul class="offCanvasMenu-listTmx">
+						<li class="is-selected">
+							<div class="offCanvasMenu-linkHolder is-selected">
+								<a href="http://dev.tonymacx86.com/" class="offCanvasMenu-link" data-xf-key="1" data-nav-id="home">Home</a>
+							</div>
+						</li>
+						<li>
+							<div class="offCanvasMenu-linkHolder">
+								<a href="https://www.tonymacx86.com/buyersguide/building-a-customac-hackintosh-the-ultimate-buyers-guide/" class="offCanvasMenu-link" data-xf-key="2" data-nav-id="buyersGuide">Buyer's Guide</a>
+							</div>
+						</li>
+						<li>
+							<div class="offCanvasMenu-linkHolder">
+								<a href="https://www.tonymacx86.com/threads/unibeast-install-macos-mojave-on-any-supported-intel-based-pc.259381/" class="offCanvasMenu-link" data-xf-key="3" data-nav-id="installationGuide">Installation Guide</a>
+							</div>
+						</li>
+						<li>
+							<div class="offCanvasMenu-linkHolder"><a href="https://www.tonymacx86.com/forums/" class="offCanvasMenu-link" data-xf-key="4" data-nav-id="forums">Forums</a>
+							</div>
+						</li>
+						<li>
+							<div class="offCanvasMenu-linkHolder"><a href="https://www.tonymacx86.com/forums/#installation.128/" class="offCanvasMenu-link" data-xf-key="5" data-nav-id="forums">Guides</a>
+							</div>
+						</li>
+						<li>
+							<div class="offCanvasMenu-linkHolder"><a href="https://www.tonymacx86.com/resources/categories/tonymacx86-downloads.3/" class="offCanvasMenu-link" data-xf-key="6" data-nav-id="forums">Downloads</a>
+							</div>
+						</li>
+						<li>
+							<div class="offCanvasMenu-linkHolder"><a href="https://www.tonymacx86.com/rules/" class="offCanvasMenu-link" data-xf-key="7" data-nav-id="rules">Rules</a>
+							</div>
+						</li>
+						<li>
+							<div class="offCanvasMenu-linkHolder">
+								<a href="https://www.tonymacx86.com/activity/" class="offCanvasMenu-link" data-xf-key="8" data-nav-id="activity">Activity</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	
+
+<div class="p-body">
+	<div class="p-body-inner">
+		<!--XF:EXTRA_OUTPUT-->
+
+		
+
+		
+
+		
+		
+	
+		<ul class="p-breadcrumbs " itemscope="" itemtype="https://schema.org/BreadcrumbList">
+		
+			
+
+			
+			
+				
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="https://www.tonymacx86.com/" itemprop="item">
+			<span itemprop="name">Home</span>
+		</a>
+		<meta itemprop="position" content="1">
+	</li>
+
+			
+
+			
+			
+				
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="https://www.tonymacx86.com/categories/installation.128/" itemprop="item">
+			<span itemprop="name">Installation</span>
+		</a>
+		<meta itemprop="position" content="2">
+	</li>
+
+			
+				
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="https://www.tonymacx86.com/forums/bios-uefi.173/" itemprop="item">
+			<span itemprop="name">BIOS/UEFI</span>
+		</a>
+		<meta itemprop="position" content="3">
+	</li>
+
+			
+
+		
+		</ul>
+	
+
+		
+
+		
+	<noscript><div class="blockMessage blockMessage--important blockMessage--iconic u-noJsOnly">JavaScript is disabled. For a better experience, please enable JavaScript in your browser before proceeding.</div></noscript>
+
+		
+	<!--[if lt IE 9]><div class="blockMessage blockMessage&#45;&#45;important blockMessage&#45;&#45;iconic">You are using an out of date browser. It  may not display this or other websites correctly.<br />You should upgrade or use an <a href="https://www.google.com/chrome/browser/" target="_blank">alternative browser</a>.</div><![endif]-->
+
+
+		
+			<div class="p-body-header">
+			
+				
+					<div class="p-title ">
+					
+						
+							<h1 class="p-title-value">
+								
+									A solution of ASUS new bios ver.2012 (not downgrading)
+								
+							</h1>
+						
+						
+					
+					</div>
+				
+
+				
+					<div class="p-description">
+	<ul class="listInline listInline--bullet">
+		<li>
+			<i class="fa--xf far fa-user" aria-hidden="true" title="Thread starter"></i>
+			<span class="u-srOnly">Thread starter</span>
+
+			<a href="https://www.tonymacx86.com/members/satanichia.2202747/" class="username  u-concealed" dir="auto" data-user-id="2202747" data-xf-init="member-tooltip" id="js-XFUniqueId1">Satanichia</a>
+		</li>
+		<li>
+			<i class="fa--xf far fa-clock" aria-hidden="true" title="Start date"></i>
+			<span class="u-srOnly">Start date</span>
+
+			<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/" class="u-concealed"><time class="u-dt" dir="auto" datetime="2019-03-11T03:41:14+0000" data-time="1552275674" data-date-string="Mar 11, 2019" data-time-string="3:41 AM" title="Mar 11, 2019 at 3:41 AM">Mar 11, 2019</time></a>
+		</li>
+		
+	</ul>
+</div>
+				
+			
+			</div>
+		
+
+		<div class="p-body-main  ">
+			
+
+			<div class="p-body-content">
+				
+				<div class="p-body-pageContent">
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+		
+	
+
+
+
+
+
+
+
+	
+		
+		
+	
+
+
+
+
+
+
+<div class="block block--messages" data-xf-init="" data-type="post" data-href="/inline-mod/">
+
+	
+	
+
+
+	<div class="block-outer"></div>
+
+	<div class="block-outer js-threadStatusField"></div>
+
+	<div class="block-container lbContainer" data-xf-init="lightbox select-to-quote" data-message-selector=".js-post" data-lb-id="thread-273151" data-lb-universal="0">
+
+		<div class="block-body js-replyNewMessageContainer">
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Satanichia" data-content="post-1922083" id="js-post-1922083">
+
+		<span class="u-anchorTarget" id="post-1922083"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="https://www.tonymacx86.com/members/satanichia.2202747/" class="avatar avatar--m" data-user-id="2202747" data-xf-init="member-tooltip" id="js-XFUniqueId2">
+			<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/2202747.jpg" srcset="/data/avatars/l/2202/2202747.jpg?1552273847 2x" alt="Satanichia" class="avatar-u2202747-m" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="https://www.tonymacx86.com/members/satanichia.2202747/" class="username " dir="auto" data-user-id="2202747" data-xf-init="member-tooltip" itemprop="name" id="js-XFUniqueId3">Satanichia</a></h4>
+			
+			
+		</div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+					
+						<dl class="pairs pairs--justified">
+							<dt>Joined</dt>
+							<dd>Mar 11, 2019</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Messages</dt>
+							<dd>1</dd>
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+						
+
+	
+		
+			<dl class="pairs pairs--justified custom-Motherboard">
+				<dt>Motherboard</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			ASUS ROG Strix B360-i Gaming
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-CPU">
+				<dt>CPU</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			i5-8600
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-Graphics">
+				<dt>Graphics</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			R9 Nano
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+	
+		
+	
+		
+	
+
+						
+							
+
+	
+
+						
+					
+				
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution message-attribution--split">
+						<div class="message-attribution-main">
+							<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922083" class="u-concealed" rel="nofollow">
+								<time class="u-dt" dir="auto" datetime="2019-03-11T03:41:14+0000" data-time="1552275674" data-date-string="Mar 11, 2019" data-time-string="3:41 AM" title="Mar 11, 2019 at 3:41 AM">Mar 11, 2019</time>
+							</a>
+						</div>
+
+						<ul class="message-attribution-opposite message-attribution-opposite--list">
+							
+							<li>
+								<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922083" data-xf-init="share-tooltip" data-href="/posts/1922083/share" rel="nofollow" id="js-XFUniqueId4">
+									<i class="fa--xf far fa-share-alt" aria-hidden="true"></i>
+								</a>
+							</li>
+							
+							
+								<li>
+									<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922083" rel="nofollow">
+										#1
+									</a>
+								</li>
+							
+						</ul>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-1922083" data-lb-caption-desc="Satanichia · Mar 11, 2019 at 3:41 AM">
+
+							
+								
+
+	
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Sorry for my bad English. It's not my native language.<br>
+<br>
+I'm using ASUS ROG Strix B360-i Gaming motherboard with Samsung PM961 Nvme SSD.<br>
+After I update the BIOS to version 2012, I have also ran into the problem that my hackintosh never boot again.<br>
+It just stucks at the progress bar with Apple logo.<br>
+And I noticed that the boot log stopped rolling when "SMCRTC:start" appears.<br>
+(The "AppleNVME Assert failed" error is misleading. But it's not the cause of this problem.)<br>
+<div class="lbContainer lbContainer--inline lbContainer--canZoom" title="392326" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-attachment392326" data-lb-id="attachment392326">
+		
+			<div class="lbContainer-zoomer js-lbImage-attachment392326" data-src="https://www.tonymacx86.com/attachments/p90308-230055-jpg.392326/" aria-label="Zoom"></div>
+		
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/P90308-230055.jpg" data-url="" class="bbImage" data-zoom-target="1" alt="392326" style="">
+	</div><br>
+Then I found an bios option about RTC was added with this bios update.<br>
+It's located at <span style="color: rgb(235, 107, 86)">UEFI Advance Mode\Advanced\PCH Configuration\System Time and Alarm Source</span>:<br>
+<div class="lbContainer lbContainer--inline lbContainer--canZoom" title="392327" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-attachment392327" data-lb-id="attachment392327">
+		
+			<div class="lbContainer-zoomer js-lbImage-attachment392327" data-src="https://www.tonymacx86.com/attachments/p90311-105526-jpg.392327/" aria-label="Zoom"></div>
+		
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/P90311-105526.jpg" data-url="" class="bbImage" data-zoom-target="1" alt="392327" style="">
+	</div><br>
+I changed the option from "ACPI Time and Alarm Device" to "Legacy RTC".<br>
+And my hackintosh is working now.<br>
+<div class="lbContainer lbContainer--inline" title="392329" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-attachment392329" data-lb-id="attachment392329">
+		
+			<div class="lbContainer-zoomer js-lbImage-attachment392329" data-src="https://www.tonymacx86.com/attachments/screen-shot-2019-03-11-at-11-39-44-am-png.392329/" aria-label="Zoom"></div>
+		
+		<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/Screen Shot 2019-03-11 at 11.39.44 AM.png" data-url="" class="bbImage" data-zoom-target="1" alt="392329" style="">
+	</div><br>
+I hope it's a useful solution for this problem.</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+								
+
+	
+
+							
+
+							
+								
+	
+		
+		<section class="message-attachments">
+			<h4 class="block-textHeader">Attachments</h4>
+			<ul class="attachmentList">
+				
+					
+						
+	<li class="attachment">
+		
+			
+	
+		
+		
+	
+
+
+			<div class="attachment-icon attachment-icon--img">
+				<a href="https://www.tonymacx86.com/attachments/screen-shot-2019-03-11-at-11-17-17-am-png.392328/" target="_blank" class="js-lbImage">
+					<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/347231-f72fa8d9e09ff674f3aa212f6adff7e7.jpg" alt="Screen Shot 2019-03-11 at 11.17.17 AM.png">
+				</a>
+			</div>
+		
+		<div class="attachment-name">
+			<a href="https://www.tonymacx86.com/attachments/screen-shot-2019-03-11-at-11-17-17-am-png.392328/" target="_blank" title="Screen Shot 2019-03-11 at 11.17.17 AM.png">Screen Shot 2019-03-11 at 11.17.17 AM.png</a>
+		</div>
+		<div class="attachment-details">
+			<span class="attachment-details-size">133.8 KB</span>
+			<span class="attachment-details-views">Views: 7</span>
+		</div>
+	</li>
+
+					
+				
+			</ul>
+		</section>
+	
+
+							
+						</div>
+
+						
+
+						
+	
+	
+
+
+					</div>
+
+					<footer class="message-footer">
+						
+
+						<div class="reactionsBar js-reactionsList is-active">
+							
+	
+	
+		<ul class="reactionSummary">
+		
+			<li><span class="reaction reaction--small reaction--1" data-reaction-id="1"><i aria-hidden="true"></i><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="reaction-sprite js-reaction" alt="Like" title="Like"></span></li>
+		
+		</ul>
+	
+
+
+<span class="u-srOnly">Reactions:</span>
+<a class="reactionsBar-link" href="https://www.tonymacx86.com/posts/1922083/reactions" data-xf-click="overlay" data-cache="false"><bdi>inarush</bdi>, <bdi>chung06</bdi>, <bdi>darthsian</bdi> and 1 other person</a>
+						</div>
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+			
+		</div>
+	</article>
+
+	
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="TheJMan36" data-content="post-1922153" id="js-post-1922153">
+
+		<span class="u-anchorTarget" id="post-1922153"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="https://www.tonymacx86.com/members/thejman36.3265/" class="avatar avatar--m" data-user-id="3265" data-xf-init="member-tooltip" id="js-XFUniqueId5">
+			<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/3265.jpg" srcset="/data/avatars/l/3/3265.jpg?1552299221 2x" alt="TheJMan36" class="avatar-u3265-m" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="https://www.tonymacx86.com/members/thejman36.3265/" class="username " dir="auto" data-user-id="3265" data-xf-init="member-tooltip" itemprop="name" id="js-XFUniqueId6">TheJMan36</a></h4>
+			
+			
+		</div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+					
+						<dl class="pairs pairs--justified">
+							<dt>Joined</dt>
+							<dd>Jun 16, 2010</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Messages</dt>
+							<dd>95</dd>
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+						
+
+	
+		
+			<dl class="pairs pairs--justified custom-Motherboard">
+				<dt>Motherboard</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			ASUS PRIME B360M-A
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-CPU">
+				<dt>CPU</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			i3-8100
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-Graphics">
+				<dt>Graphics</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			RX 570
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+	
+		
+	
+		
+	
+
+						
+							
+
+	
+
+						
+					
+				
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution message-attribution--split">
+						<div class="message-attribution-main">
+							<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922153" class="u-concealed" rel="nofollow">
+								<time class="u-dt" dir="auto" datetime="2019-03-11T09:55:19+0000" data-time="1552298119" data-date-string="Mar 11, 2019" data-time-string="9:55 AM" title="Mar 11, 2019 at 9:55 AM">Mar 11, 2019</time>
+							</a>
+						</div>
+
+						<ul class="message-attribution-opposite message-attribution-opposite--list">
+							
+							<li>
+								<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922153" data-xf-init="share-tooltip" data-href="/posts/1922153/share" rel="nofollow" id="js-XFUniqueId7">
+									<i class="fa--xf far fa-share-alt" aria-hidden="true"></i>
+								</a>
+							</li>
+							
+							
+								<li>
+									<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922153" rel="nofollow">
+										#2
+									</a>
+								</li>
+							
+						</ul>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-1922153" data-lb-caption-desc="TheJMan36 · Mar 11, 2019 at 9:55 AM">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">THANK YOU!!! Confirmed! Working for my ASUS PRIME B360M-A as well. You are a gentleman and a scholar etc etc.<br>
+<br>
+I've combed through BIOS settings for weeks and never thought it could be due to something as simple as "System Time And Alarm Source."<br>
+<br>
+Many users completely replaced their motherboards, I'm glad I was patient.<br>
+<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/headbang.gif" class="smilie" alt=":headbang:" title="headbang    :headbang:" data-shortname=":headbang:"><img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/icon_clap.gif" class="smilie" alt=":clap:" title="clap    :clap:" data-shortname=":clap:"></div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+							<div class="message-lastEdit">
+								
+									Last edited: <time class="u-dt" dir="auto" datetime="2019-03-11T12:01:06+0000" data-time="1552305666" data-date-string="Mar 11, 2019" data-time-string="12:01 PM" title="Mar 11, 2019 at 12:01 PM">Mar 11, 2019</time>
+								
+							</div>
+						
+
+						
+	
+	
+
+
+					</div>
+
+					<footer class="message-footer">
+						
+
+						<div class="reactionsBar js-reactionsList ">
+							
+						</div>
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+			
+		</div>
+	</article>
+
+	
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="bein92" data-content="post-1922162" id="js-post-1922162">
+
+		<span class="u-anchorTarget" id="post-1922162"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="https://www.tonymacx86.com/members/bein92.1736493/" class="avatar avatar--m" data-user-id="1736493" data-xf-init="member-tooltip" id="js-XFUniqueId8">
+			<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/22.png" alt="bein92" class="avatar-u1736493-m" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="https://www.tonymacx86.com/members/bein92.1736493/" class="username " dir="auto" data-user-id="1736493" data-xf-init="member-tooltip" itemprop="name" id="js-XFUniqueId9">bein92</a></h4>
+			
+			
+		</div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+					
+						<dl class="pairs pairs--justified">
+							<dt>Joined</dt>
+							<dd>Nov 22, 2016</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Messages</dt>
+							<dd>4</dd>
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+						
+
+	
+		
+			<dl class="pairs pairs--justified custom-Motherboard">
+				<dt>Motherboard</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			ASUS ROG STRIX H370-I Gaaming
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-CPU">
+				<dt>CPU</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			i5-8400
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-Graphics">
+				<dt>Graphics</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			RX 560
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-Mac">
+				<dt>Mac</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/imac.png" alt="iMac" title="iMac" class="customProfileIcon">, <img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/macbook_pro.png" alt="MacBook Pro" title="MacBook Pro" class="customProfileIcon">
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+	
+		
+			<dl class="pairs pairs--justified custom-Mobile Phone">
+				<dt>Mobile Phone</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/android.png" alt="Android" title="Android" class="customProfileIcon">, <img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/ios.png" alt="iOS" title="iOS" class="customProfileIcon">
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+
+						
+							
+
+	
+
+						
+					
+				
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution message-attribution--split">
+						<div class="message-attribution-main">
+							<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922162" class="u-concealed" rel="nofollow">
+								<time class="u-dt" dir="auto" datetime="2019-03-11T10:15:05+0000" data-time="1552299305" data-date-string="Mar 11, 2019" data-time-string="10:15 AM" title="Mar 11, 2019 at 10:15 AM">Mar 11, 2019</time>
+							</a>
+						</div>
+
+						<ul class="message-attribution-opposite message-attribution-opposite--list">
+							
+							<li>
+								<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922162" data-xf-init="share-tooltip" data-href="/posts/1922162/share" rel="nofollow" id="js-XFUniqueId10">
+									<i class="fa--xf far fa-share-alt" aria-hidden="true"></i>
+								</a>
+							</li>
+							
+							
+								<li>
+									<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922162" rel="nofollow">
+										#3
+									</a>
+								</li>
+							
+						</ul>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-1922162" data-lb-caption-desc="bein92 · Mar 11, 2019 at 10:15 AM">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Thank you.<br>
+Will check in the eve with my ROG STRIX H370-I and will let you know.</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+	
+
+
+					</div>
+
+					<footer class="message-footer">
+						
+
+						<div class="reactionsBar js-reactionsList ">
+							
+						</div>
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+			
+		</div>
+	</article>
+
+	
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Say Heading" data-content="post-1922182" id="js-post-1922182">
+
+		<span class="u-anchorTarget" id="post-1922182"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="https://www.tonymacx86.com/members/say-heading.17922/" class="avatar avatar--m" data-user-id="17922" data-xf-init="member-tooltip" id="js-XFUniqueId11">
+			<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/17922.jpg" alt="Say Heading" class="avatar-u17922-m" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="https://www.tonymacx86.com/members/say-heading.17922/" class="username " dir="auto" data-user-id="17922" data-xf-init="member-tooltip" itemprop="name" id="js-XFUniqueId12">Say Heading</a></h4>
+			
+			
+		</div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+					
+						<dl class="pairs pairs--justified">
+							<dt>Joined</dt>
+							<dd>Jan 16, 2011</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Messages</dt>
+							<dd>520</dd>
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+						
+
+	
+		
+			<dl class="pairs pairs--justified custom-Motherboard">
+				<dt>Motherboard</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			Asus ROG MAXIMUS X HERO
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-CPU">
+				<dt>CPU</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			i7-9700K
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-Graphics">
+				<dt>Graphics</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			RX 580
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+	
+		
+			<dl class="pairs pairs--justified custom-Classic Mac">
+				<dt>Classic Mac</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/power_mac.png" alt="Power Mac" title="Power Mac" class="customProfileIcon">, <img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/powerbook.png" alt="PowerBook" title="PowerBook" class="customProfileIcon">
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-Mobile Phone">
+				<dt>Mobile Phone</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/ios.png" alt="iOS" title="iOS" class="customProfileIcon">
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+
+						
+							
+
+	
+
+						
+					
+				
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution message-attribution--split">
+						<div class="message-attribution-main">
+							<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922182" class="u-concealed" rel="nofollow">
+								<time class="u-dt" dir="auto" datetime="2019-03-11T11:11:30+0000" data-time="1552302690" data-date-string="Mar 11, 2019" data-time-string="11:11 AM" title="Mar 11, 2019 at 11:11 AM">Mar 11, 2019</time>
+							</a>
+						</div>
+
+						<ul class="message-attribution-opposite message-attribution-opposite--list">
+							
+							<li>
+								<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922182" data-xf-init="share-tooltip" data-href="/posts/1922182/share" rel="nofollow" id="js-XFUniqueId13">
+									<i class="fa--xf far fa-share-alt" aria-hidden="true"></i>
+								</a>
+							</li>
+							
+							
+								<li>
+									<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922182" rel="nofollow">
+										#4
+									</a>
+								</li>
+							
+						</ul>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-1922182" data-lb-caption-desc="Say Heading · Mar 11, 2019 at 11:11 AM">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Obviously an issue that all owners of current ASUS boards should have in mind if their boards have BIOS updates available. Nice finding!</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+	<div class="block buildSignatures">
+		
+			
+				<dl class="pairs pairs--justified">
+					<dt>
+						<a href="http://www.customac.com/" target="_blank">silentDTP</a>
+					</dt>
+					<dd>
+						<a href="http://www.amazon.com/dp/B004ZQ6F54/ref=as_li_ss_tl?ie=UTF8&amp;tag=tonymacx86com-20" target="_blank" data-amzn-asin="B004ZQ6F54">GA-Z68X-UD7-B3</a>&nbsp;|&nbsp;
+						<a href="http://www.amazon.com/dp/B004EBUXSU/ref=as_li_ss_tl?ie=UTF8&amp;tag=tonymacx86com-20" target="_blank" data-amzn-asin="B004EBUXSU">i7 2600</a>&nbsp;|&nbsp;
+						<a href="http://www.amazon.com/dp/B002SP113K/ref=as_li_ss_tl?ie=UTF8&amp;tag=tonymacx86com-20" target="_blank" data-amzn-asin="B002SP113K">Radeon HD 5770</a>
+					</dd>
+				</dl>
+			
+		
+			
+				<dl class="pairs pairs--justified">
+					<dt>
+						<a href="http://www.customac.com/" target="_blank">powerAV</a>
+					</dt>
+					<dd>
+						<a href="http://www.amazon.com/dp/B0764BVTPQ/ref=as_li_ss_tl?ie=UTF8&amp;tag=tonymacx86com-20" target="_blank" data-amzn-asin="B0764BVTPQ">ROG MAXIMUS X HERO</a>&nbsp;|&nbsp;
+						<a href="http://www.amazon.com/dp/B07HHN6KBZ/ref=as_li_ss_tl?ie=UTF8&amp;tag=tonymacx86com-20" target="_blank" data-amzn-asin="B07HHN6KBZ">i7 9700K</a>&nbsp;|&nbsp;
+						<a href="http://www.amazon.com/s/?tag=tonymacx86com-20&amp;link_code=wsw&amp;_encoding=UTF-8&amp;search-alias=aps&amp;field-keywords=Radeon%20Other&amp;Submit.x=-93&amp;Submit.y=-23&amp;Submit=Go" target="_blank">Radeon Other</a>
+					</dd>
+				</dl>
+			
+		
+	</div>
+
+
+					</div>
+
+					<footer class="message-footer">
+						
+
+						<div class="reactionsBar js-reactionsList ">
+							
+						</div>
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+			
+		</div>
+	</article>
+
+	
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="chung06" data-content="post-1922596" id="js-post-1922596">
+
+		<span class="u-anchorTarget" id="post-1922596"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="https://www.tonymacx86.com/members/chung06.2199597/" class="avatar avatar--m" data-user-id="2199597" data-xf-init="member-tooltip" id="js-XFUniqueId14">
+			<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/0.png" alt="chung06" class="avatar-u2199597-m" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="https://www.tonymacx86.com/members/chung06.2199597/" class="username " dir="auto" data-user-id="2199597" data-xf-init="member-tooltip" itemprop="name" id="js-XFUniqueId15">chung06</a></h4>
+			
+			
+		</div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+					
+						<dl class="pairs pairs--justified">
+							<dt>Joined</dt>
+							<dd>Mar 5, 2019</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Messages</dt>
+							<dd>4</dd>
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+						
+
+	
+		
+			<dl class="pairs pairs--justified custom-Motherboard">
+				<dt>Motherboard</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			Asus Prime H310m-a
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-CPU">
+				<dt>CPU</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			I5-8400
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+			<dl class="pairs pairs--justified custom-Graphics">
+				<dt>Graphics</dt>
+				<dd class="customFieldData">
+					
+	
+		
+			UHD 630
+		
+	
+
+				</dd>
+			</dl>
+		
+	
+		
+	
+		
+	
+		
+	
+
+						
+							
+
+	
+
+						
+					
+				
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution message-attribution--split">
+						<div class="message-attribution-main">
+							<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922596" class="u-concealed" rel="nofollow">
+								<time class="u-dt" dir="auto" datetime="2019-03-12T06:28:10+0000" data-time="1552372090" data-date-string="Mar 12, 2019" data-time-string="6:28 AM" title="Mar 12, 2019 at 6:28 AM">Mar 12, 2019</time>
+							</a>
+						</div>
+
+						<ul class="message-attribution-opposite message-attribution-opposite--list">
+							
+							<li>
+								<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922596" data-xf-init="share-tooltip" data-href="/posts/1922596/share" rel="nofollow" id="js-XFUniqueId16">
+									<i class="fa--xf far fa-share-alt" aria-hidden="true"></i>
+								</a>
+							</li>
+							
+							
+								<li>
+									<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1922596" rel="nofollow">
+										#5
+									</a>
+								</li>
+							
+						</ul>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-1922596" data-lb-caption-desc="chung06 · Mar 12, 2019 at 6:28 AM">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Thanks a lot, you saved my day !!! Asus prime H310m-a worked after apply this solution</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+	
+
+
+					</div>
+
+					<footer class="message-footer">
+						
+
+						<div class="reactionsBar js-reactionsList ">
+							
+						</div>
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+			
+		</div>
+	</article>
+
+	
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Keule123" data-content="post-1924579" id="js-post-1924579">
+
+		<span class="u-anchorTarget" id="post-1924579"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="https://www.tonymacx86.com/members/keule123.2158469/" class="avatar avatar--m" data-user-id="2158469" data-xf-init="member-tooltip" id="js-XFUniqueId17">
+			<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/24.png" alt="Keule123" class="avatar-u2158469-m" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="https://www.tonymacx86.com/members/keule123.2158469/" class="username " dir="auto" data-user-id="2158469" data-xf-init="member-tooltip" itemprop="name" id="js-XFUniqueId18">Keule123</a></h4>
+			
+			
+		</div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+					
+						<dl class="pairs pairs--justified">
+							<dt>Joined</dt>
+							<dd>Dec 24, 2018</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Messages</dt>
+							<dd>1</dd>
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+						
+
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+						
+							
+
+	
+
+						
+					
+				
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution message-attribution--split">
+						<div class="message-attribution-main">
+							<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1924579" class="u-concealed" rel="nofollow">
+								<time class="u-dt" dir="auto" datetime="2019-03-16T07:43:46+0000" data-time="1552722226" data-date-string="Mar 16, 2019" data-time-string="7:43 AM" title="Mar 16, 2019 at 7:43 AM">Saturday at 7:43 AM</time>
+							</a>
+						</div>
+
+						<ul class="message-attribution-opposite message-attribution-opposite--list">
+							
+							<li>
+								<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1924579" data-xf-init="share-tooltip" data-href="/posts/1924579/share" rel="nofollow" id="js-XFUniqueId19">
+									<i class="fa--xf far fa-share-alt" aria-hidden="true"></i>
+								</a>
+							</li>
+							
+							
+								<li>
+									<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/post-1924579" rel="nofollow">
+										#6
+									</a>
+								</li>
+							
+						</ul>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-1924579" data-lb-caption-desc="Keule123 · Mar 16, 2019 at 7:43 AM">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Thank you very much. U made my day.</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+	
+
+
+					</div>
+
+					<footer class="message-footer">
+						
+
+						<div class="reactionsBar js-reactionsList ">
+							
+						</div>
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+			
+		</div>
+	</article>
+
+	
+
+				
+			
+		</div>
+	</div>
+
+	
+		<div class="block-outer block-outer--after">
+			
+				
+				
+				
+					<div class="block-outer-opposite">
+						
+							<a href="https://www.tonymacx86.com/login/" class="button--link button" data-xf-click="overlay"><span class="button-text">
+								You must log in or register to reply here.
+							</span></a>
+						
+					</div>
+				
+			
+		</div>
+	
+
+	
+	
+
+</div>
+
+
+
+
+
+<div class="blockMessage blockMessage--none">
+	
+	
+		
+		<div class="shareButtons shareButtons--iconic" data-xf-init="share-buttons" data-page-url="" data-page-title="" data-page-desc="">
+			
+				<span class="shareButtons-label">Share:</span>
+			
+
+			<div class="shareButtons-buttons">
+				
+
+					
+						<a class="shareButtons-button shareButtons-button--brand shareButtons-button--facebook" data-href="https://www.facebook.com/sharer.php?u={url}" id="js-XFUniqueId20">
+							<i aria-hidden="true"></i>
+							<span>Facebook</span>
+						</a>
+					
+
+					
+						<a class="shareButtons-button shareButtons-button--brand shareButtons-button--twitter" data-href="https://twitter.com/intent/tweet?url={url}&amp;text={title}" id="js-XFUniqueId21">
+							<i aria-hidden="true"></i>
+							<span>Twitter</span>
+						</a>
+					
+
+					
+						<a class="shareButtons-button shareButtons-button--brand shareButtons-button--reddit" data-href="https://reddit.com/submit?url={url}&amp;title={title}" id="js-XFUniqueId22">
+							<i aria-hidden="true"></i>
+							<span>Reddit</span>
+						</a>
+					
+
+					
+						<a class="shareButtons-button shareButtons-button--brand shareButtons-button--pinterest" data-href="https://pinterest.com/pin/create/bookmarklet/?url={url}&amp;description={title}" id="js-XFUniqueId23">
+							<i aria-hidden="true"></i>
+							<span>Pinterest</span>
+						</a>
+					
+
+					
+						<a class="shareButtons-button shareButtons-button--brand shareButtons-button--tumblr" data-href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={url}&amp;title={title}" id="js-XFUniqueId24">
+							<i aria-hidden="true"></i>
+							<span>Tumblr</span>
+						</a>
+					
+
+					
+						<a class="shareButtons-button shareButtons-button--brand shareButtons-button--whatsApp" data-href="https://api.whatsapp.com/send?text={title} {url}" id="js-XFUniqueId25">
+							<i aria-hidden="true"></i>
+							<span>WhatsApp</span>
+						</a>
+					
+
+					
+						<a class="shareButtons-button shareButtons-button--email" data-href="mailto:?subject={title}&amp;body={url}" id="js-XFUniqueId26">
+							<i aria-hidden="true"></i>
+							<span>Email</span>
+						</a>
+					
+
+					
+						<a class="shareButtons-button shareButtons-button--link" data-clipboard="{url}" id="js-XFUniqueId27">
+							<i aria-hidden="true"></i>
+							<span>Link</span>
+						</a>
+					
+				
+			</div>
+		</div>
+	
+
+</div>
+
+
+
+</div>
+				
+			</div>
+
+			
+		</div>
+
+		
+		
+	
+		<ul class="p-breadcrumbs p-breadcrumbs--bottom" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+		
+			
+
+			
+			
+				
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="https://www.tonymacx86.com/" itemprop="item">
+			<span itemprop="name">Home</span>
+		</a>
+		<meta itemprop="position" content="1">
+	</li>
+
+			
+
+			
+			
+				
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="https://www.tonymacx86.com/categories/installation.128/" itemprop="item">
+			<span itemprop="name">Installation</span>
+		</a>
+		<meta itemprop="position" content="2">
+	</li>
+
+			
+				
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="https://www.tonymacx86.com/forums/bios-uefi.173/" itemprop="item">
+			<span itemprop="name">BIOS/UEFI</span>
+		</a>
+		<meta itemprop="position" content="3">
+	</li>
+
+			
+
+		
+		</ul>
+	
+
+		
+	</div>
+</div>
+
+
+	<div class="p-body">
+		<div class="p-body-inner">
+			<div class="responsiveGoogleAdHorizontal">
+		<script async="" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/f(6).txt"></script>
+		<!-- Responsive Ad -->
+		<ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-9762329074683820" data-ad-slot="8238137946" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:728px;height:90px;" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/saved_resource(3).html"></iframe></ins></ins></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+</div>
+			
+		</div>
+	</div>
+
+
+<footer class="p-footer" id="footer" style="margin-bottom: 98px;">
+	<div class="p-footer-inner block-container">
+		<div class="p-footer-row">
+			<div class="showMobile">
+				<div id="mobileFooterLogo">
+					<a href="https://www.tonymacx86.com/">
+						<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/newlogo.png" class="img-responsive">
+					</a>
+				</div>
+				<div id="mobileFooterSearch">
+					<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/search-sprite.png" id="mobileFooterCritters">
+					<form action="https://www.tonymacx86.com/search/search" method="post" class="menu-content" data-xf-init="quick-search">
+						<input type="text" class="input" name="keywords" placeholder="Search…" aria-label="Search" data-menu-autofocus="true">
+						<button type="submit" class="button--cta button button--icon button--icon--search"><span class="button-text">Search</span></button>
+						<input type="hidden" name="_xfToken" value="1552964386,3ba66cb718e22593510c575d85d08d75">
+					</form>
+				</div>
+			</div>
+			<table class="footerSiteMap">
+				<tbody>
+					<tr>
+						<td class="hideMobile">
+							<div id="footerSearch">
+								<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/search-sprite.png" id="footerCritters">
+								<form action="https://www.tonymacx86.com/search/search" method="post" class="menu-content" data-xf-init="quick-search">
+									<input type="text" class="input" name="keywords" placeholder="Search…" aria-label="Search" data-menu-autofocus="true">
+									<button type="submit" class="button--cta button"><span class="button-text">Search</span></button>
+									<input type="hidden" name="_xfToken" value="1552964386,3ba66cb718e22593510c575d85d08d75">
+								</form>
+							</div>
+							<div id="footerLogo">
+								<a href="https://www.tonymacx86.com/">
+									<img src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/newlogo.png" class="img-responsive">
+								</a>
+							</div>
+						</td>
+						<td>
+							<ul class="footerLinks">
+								<li>
+									<h4>
+										<a href="https://www.tonymacx86.com/forums">Forum</a>
+									</h4>
+								</li>
+								
+								<li>
+									<a href="https://www.tonymacx86.com/categories/the-build.4">The Build</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/categories/installation.128">Installation</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/categories/post-installation.26">Post Installation</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/categories/the-workshop.121">The Workshop</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/categories/the-tools.118">The Tools</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/categories/the-clubhouse.5">The Clubhouse</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/categories/infinite-loop.7">Infinite Loop</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/categories/laptops.116">Laptops</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul class="footerLinks">
+								<li>
+									<h4>
+										<a href="https://www.tonymacx86.com/categories/installation.128">Guides</a>
+									</h4>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/threads/im-new-to-everything-where-do-i-start.104542/">Start Here!</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/threads/unibeast-install-macos-mojave-on-any-supported-intel-based-pc.259381/">10.14 Installation</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/threads/update-directly-to-macos-high-sierra.232707/">10.13 Installation</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/threads/unibeast-install-macos-sierra-on-any-supported-intel-based-pc.200564/">10.12 Installation</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/threads/unibeast-install-os-x-el-capitan-any-supported-intel-based-pc.172672/">10.11 Installation</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/threads/unibeast-install-os-x-yosemite-on-any-supported-intel-based-pc.143976/">10.10 Installation</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/threads/unibeast-install-os-x-mavericks-on-any-supported-intel-based-pc.112389/">10.9 Installation</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/threads/unibeast-install-os-x-mountain-lion-on-any-supported-intel-based-pc.60584/">10.8 Installation</a>
+								</li>
+								<li>
+									<a href="https://tonymacx86.blogspot.com/2011/10/unibeast-install-mac-os-x-lion-using.html">10.7 Installation</a>
+								</li>
+								<li>
+									<a href="https://tonymacx86.blogspot.com/2010/04/iboot-multibeast-install-mac-os-x-on.html">10.6 Installation</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/threads/an-idiots-guide-to-imessage.196827/">Fix iMessage</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul class="footerLinks">
+								<li>
+									<h4>
+										<a href="https://www.tonymacx86.com/resources/categories/tonymacx86-downloads.3">Downloads</a>
+									</h4>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/resources/categories/tonymacx86-downloads.3">Downloads Index</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/dsdt-database">DSDT</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/resources/categories/kexts.11">Kexts</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/nvidia-drivers/">NVIDIA Drivers</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/resources/categories/community-software.10/">Community Software</a>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/resources/categories/archive.5/">Archive</a>
+								</li>
+							</ul>
+						</td>
+						<td>
+							<ul class="footerLinks">
+								<li>
+									<h4>
+										<a>
+											<i class="fa fa-plus"></i>
+										</a>
+									</h4>
+								</li>
+								<li>
+									<a href="https://www.tonymacx86.com/media/albums/">Albums</a>
+								</li>
+								<li>
+									<a href="http://www.zazzle.com/tonymacx86">Shop</a>
+								</li>
+								<li>
+									<a href="http://www.customac.com/">CustoMac.com</a>
+								</li>
+								<li>
+									<a href="http://www.multibeast.com/">MultiBeast.com</a>
+								</li>
+								<li>
+									<a href="http://www.unibeast.com/">UniBeast.com</a>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr class="showMobile">
+						<td colspan="5" class="fullWidth">
+							<a href="https://www.tonymacx86.com/">Home</a>
+							<a href="https://www.tonymacx86.com/activity">Activity</a>
+							<a href="https://www.tonymacx86.com/rules">Rules</a>
+							<a href="https://www.tonymacx86.com/contact-us">Contact Us</a>
+						</td>
+					</tr>
+					<tr class="showMobile">
+						<td colspan="5" class="fullWidth">
+							<div id="mobileFooterSocial">
+								<a href="http://www.facebook.com/tonymacx86"><i class="fa fa-facebook-square fa-2x"></i></a>
+								<a href="http://instagram.com/tonymacx86"><i class="fa fa-instagram fa-2x"></i></a>
+								<a href="http://www.twitter.com/tonymacx86"><i class="fa fa-twitter-square fa-2x"></i></a>
+								<a href="http://plus.google.com/100821890176638468121/posts"><i class="fa fa-google-plus-square fa-2x"></i></a>
+								<a href="http://www.youtube.com/tonymacx86"><i class="fa fa-youtube fa-2x"></i></a>
+								<a href="http://feeds.feedburner.com/tonymacx86rss"><i class="fa fa-rss-square fa-2x"></i></a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<ul class="p-footer-linkList hideMobile">
+								<li><a href="https://www.tonymacx86.com/">Home</a></li>
+								<li><a href="https://www.tonymacx86.com/activity">Activity</a></li>
+								<li><a href="https://www.tonymacx86.com/rules">Rules</a></li>
+								<li><a href="https://www.tonymacx86.com/contact-us">Contact Us</a></li>
+								<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=CC3JC8VG8ETHQ" class="cFooterLink">Contribute</a></li>
+							</ul>
+						</td>
+						<td colspan="2">
+							<ul class="p-footer-linkList hideMobile moveRight footerSocial">
+								<li><a href="http://www.facebook.com/tonymacx86"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+								<li><a href="http://instagram.com/tonymacx86"><i class="fa fa-instagram fa-2x"></i></a></li>
+								<li><a href="http://www.twitter.com/tonymacx86"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+								<li><a href="http://www.youtube.com/tonymacx86"><i class="fa fa-youtube fa-2x"></i></a></li>
+								<li><a href="http://feeds.feedburner.com/tonymacx86rss"><i class="fa fa-rss-square fa-2x"></i></a></li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</footer>
+
+<div class="p-body">
+	<div class="p-body-inner">
+		<div class="footerLegal">
+			<div class="p-footer-row">
+				<div class="p-footer-row-main">
+					<span class="p-footer-copyright">
+						Copyright © 2010 - 2019 tonymacx86 LLC
+						 
+					</span>
+					
+				</div>
+				<div class="p-footer-row-opposite">
+					<ul class="p-footer-linkList">
+						<li><a href="https://www.tonymacx86.com/privacy/">Privacy Policy</a></li>
+						<li><a href="https://www.tonymacx86.com/legal/">Terms and Conditions</a></li>
+						<li><a href="https://www.tonymacx86.com/rules">Rules</a></li>
+						<li><a href="https://www.tonymacx86.com/forums/#top">Top <i class="fa fa-arrow-circle-up"></i></a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+</div> <!-- closing p-pageWrapper -->
+
+<div class="u-bottomFixer js-bottomFixTarget">
+	
+	
+		
+	
+		
+		
+		
+
+		<ul class="notices notices--bottom_fixer js-notices" data-xf-init="notices" data-type="bottom_fixer" data-scroll-interval="6">
+
+			
+				
+	<li class="notice js-notice notice--primary notice--cookie" data-notice-id="-1" data-delay-duration="0" data-display-duration="0" data-auto-dismiss="0" data-visibility="">
+
+		
+		<div class="notice-content">
+			
+			<div class="u-alignCenter">
+	This site uses cookies to help personalise content, tailor your experience and to keep you logged in if you register.<br>
+By continuing to use this site, you are consenting to our use of cookies.
+</div>
+
+<div class="u-inputSpacer u-alignCenter">
+	<a href="https://www.tonymacx86.com/account/dismiss-notice" class="js-noticeDismiss button--notice button button--icon button--icon--confirm" data-xf-init="tooltip" data-original-title="Dismiss notice" id="js-XFUniqueId28"><span class="button-text">Accept</span></a>
+	<a href="https://www.tonymacx86.com/help/cookies" class="button--notice button"><span class="button-text">Learn more…</span></a>
+</div>
+		</div>
+	</li>
+
+			
+		</ul>
+	
+
+	
+</div>
+
+
+	<div class="u-scrollButtons js-scrollButtons" data-trigger-type="up">
+		<a href="https://www.tonymacx86.com/threads/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151/#top" class="button--scroll button" data-xf-click="scroll-to"><span class="button-text"><i class="fa--xf far fa-arrow-up" aria-hidden="true"></i><span class="u-srOnly">Top</span></span></a>
+		
+	</div>
+
+
+
+	<script src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/jquery-3.3.1.min.js.ダウンロード"></script>
+	<script src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/vendor-compiled.js.ダウンロード"></script>
+	<script src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/core-compiled.js.ダウンロード"></script>
+	<script src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/lightbox-compiled.js.ダウンロード"></script>
+<script src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/notice.min.js.ダウンロード"></script>
+
+	<script>
+		jQuery.extend(true, XF.config, {
+			// 
+			userId: 0,
+			enablePush: false,
+			pushAppServerKey: '',
+			url: {
+				fullBase: 'https://www.tonymacx86.com/',
+				basePath: '/',
+				css: '/css.php?css=__SENTINEL__&s=10&l=1&d=1552631037',
+				keepAlive: '/login/keep-alive'
+			},
+			cookie: {
+				path: '/',
+				domain: '',
+				prefix: 'xf_',
+				secure: true
+			},
+			csrf: '1552964384,b49ce0f9c9c2cc538594624c981ae8a6',
+			js: {"\/js\/xf\/lightbox-compiled.js?_v=84f4b40b":true,"\/js\/xf\/notice.min.js?_v=84f4b40b":true},
+			css: {"public:attachments.less":true,"public:lightbox.less":true,"public:message.less":true,"public:notices.less":true,"public:share_controls.less":true,"public:extra.less":true},
+			time: {
+				now: 1552964384,
+				today: 1552953600,
+				todayDow: 2
+			},
+			borderSizeFeature: '3px',
+			fontAwesomeWeight: 'r',
+			enableRtnProtect: true,
+			enableFormSubmitSticky: true,
+			uploadMaxFilesize: 104857600,
+			allowedVideoExtensions: ["m4v","mov","mp4","mp4v","mpeg","mpg","ogv","webm"],
+			shortcodeToEmoji: true,
+			visitorCounts: {
+				conversations_unread: '0',
+				alerts_unread: '0',
+				total_unread: '0',
+				title_count: true,
+				icon_indicator: true
+			},
+			jsState: {},
+			publicMetadataLogoUrl: 'https://www.tonymacx86.com/images/tonymacx86-logo.png',
+			publicPushBadgeUrl: 'https://www.tonymacx86.com/styles/default/xenforo/bell.png'
+		});
+
+		jQuery.extend(XF.phrases, {
+			// 
+			date_x_at_time_y: "{date} at {time}",
+			day_x_at_time_y:  "{day} at {time}",
+			yesterday_at_x:   "Yesterday at {time}",
+			x_minutes_ago:    "{minutes} minutes ago",
+			one_minute_ago:   "1 minute ago",
+			a_moment_ago:     "A moment ago",
+			today_at_x:       "Today at {time}",
+			in_a_moment:      "In a moment",
+			in_a_minute:      "In a minute",
+			in_x_minutes:     "In {minutes} minutes",
+			later_today_at_x: "Later today at {time}",
+			tomorrow_at_x:    "Tomorrow at {time}",
+
+			day0: "Sunday",
+			day1: "Monday",
+			day2: "Tuesday",
+			day3: "Wednesday",
+			day4: "Thursday",
+			day5: "Friday",
+			day6: "Saturday",
+
+			dayShort0: "Sun",
+			dayShort1: "Mon",
+			dayShort2: "Tue",
+			dayShort3: "Wed",
+			dayShort4: "Thu",
+			dayShort5: "Fri",
+			dayShort6: "Sat",
+
+			month0: "January",
+			month1: "February",
+			month2: "March",
+			month3: "April",
+			month4: "May",
+			month5: "June",
+			month6: "July",
+			month7: "August",
+			month8: "September",
+			month9: "October",
+			month10: "November",
+			month11: "December",
+
+			active_user_changed_reload_page: "The active user has changed. Reload the page for the latest version.",
+			server_did_not_respond_in_time_try_again: "The server did not respond in time. Please try again.",
+			oops_we_ran_into_some_problems: "Oops! We ran into some problems.",
+			oops_we_ran_into_some_problems_more_details_console: "Oops! We ran into some problems. Please try again later. More error details may be in the browser console.",
+			file_too_large_to_upload: "The file is too large to be uploaded.",
+			uploaded_file_is_too_large_for_server_to_process: "The uploaded file is too large for the server to process.",
+			files_being_uploaded_are_you_sure: "Files are still being uploaded. Are you sure you want to submit this form?",
+			attach: "Attach files",
+			rich_text_box: "Rich text box",
+			close: "Close",
+			link_copied_to_clipboard: "Link copied to clipboard.",
+			text_copied_to_clipboard: "Text copied to clipboard.",
+			loading: "Loading…",
+
+			processing: "Processing",
+			'processing...': "Processing…",
+
+			showing_x_of_y_items: "Showing {count} of {total} items",
+			showing_all_items: "Showing all items",
+			no_items_to_display: "No items to display",
+
+			push_enable_notification_title: "Push notifications enabled successfully at tonymacx86.com",
+			push_enable_notification_body: "Thank you for enabling push notifications!"
+		});
+	</script>
+
+	<form style="display:none" hidden="hidden">
+		<input type="text" name="_xfClientLoadTime" value="" id="_xfClientLoadTime" title="_xfClientLoadTime" tabindex="-1">
+	</form>
+
+	
+
+
+
+	<script type="text/template" id="xfReactTooltipTemplate">
+		<div class="tooltip-content-inner">
+			<div class="reactTooltip">
+				
+					<a href="#" class="reaction reaction--1" data-reaction-id="1"><i aria-hidden="true"></i><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="reaction-sprite js-reaction" alt="Like" title="Like" data-xf-init="tooltip" /></a>
+				
+					<a href="#" class="reaction reaction--2" data-reaction-id="2"><i aria-hidden="true"></i><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="reaction-sprite js-reaction" alt="Love" title="Love" data-xf-init="tooltip" /></a>
+				
+					<a href="#" class="reaction reaction--3" data-reaction-id="3"><i aria-hidden="true"></i><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="reaction-sprite js-reaction" alt="Haha" title="Haha" data-xf-init="tooltip" /></a>
+				
+					<a href="#" class="reaction reaction--4" data-reaction-id="4"><i aria-hidden="true"></i><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="reaction-sprite js-reaction" alt="Wow" title="Wow" data-xf-init="tooltip" /></a>
+				
+					<a href="#" class="reaction reaction--5" data-reaction-id="5"><i aria-hidden="true"></i><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="reaction-sprite js-reaction" alt="Sad" title="Sad" data-xf-init="tooltip" /></a>
+				
+					<a href="#" class="reaction reaction--6" data-reaction-id="6"><i aria-hidden="true"></i><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="reaction-sprite js-reaction" alt="Angry" title="Angry" data-xf-init="tooltip" /></a>
+				
+			</div>
+		</div>
+	</script>
+
+
+
+	
+		
+	
+	
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "DiscussionForumPosting",
+			"@id": "https:\/\/www.tonymacx86.com\/threads\/a-solution-of-asus-new-bios-ver-2012-not-downgrading.273151\/",
+			"headline": "A solution of ASUS new bios ver.2012 (not downgrading)",
+			"articleBody": "Sorry for my bad English. It's not my native language.\n\nI'm using ASUS ROG Strix B360-i Gaming motherboard with Samsung PM961 Nvme SSD.\nAfter I update the BIOS to version 2012, I have also ran into the problem that my hackintosh never boot again.\nIt just stucks at the progress bar with Apple logo.\nAnd I noticed that the boot log stopped rolling when \"SMCRTC:start\" appears.\n(The \"AppleNVME Assert failed\" error is misleading. But it's not the cause of this problem.)\n\nThen I found an bios option about RTC was added with this bios update.\nIt's located at UEFI Advance Mode\\Advanced\\PCH Configuration\\System Time and Alarm Source:\n\nI changed the option from \"ACPI Time and Alarm Device\" to \"Legacy RTC\".\nAnd my hackintosh is working now.\n\nI hope it's a useful solution for this problem.",
+			"articleSection": "BIOS\/UEFI",
+			"author": {
+				"@type": "Person",
+				"name": "Satanichia"
+			},
+			"datePublished": "2019-03-11",
+			"dateModified": "2019-03-16",
+			"image": "\/data\/avatars\/h\/2202\/2202747.jpg?1552273847",
+			"interactionStatistic": {
+				"@type": "InteractionCounter",
+				"interactionType": "https://schema.org/ReplyAction",
+				"userInteractionCount": 5
+			}
+		}
+		</script>
+	
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=6266899; 
+var sc_invisible=1; 
+var sc_security="9da4e470"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script><script type="text/javascript" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/counter.js.ダウンロード"></script>
+<noscript><div class="statcounter"><a title="free web stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/6266899/0/9da4e470/1/" alt="free
+web stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+<script src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/onejs"></script><div id="amzn_assoc_ad_div_adunit_0"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iframe id="google_osd_static_frame_1914682659039" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/saved_resource(4).html"></iframe></body><iframe id="google_shimpl" style="display: none;" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/saved_resource(5).html"></iframe><iframe id="google_esf" name="google_esf" src="./A solution of ASUS new bios ver.2012 (not downgrading) _ tonymacx86.com_files/zrt_lookup.html" data-ad-client="ca-pub-9762329074683820" style="display: none;"></iframe></html>

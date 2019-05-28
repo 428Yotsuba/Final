@@ -1,0 +1,177 @@
+
+A:LINK   {color : #99FFFF; TEXT-DECORATION: underline;}
+A:VISITED{color : #FFCC66; TEXT-DECORATION: underline;}
+A:HOVER  {color : #000000; TEXT-DECORATION: none; BACKGROUND-COLOR: #CCFFFF;}
+A:ACTIVE {color : #000000; TEXT-DECORATION: none; BACKGROUND-COLOR: #FFCC66;}
+.size7 {font-size:7pt;}
+.size8 {font-size:8pt;}
+.size9 {font-size:9pt;}
+.sizea {font-size:10pt;}
+.sizeb {font-size:11pt;}
+.sizec {font-size:12pt;}
+
+.QA_Q	{color : #FF0; TEXT-DECORATION: none; font-weight: bold; BACKGROUND-COLOR: #333;}
+
+/* 日本語テキスト文章 */
+
+.jpn	{font-size: 10pt;
+	 line-height: 11pt;
+	 font-style: normal}
+
+.jpnb	{font-size: 12pt;
+	 line-height: 14pt;
+	 font-style: normal}
+
+.jpns	{font-size: 8pt;
+	 line-height: 8pt}
+
+
+/* 英語テキスト文章 */
+.eng	{font-size: 10pt;
+	 line-height: 11pt;
+	 font-style: normal;
+	 font-family: "Verdana", "Arial", "Helvetica", "sans-serif"}
+
+.engs	{font-size: 8pt;
+	 line-height: 8pt;
+	 font-style: normal;
+	 font-family: "Verdana", "Arial", "Helvetica", "sans-serif"}
+
+
+/* サブタイトル（文章） */
+.subt	{font-size: 10pt;
+	 font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	 line-height:12pt;
+	 font-weight: bold}
+
+
+.subtj	{font-size: 10pt;
+	 line-height:12pt;
+	 font-weight: bold}
+	 
+
+
+.title	{  font-family:	 "Verdana", "Arial", "Helvetica", "sans-serif";
+	 font-size: 12pt;
+	 line-height: 14pt;
+	 font-weight: bold}
+
+.titleJ	{font-size: 12pt;
+	 line-height: 14pt;
+	 font-weight: bold}
+
+.src1	{color : #FFF; TEXT-DECORATION: none; }
+.src2	{color : #F69; TEXT-DECORATION: none; font-weight: bold; }
+.src3	{color : #FFF; TEXT-DECORATION: none; background: #04C; }
+.src4	{color : #FF3; TEXT-DECORATION: none; background: #084; }
+.srck	{color : #F69; TEXT-DECORATION: none; font-weight: bold; }
+
+.column	{
+	margin: 1.0em 1.0em 1.0em 1.0em;
+	border: dashed thin #0cc;
+	padding: 0.5em;
+	background: #333;
+}
+
+.warn	{
+	margin: 1.5em 2em 1.5em 2em;
+	border: dashed medium #f00;
+	padding: 0.5em;
+	background: #000;
+	color: #FF3;
+	TEXT-DECORATION: none; font-weight: bold;
+}
+
+.midashi1	{color: #9F9; TEXT-DECORATION: none; font-weight: bold; BACKGROUND-COLOR: #030;}
+.midashi2	{color: #FF0; TEXT-DECORATION: none; font-weight: bold; BACKGROUND-COLOR: #333;}
+.midashi3	{color: #F86; TEXT-DECORATION: none; font-weight: bold; BACKGROUND-COLOR: #300;}
+.midashi4	{color: #6FF; TEXT-DECORATION: none; font-weight: bold; BACKGROUND-COLOR: #333;}
+.midashi5	{color: #66F; TEXT-DECORATION: none; font-weight: bold; BACKGROUND-COLOR: #333;}
+.midashi6	{color: #F6F; TEXT-DECORATION: none; font-weight: bold; BACKGROUND-COLOR: #333;}
+
+.datetime	{color: #CCC; TEXT-DECORATION: none; font-weight: bold; BACKGROUND-COLOR: #333;}
+.datenew	{color: #FF3; TEXT-DECORATION: none; font-weight: bold; BACKGROUND-COLOR: #333;}
+.dateup		{color: #FF3; TEXT-DECORATION: none; font-weight: bold; BACKGROUND-COLOR: #333;}
+
+
+pre {
+    /* Mozilla */
+    white-space: -moz-pre-wrap;
+
+    /* Opera 4-6 */
+    white-space: -pre-wrap;
+
+    /* Opera 7 */
+    white-space: -o-pre-wrap;
+
+    /* CSS3 */
+    white-space: pre-wrap;
+
+    /* IE 5.5+ */
+    word-wrap: break-word;
+}
+
+
+/*
+   #tab{margin-left:5; margin-right:5;}
+TD{
+  border-width : 1px 1px 1px 1px;
+  border-style : solid solid solid solid;
+  border-color : black black black black;
+}
+
+*/
+
+/* 2016/06/04 */
+body {
+	font-size: 100%;
+	line-height: 1.22;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+@media screen and (max-width: 480px)
+{
+	body {
+		font-size: 80%;
+		line-height: 1.26;
+		-webkit-text-size-adjust: 80%;
+		-moz-text-size-adjust: 80%;
+		-ms-text-size-adjust: 80%;
+		-o-text-size-adjust: 80%;
+		text-size-adjust: 80%;
+	}
+
+	h2 {
+		font-size: 100%;
+		line-height: 1.26;
+		-webkit-text-size-adjust: 100%;
+		-moz-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+		-o-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+	}
+
+	td {
+		font-size: 80%;
+		line-height: 1.26;
+		-webkit-text-size-adjust: 80%;
+		-moz-text-size-adjust: 80%;
+		-ms-text-size-adjust: 80%;
+		-o-text-size-adjust: 80%;
+		text-size-adjust: 80%;
+	}
+
+	.column	{
+		margin: 0.5em 0.5em 1.0em 0.5em;
+	}
+}
+
+img {
+	max-width : 100% ;
+	height : auto ;
+}
+

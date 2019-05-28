@@ -1,0 +1,133 @@
+如何修正FCPX High SIERRA中的視頻呈現問題（硬件編碼和HEVC支持）
+3月 15, 2018
+以下是如何通過啟用硬件編碼和/或HEVC支持，在基於英特爾的黑蘋果上使用AMD RX Polaris，Nvidia圖形卡或iGPU修復Final Cut Pro X或其他任何視頻編碼/解碼/渲染過程中的視頻渲染問題和性能問題。
+目前有許多朋友似乎都在使用High Sierra和FCPX 10.X在運行黑蘋果電腦所產生的新問題。 於是我最近以RX 580來試試看，是能否也是和大家遇到相同的問題，以下歸納了幾個問題：
+導出速度慢，甚至出口失敗。
+圖形工件不應該在那裡。
+轉換和效果不起作用，失效或導致凍結。
+FCPX隨機凍結macOS，但鼠標仍可移動。
+小變化時，鼠標變成無盡的旋轉彩球。
+我已經收到很多問題，詢問有關視頻效果不佳的情況，並且可以看到你們在談論的內容。 如果視頻編輯效果不佳並且甚至無法用於導出，那麼為視頻編輯構建新的黑蘋果有什麼意義？
+幸運的是，這可以修復。這是一種圖形/編碼/解碼問題，這是由於未針對視頻編輯進行優化的錯誤設置而導致的。 這些問題是未啟用H.264和H.265支持的結果。 FCPX使用英特爾CPU / iGPU與dGPU結合進行渲染，所以最好我們嘗試並利用iGPU，並將它與AMD RX 580或任何顯卡一起使用，就像真正的Mac一樣。
+在應用了下面的修復之後，我所有的渲染問題都消失了，我的Bruce 5k Test下降到了高峰13.2的瘋狂9秒輸出時間，使用這些：
+ XFX RX 580 GTS 8GB
+Intel i7-8700K Coffee Lake 6-Core
+ASUS ROG Maximus X Hero (Wi-Fi AC)
+FCPX HACKINTOSH OPTIMIZATION GUIDE
+遵循本指南後，如果硬件編碼未啟用，導出時間應該會減少。
+
+本指南是在Coffee Lake，Kaby Lake和Sky Lake *的基礎上創建的，因為如果您使用的是舊版本，並非所有步驟都適用於您，並且您需要使用Haswell或更高版本 來自iGPU的硬件編碼支持和HEVC支持您需要Sky Lake或更高版本並使用High Sierra。
+
+MOUNT EFI PARTITION：
+Open Clover Configurator
+Select Mount EFI under TOOLS
+Click Mount Partition for Install macOS….
+Click Open Partition
+KEXT UPDATES:
+After mounting the EFI partition we need to make sure we our using the latest version of each of these kexts as they fix  various compatibility issues with the latest hardware.
+Download the latest RELEASE.zip of Shiki.kext
+Copy & Paste Shiki.kext into EFI/CLOVER/kexts/Other
+Download the latest RELEASE.zip of Lilu.kext
+Copy & Paste Lilu.kext into EFI/CLOVER/kexts/Other
+Download the most recent version of IntelGraphicsFixup.kext
+Paste IntelGraphicsFixup.kext into EFI/CLOVER/kexts/Other
+AMD?
+Download the most recent version of WhateverGreen.kext
+Paste WhateverGreen.kext into EFI/CLOVER/kexts/Other
+Nvidia?
+Download the most recent version of NvidiaGraphicsFixup.kext
+Paste NvidiaGraphicsFixup.kext into EFI/CLOVER/kexts/Other
+Download the most recent version of FAKEPCIID
+Unzip RehabMan-FakePCIID folder
+Copy FakePCIID.kext and FakePCIID_Intel_HD_Graphics.kext from the Release folder of Rehabman-FAKEPCIID
+Paste FakePCIID.kext and FakePCIID_Intel_HD_Graphics.kext to EFI/CLOVER/kexts/Other
+CONFIG.PLIST CHANGES:
+Navigate to Volumes/EFI/EFI/CLOVER/
+Open config.plist with Clover Configurator
+Select System Parameters on left-side column
+Verify Inject Kexts is set to Yes
+Select Boot on left-side column
+Under Custom flags add:
+ AMD users:
+shikigva=4
+-rad4200
+ Nvidia users:
+shikigva=12
+Intel iGPU-only users:
+shikigva=1
+Kaby Lake & Coffee Lake Users:
+Select Devices on left-side column
+Set IntelGFX box to: 0x59128086 or if using an i3-8100/i3-8350k set to: 0x59168086
+Select Graphics on left-side column
+Using Nvidia or AMD
+Set ig-platform-id to: 0x59120003
+Using Intel iGPU 
+Set ig-platform-id to: 0x59120000
+DSDT PATCHING
+HECI -> IMEI Patch
+is needed in config.plist in order for the iGPU + dGPU to still function properly after sleep, along with the other two DSDT patches GFX0 -> IGPU and PEGP -> GFX0 patch when you have integrated and dedicated graphics running at the same time. Without these patches the fixes in this guide wont persist through sleep and everything will break.
+In config.plist Select Acpi on left-side column of Clover Configurator
+Verify you have the following under DSDT -> Patches. It’s important that GFX0 -> iGPU is before PEGP -> GFX0
+HECI -> IMEI Patch
+Comment: change HECI to IMEI
+Find* [Hex]: 48454349
+Replace [Hex]: 494d4549
+GFX0 -> IGPU Patch
+Comment: change GFX0 to IGPU
+Find* [Hex]: 47465830
+Replace* [Hex] : 49475055
+ PEGP -> GFX0 Patch
+Comment: change PEGP to GFX0
+Find* [Hex]: 50454750
+Replace [Hex]: 47465830
+Save config.plist
+Restart Hackintosh & Enter BIOS
+
+BIOS CHANGES:
+在BIOS中，有兩個非常重要的設置可以決定是否可以使用FCPX可靠性。 首先是將初始或主要顯示/圖形更改為dGPU或iGPU，因為將其置於“自動”將導致性能下降。 下一個設置是在FCPX使用它之後始終啟用IGPU。 在技嘉的設置很容易找到，但華碩，華擎，微星主板的設置是偽裝成IGPU多顯示器。 為了獲得FCPX的硬件編碼，需要全時啟用iGPU。 如果您擁有iGPU多顯示器設置，請在設置主顯示器/初始顯示器之前進行設置，因為它可能會在不知不覺中將後者重置為iGPU。
+
+還要設置DVMT預先分配/共享內存。 如果您沒有在正確的位置看到它，請正確設置另外兩個設置並重新進入BIOS，並且它應該在那裡，因為有時需要首先啟用IGPU才能更改它。
+Gigabyte:
+Chipset → Integrated Graphics : Enabled
+Chipset → DVMT Pre-Allocated :128M
+Nvidia or AMD
+Peripherals → Initial Display Output : PCIe 1 Slot
+Intel iGPU
+Peripherals → Initial Display Output : IGFX
+ASUS:
+Advanced \ System Agent(SA) Configuration → IGPU Multi-Monitor : Enabled
+Advanced \ System Agent(SA) Configuration → DVMT pre-Allocated : 128M
+Nvidia or AMD
+Advanced \ System Agent(SA) Configuration → Primary Display : PCIE
+Intel iGPU
+Advanced \ System Agent(SA) Configuration → Primary Display : CPU Graphics
+ASRock:
+Advanced \ Chipset Configuration → IGPU Multi-Monitor : Enabled
+Advanced \ Chipset Configuration → Share Memory : 128MB
+Nvidia or AMD
+Advanced \ Chipset Configuration → Primary Graphics Adapter : PCI Express
+Intel iGPU
+Advanced \ Chipset Configuration → Primary Graphics Adapter : Onboard
+MSI:
+Advanced \ Integrated Graphics Configuration → IGD Multi-Monitor : [Enabled]
+Advanced \ Integrated Graphics Configuration → DVMT Pre-Allocated : [128M]
+Nvidia or AMD
+Advanced \ Integrated Graphics Configuration → Initiate Graphic Adapter : [PEG]
+iGPU?
+Advanced \ Integrated Graphics Configuration → Initiate Graphic Adapter : [IGD]
+SUCCESS?
+更改BIOS設置後，啟動macOS，看看會發生什麼。
+
+一切正常和運行？ 是的，不是？
+
+以上設置為我工作，但每個人的安裝/ EFI /部件可能會有所不同。 如果無論出於何種原因，上述步驟仍然無法消除性能問題，那麼通過Clover注入的圖形kext可能無法正常工作。
+
+為了糾正這個問題，我們可以將處理圖形的幾個kexts移到內核緩存。 Apple建議將非蘋果kexts放在/ Library / Extensions中，以便我們使用該文件夾。
+如果上述不可用，可選的額外步驟：
+Mount EFI partition
+Copy IntelGraphicsFixup.kext & Lilu.kext & WhateverGreen.kext (If AMD) (Make sure each kext is the latest version)
+Paste them in location /Library/Extensions
+Enter Password on prompt
+Restart Hackintosh
+Boom!
+分享

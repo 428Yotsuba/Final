@@ -1,0 +1,5 @@
+Applications.pkg:Required
+PreferencePanes.pkg:Required
+ApplicationSupport.pkg:Required
+LaunchAgents.pkg:Required
+Preferences.pkg:Required

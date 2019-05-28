@@ -1,0 +1,14 @@
+finally get rid of the OsxAptioXXX.efi by using the legacy boot. with the legacy clover boot. it looks like super stable. and every thing works just perfect, including sleeping and xcpm.
+
+the randomly boot failure and randomly reboot , panic seems has gone away.
+
+I compile the latest Clover boot from the source and try a lot . still could get the allocation error.
+the uefi allocation is randomly time to time, free the low memory below 20000000 is a buggy patch, it will free some bs_code, it makes side effects, I think it's cause the panic and reboot. it reports resources not found error.
+
+I thought the final resolution is write a special UEFI for the mono. but it's hard to achieve, so the workaround is using legacy bios clover booting. No UEFI booting, No patch , No OsxAptioXXX.efi, no buggy and side effects.
+
+Post the efi for anyone who need it
+
+Screenshot for legacy boot setting attached.
+
+I my mobo I set the bios to boot with legacy + UEFI, and use the legacy disk for the 1st boot device.

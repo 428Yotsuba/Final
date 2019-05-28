@@ -1,0 +1,45 @@
+function ImageLazy(e){
+	var count=0;
+	var bottom=(window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight);
+	var scroll=(window.scrollY||document.documentElement.scrollTop||document.body.scrollTop);
+	var elements=document.getElementsByTagName('img');
+
+	bottom*=1.2;
+	bottom+=scroll;
+
+	for(var i=0;i<elements.length;i++)
+	{
+		if(elements[i].getAttribute('data-src'))
+		{
+			var offset=0;
+			var test=elements[i];
+			while(test.offsetParent){
+				offset+=test.offsetTop;
+				test=test.offsetParent;
+			}
+			offset+=test.offsetTop;
+			if(offset<bottom){
+				elements[i].src=elements[i].getAttribute('data-src');
+				elements[i].removeAttribute('data-src');
+			}else{
+				count++;
+				break;
+			}
+		}
+	}
+	if(!count && e && e.type=='scroll'){
+		if(window.addEventListener){
+			window.removeEventListener('scroll',ImageLazy,false);
+		}else{
+			window.detachEvent('onscroll',ImageLazy);
+		}
+	}
+	if(count && (!e||e.type=='load')){
+		if(window.addEventListener){
+			window.addEventListener('scroll',ImageLazy,false);
+		}else{
+			window.attachEvent('onscroll',ImageLazy);
+		}
+	}
+}
+

@@ -1,0 +1,135 @@
+ME AND MY BLACK APPLE
+
+SEARCH
+
+How to fix video rendering problems in FCPX High SIERRA (hardware encoding and HEVC support)
+March 15, 2018
+Here's how to use the AMD RX Polaris, Nvidia graphics card or iGPU to fix video rendering issues in Final Cut Pro X or any other video encoding/decoding/rendering process on Intel-based Black Apple by enabling hardware encoding and/or HEVC support. And performance issues.
+Many friends seem to be using New Problems with High Sierra and FCPX 10.X running Black Apple. So I recently tried it with RX 580. Is it possible to encounter the same problem with everyone? Here are a few questions:
+The export is slow and even the exit fails.
+Graphic artifacts should not be there.
+Conversions and effects do not work, fail or cause freezing.
+FCPX freezes macOS randomly, but the mouse can still move.
+When the small change, the mouse turns into an endless rotating ball.
+I have received a lot of questions about the poor performance of the video and can see what you are talking about. If video editing is not working well and can't even be used for exporting, what does it mean to build a new black apple for video editing?
+Fortunately, this can be fixed. This is a graphics/encoding/decoding problem due to incorrect settings that are not optimized for video editing. These issues are the result of not enabling H.264 and H.265 support. FCPX uses Intel CPU / iGPU and dGPU for rendering, so it's best to try and use iGPU and use it with AMD RX 580 or any graphics card, just like a real Mac.
+After applying the fix below, all my rendering problems disappeared, and my Bruce 5k Test dropped to a peak 93.2 crazy 9-second output time, using these:
+ XFX RX 580 GTS 8GB
+Intel i7-8700K Coffee Lake 6-Core
+ASUS ROG Maximus X Hero (Wi-Fi AC)
+FCPX HACKINTOSH OPTIMIZATION GUIDE
+After following this guide, if the hardware code is not enabled, the export time should be reduced. This guide was created on the basis of Coffee Lake, Kaby Lake and Sky Lake*, because if you are using an older version, not all steps are for you, and you need to use Haswell or a higher hardware code from iGPU. Support and HEVC support You need Sky Lake or higher and use High Sierra. MOUNT EFI PARTITION: Open Clover Configurator
+
+
+
+
+ 
+Select  Mount EFI  under TOOLS
+Click  Mount Partition  for Install macOS....
+Click  Open Partition
+KEXT UPDATES:
+After mounting the EFI partition we need to make sure we our using the latest version of each of these kexts as they fix various compatibility issues with the latest hardware.
+Download  the latest RELEASE.zip of  Shiki.kext  
+Copy & Paste  Shiki.kext  into EFI/CLOVER/kexts/Other
+Download  the latest RELEASE.zip of  Lilu.kext  
+Copy & Paste  Lilu.kext  into EFI/CLOVER/kexts/Other
+Download  the most recent version of  IntelGraphicsFixup.kext
+Paste  IntelGraphicsFixup.kext  into EFI/CLOVER/kexts/Other
+AMD?
+Download  the most recent version of WhateverGreen.kext 
+Paste WhateverGreen.kext  into EFI/CLOVER/kexts/Other 
+Nvidia?
+Download  the most recent version of NvidiaGraphicsFixup.kext 
+Paste NvidiaGraphicsFixup.kext  into EFI/CLOVER/kexts/Other 
+Download  the most recent version of  FAKEPCIID
+Unzip  RehabMan-FakePCIID folder
+Copy  FakePCIID.kext  and  FakePCIID_Intel_HD_Graphics.kext  from the  Release  folder of Rehabman-FAKEPCIID
+Paste  FakePCIID.kext  and FakePCIID_Intel_HD_Graphics.kext to  EFI/CLOVER/kexts/Other  
+CONFIG.PLIST CHANGES:
+Navigate to Volumes/EFI/EFI/CLOVER/ 
+Open config.plist with Clover Configurator   
+Select System Parameters on left-side column  
+Verify Inject Kexts is set to Yes   
+Select Boot on left-side column  
+Under Custom flags add:  
+ AMD users:
+shikigva=4
+-rad4200
+ Nvidia users:
+shikigva=12
+Intel iGPU-only users:
+shikigva=1
+Kaby Lake & Coffee Lake Users:
+Select Devices on left-side column  
+Set IntelGFX box to: or if using an i3-8100/i3-8350k set to:   0x59128086  0x59168086
+Select Graphics on left-side column  
+Using Nvidia or AMD
+Set ig-platform-id to:   0x59120003
+Using Intel iGPU 
+Set ig-platform-id to:   0x59120000
+DSDT PATCHING
+HECI -> IMEI Patch
+Is needed in config.plist in order for the iGPU + dGPU to still function properly after sleep, along with the other two DSDT patches  GFX0 -> IGPU and PEGP -> GFX0  patch when you have integrated and dedicated graphics running at the same time. Without these patches the fixes in this guide wont persist through sleep and everything will break.    
+In config.plist Select Acpi  on left-side column of Clover Configurator   
+Verify you have the following under DSDT -> Patches. It's important that GFX0 -> iGPU is before PEGP -> GFX0 
+HECI -> IMEI Patch
+Comment:  change HECI to IMEI
+Find* [Hex]:  48454349
+Replace [Hex]:  494d4549
+GFX0 -> IGPU Patch
+Comment:  change GFX0 to IGPU
+Find* [Hex]:  47465830
+Replace* [Hex] :  49475055
+ PEGP -> GFX0 Patch
+Comment: change PEGP to GFX0 
+Find* [Hex]: 50454750 
+Replace [Hex]: 47465830 
+Save  config.plist
+Restart  Hackintosh & Enter BIOS
+
+BIOS CHANGES:
+In the BIOS, there are two very important settings that determine whether FCPX reliability can be used. The first is to change the initial or primary display/graphic to dGPU or iGPU, as placing it "automatic" will result in performance degradation. The next setting is to always enable IGPU after FCPX uses it. The settings in Gigabyte are easy to find, but the settings for Asus, ASRock and MSI motherboards are disguised as IGPU multi-monitors. In order to obtain the hardware coding of the FCPX, it is necessary to enable iGPU at all times. If you have an iGPU multi-monitor setup, set it up before setting up the primary/initial display, as it may reset the latter to iGPU without knowing it. Also set DVMT pre-allocated/shared memory. If you don't see it in the right place, set the other two settings correctly and re-enter the BIOS, and it should be there, because sometimes you need to enable IGPU first to change it.
+
+Gigabyte:
+Chipset  Å® Integrated Graphics :  Enabled
+Chipset  Å® DVMT Pre-Allocated : 128 M
+Nvidia or AMD
+Peripherals  Å® Initial Display Output :  PCIe 1 Slot
+Intel iGPU
+Peripherals  Å® Initial Display Output : IGFX 
+ASUS:
+Advanced \ System Agent(SA) Configuration Å® IGPU Multi-Monitor :  Enabled
+Advanced \ System Agent(SA) Configuration Å® DVMT pre-Allocated :  128M
+Nvidia or AMD
+Advanced \ System Agent(SA) Configuration Å® Primary Display :  PCIE
+Intel iGPU
+Advanced \ System Agent(SA) Configuration Å® Primary Display : CPU Graphics 
+ASRock:
+Advanced \ Chipset Configuration Å® IGPU Multi-Monitor :  Enabled
+Advanced \ Chipset Configuration Å® Share Memory :  128MB
+Nvidia or AMD
+Advanced \ Chipset Configuration Å® Primary Graphics Adapter : PCI Express 
+Intel iGPU
+Advanced \ Chipset Configuration Å® Primary Graphics Adapter :  Onboard
+MSI:
+Advanced \ Integrated Graphics Configuration Å® IGD Multi-Monitor : [ Enabled] 
+Advanced \ Integrated Graphics Configuration Å® DVMT Pre-Allocated : [ 128M]
+Nvidia or AMD
+Advanced \ Integrated Graphics Configuration Å® Initiate Graphic Adapter : [PEG] 
+iGPU?
+Advanced \ Integrated Graphics Configuration Å® Initiate Graphic Adapter : [ IGD]
+SUCCESS?
+After changing the BIOS settings, start macOS and see what happens.
+
+Everything works and runs? Yes, no? The above settings work for me, but everyone's installation / EFI / parts may vary. If for any reason the above steps still do not eliminate the performance issue, the graphics kext injected via Clover may not work properly. To correct this problem, we can move several kexts that process graphics to the kernel cache. Apple recommends placing non-Apple kexts in / Library / Extensions so that we can use that folder.
+
+
+
+If the above is not available, optional additional steps:
+Mount  EFI partition
+Copy IntelGraphicsFixup.kext & Lilu.kext & WhateverGreen.kext (If AMD)  (Make sure each kext is the latest version)      
+Paste  them in location  /Library/Extensions
+Enter Password  on prompt
+Restart  Hackintosh
+Boom!
+SHARE IT

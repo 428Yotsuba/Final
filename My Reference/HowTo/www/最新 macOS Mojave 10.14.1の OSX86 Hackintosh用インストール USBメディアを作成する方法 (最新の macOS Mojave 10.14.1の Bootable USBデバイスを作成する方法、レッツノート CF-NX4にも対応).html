@@ -1,0 +1,956 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0090)http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_create_install_usb_media_mojave/ -->
+<html lang="ja-JP"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osd.js.ダウンロード"></script><script type="text/javascript" async="" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/analytics.js.ダウンロード"></script>
+
+<!-- 雀の往来 -->
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,target-densitydpi=medium-dpi">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="keywords" content="Apple,MacBook,Hackintosh">
+<meta name="description" content="最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法">
+<title>最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)</title>
+<script src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/ca-pub-8444249238585841.js.ダウンロード"></script><script>tn_=false;function _setupIW(){}</script>
+<script>
+  var GA_TRACKING_ID = "UA-20044486-1";
+  document.write('<scr' + 'ipt async src="https://www.googletagmanager.com/gtag/js?id=' + GA_TRACKING_ID +'"></sc' + 'ript>');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  var dimension_value = location.pathname;
+  gtag('config', GA_TRACKING_ID, {
+    'custom_map': {'dimension1': 'dimension_name'}
+  });
+  gtag('event', 'pageview', {'dimension_name': dimension_value});
+</script><script async="" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/js"></script>
+<link rel="stylesheet" href="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/style.css">
+<script src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/lazy.js.ダウンロード"></script>
+<link rel="preload" href="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/f(4).txt" as="script"><script type="text/javascript" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/f(4).txt"></script><link rel="preload" href="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/f(5).txt" as="script"><script type="text/javascript" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/f(5).txt"></script><link rel="preload" href="http://pagead2.googlesyndication.com/pagead/js/r20190212/r20190131/show_ads_impl.js" as="script"><style>.amzn-lew-adsDiv{position:fixed;display:none;left:0;z-index:999;background:#FFF;margin:0;padding:0;outline:0;height:80px;-webkit-transition:height .3s ease;-moz-transition:height .3s ease;-o-transition:height .3s ease;-ms-transition:height .3s ease;transition:height .3s ease}.amzn-lew-adsDiv #amzn-lew-closeButton{cursor:pointer;width:40px;height:15px;display:none;position:absolute;right:10px;top:-15px;outline:0;margin:0;padding:0;border:1px solid rgba(255,255,255,0);border-radius:5px 5px 0 0;background-color:rgba(245,156,56,0.35);background-repeat:no-repeat;background-position:-1px -85px;z-index:999}button#amzn-lew-closeButton::before{position:absolute;content:'';left:-10px;right:-10px;top:-10px;bottom:-10px}img#amzn-lew-cues{display:inline-block;height:1em;border:0;padding:0;margin:0;outline:0;width:auto;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none}img.amzn_view_checked{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none}button::-moz-focus-inner{border:0}.amznTextLinkWidget_a::after{content:' ';display:block;position:absolute;top:0;left:0;right:0;bottom:0}.amzn-lew-a{display:block;width:100%;overflow:visible}.amzn-lew-iframe{border:1px solid #f59c38;border-bottom:0;max-height:80px;width:calc(100% - 2px)}</style></head>
+
+<body text="#FFFFFF" bgcolor="#000033" link="#66FFFF" vlink="#FF6666" alink="#FF6666" onload="ImageLazy()">
+<amp-auto-ads type="adsense" data-ad-client="ca-pub-8444249238585841">
+</amp-auto-ads>
+<pre class="column"><font class="midashi1">● URL（再）変更のお知らせ</font>
+　2019/02 猫屋敷サーバ neko.ne.jpが復旧かも？なので
+　ネットオウル株式会社が運営するスターサーバーフリー
+http://freewing.starfree.jp/
+　から
+http://www.neko.ne.jp/&amp;#126;freewing/
+　に戻しました。。。。
+</pre>
+<hr>
+      <table border="0" cellspacing="0" cellpadding="0" bgcolor="#333333">
+        <tbody><tr>
+          <td>&nbsp;</td>
+          <td align="left" valign="top">
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td><font color="#FFFFFF">■</font> <a href="http://www.neko.ne.jp/~freewing/">HOME</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;<font color="#FF0000">■</font> <a href="http://www.neko.ne.jp/~freewing/security/">Security</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;&nbsp;<font color="#FF6600">■</font> <a href="http://www.neko.ne.jp/~freewing/software/">Software</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;<font color="#FFFF00">■</font> <a href="http://www.neko.ne.jp/~freewing/hardware/">Hardware</a></td>
+              </tr>
+            </tbody></table>
+          </td>
+          <td>&nbsp;&nbsp;</td>
+          <td align="left">
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td><font color="#33FF00">■</font> <a href="http://www.neko.ne.jp/~freewing/fpga/">FPGA</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;<font color="#33FFCC">■</font> <a href="http://www.neko.ne.jp/~freewing/cpu/">CPU</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;&nbsp;<font color="#9900FF">■</font> <a href="http://www.neko.ne.jp/~freewing/android/">Android</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;<font color="#C00040">■</font> <a href="http://www.neko.ne.jp/~freewing/raspberry_pi/">Raspberry Pi</a></td>
+              </tr>
+            </tbody></table>
+          </td>
+          <td>&nbsp;&nbsp;</td>
+          <td align="left" valign="bottom">
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td><font color="#88AAFF">■</font> <a href="http://www.neko.ne.jp/~freewing/nlite/">nLite</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;<font color="#3333FF">■</font> <a href="http://www.neko.ne.jp/~freewing/xcode/">Xcode</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;&nbsp;<font color="#888888">■</font> <a href="http://www.neko.ne.jp/~freewing/etc/">etc.</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;&nbsp;&nbsp;<font color="#FFFFFF">■</font> <a href="http://www.neko.ne.jp/~freewing/sitemap.htm">ALL</a></td>
+              </tr>
+            </tbody></table>
+          </td>
+          <td>&nbsp;&nbsp;</td>
+          <td align="right" valign="bottom">
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td>
+
+<a href="http://translate.google.com/translate?hl=ja&amp;sl=ja&amp;tl=en&amp;u=http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_create_install_usb_media_mojave/"> <img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/fenglish.gif" alt="English Translate"></a>
+<a href="http://translate.google.cn/translate?hl=ja&amp;sl=ja&amp;tl=zh-CN&amp;u=http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_create_install_usb_media_mojave/"> <img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/fchinese.gif" alt="中文翻訳"></a>
+                </td>
+              </tr>
+              <tr>
+                <td align="right" valign="top">
+                <font color="#CCAAAA">■</font> <a href="http://www.neko.ne.jp/~freewing/link/">LINK</a>
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                <font color="#FFFFFF">■</font> <a href="http://www.neko.ne.jp/~freewing/software/">BACK</a></td>
+              </tr>
+            </tbody></table>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody></table>
+
+<hr noshade="" size="3" color="#FFFFFF">・<font class="datenew">[NEW] 2018/11/23</font><br>
+<h2><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh.png" alt="最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法" align="left"> 最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法</h2>(最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)<br clear="all"><br>
+Tags: [<a href="http://www.neko.ne.jp/~freewing/tags/a6229d34.htm">Apple</a>], [<a href="http://www.neko.ne.jp/~freewing/tags/13ec9b51.htm">MacBook</a>], [<a href="http://www.neko.ne.jp/~freewing/tags/ed5b2e4f.htm">Hackintosh</a>]<br>
+<hr>
+
+<script async="" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/f(6).txt"></script>
+<!-- 468x60-20140208 -->
+<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-8444249238585841" data-ad-slot="2848881440" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:468px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:468px;background-color:transparent;"><iframe width="468" height="60" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:468px;height:60px;" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/saved_resource.html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+<div style="display: inline-block; _display: inline;">
+<iframe src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/cm.html" width="234" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+</div>
+<div style="display: inline-block; _display: inline;">
+<iframe src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/cm(1).html" width="234" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+</div>
+
+<hr>
+<script async="" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/f(6).txt"></script>
+<!-- レスポンシブ リンク -->
+<ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-8444249238585841" data-ad-slot="4428915448" data-ad-format="link" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:1200px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:1200px;background-color:transparent;"><iframe width="1200" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:1200px;height:90px;" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+<hr>
+<font class="midashi1">● Mojaveの夢を観た！</font><br>
+<br>
+　macOS Mojave 10.14.1 (18B75)<br>
+<br>
+　Mojaveにもアップデートが提供されて 10.14.1になりました。<br>
+　そこで、久しぶりに Mojaveのハッキントッシュの夢を観ようと思いつきました。<br>
+<br>
+　2018/09/25 10.14   18A391<br>
+　2018/10/30 10.14.1 18B75<br>
+　2018/12/05 10.14.2 18C54<br>
+　2019/01/22 10.14.3 18D42<br>
+<br>
+<a href="https://www.apple.com/jp/macos/mojave/" target="_blank">macOS Mojave パワーに満ちたシンプル。</a>
+<br>
+<br>
+<a href="https://itunes.apple.com/ca/app/macos-mojave/id1398502828?mt=12" target="_blank">macOS Mojave Apple</a>
+<br>
+<br>
+<font class="midashi1">●用意する物 16GB以上の USBメモリスティック</font><br>
+<br>
+　SanDisk Cruzer Fit 16GBを使用しました。<br>
+<br>
+<table border="2" cellspacing="0" cellpadding="4" bordercolor="white" style="border-collapse: collapse;">
+<tbody><tr><td width="25%">
+<iframe src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/cm(2).html" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<br>
+<a href="http://www.amazon.co.jp/gp/product/B005FYNSZA/ref=as_li_tf_tl?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=B005FYNSZA&amp;linkCode=as2&amp;tag=freewing-22">サンディスク USBメモリ 16GB SDCZ33-016G 高速 並行輸入品 海外パッケージ品</a><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/ir(1)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"><br>
+ASIN: B005FYNSZA
+<br>
+</td><td width="25%">
+<iframe src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/cm(3).html" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<br>
+<a href="http://www.amazon.co.jp/gp/product/B00IUF54JE/ref=as_li_tf_tl?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=B00IUF54JE&amp;linkCode=as2&amp;tag=freewing-22">SanDisk Cruzer Fit USBフラッシュメモリー 16GB (5年間保証)【正規代理店品】 SDCZ33-016G-J57</a><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/ir(2)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"><br>
+ASIN: B00IUF54JE
+<br>
+</td><td width="25%">
+<iframe src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/cm(4).html" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<br>
+<a href="http://www.amazon.co.jp/gp/product/B07B6G8VJC/ref=as_li_tf_tl?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=B07B6G8VJC&amp;linkCode=as2&amp;tag=freewing-22">SanDisk USBメモリ 32GB USB3.1 &amp; USB 3.0 Ultra Fit フラッシュドライブ 【正規代理店品】 (5年保証) SDCZ430-032G-J57</a><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/ir(3)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"><br>
+ASIN: B07B6G8VJC
+<br>
+</td><td width="25%">
+<iframe src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/cm(5).html" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<br>
+<a href="http://www.amazon.co.jp/gp/product/B077VYCV37/ref=as_li_tf_tl?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=B077VYCV37&amp;linkCode=as2&amp;tag=freewing-22">SanDisk ( サンディスク ) 64GB ULTRA Fit USB3.1 フラッシュドライブ ( 読取 最大130MB/s ) SDCZ430-064G ［ 海外パッケージ品 ］</a><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/ir(4)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"><br>
+ASIN: B077VYCV37
+<br>
+</td></tr>
+</tbody></table>
+<br>
+<hr>
+<font class="midashi1">●使用したアプリ/設定ファイル</font><br>
+<br>
+　・Clover EFI bootloader r4769 Clover_v2.4k_r4769.zip<br>
+<a href="https://sourceforge.net/projects/cloverefiboot/files/Installer/" target="_blank">Clover EFI bootloader download - SourceForge.net</a>
+<br>
+<a href="https://clover-wiki.zetam.org/Contents" target="_blank">Clover Wiki</a>
+<br>
+　Windowsで macOSの夢をする為のブートローダーを作成します。<br>
+<br>
+2018-12-01 Clover_v2.4k_r4784.zip<br>
+2018-11-19 Clover_v2.4k_r4769.zip<br>
+<br>
+　・Clover Configurator 5.3.2.0<br>
+<a href="https://mackie100projects.altervista.org/download-clover-configurator/" target="_blank">Download Clover Configurator 5.3.2.0 - mackie100 projects</a>
+<br>
+　config.plist設定ファイルを変更するのに使用します。<br>
+<br>
+　・Kext Updater 2.6.2.zip 12.4MB 2018-11-20<br>
+<a href="https://www.insanelymac.com/forum/topic/334222-kext-updater-keep-your-kexts-fresh-with-only-one-click/" target="_blank">Kext Updater: Keep your Kexts fresh with only one Click</a>
+<br>
+<a href="https://bitbucket.org/profdrluigi/kextupdater/downloads/" target="_blank">ProfDrLuigi  kextupdater ダウンロード</a>
+<br>
+　kextをダウンロードするのに使用します。<br>
+<br>
+2018/12/01 Kext Updater 2.6.6.zip<br>
+<br>
+　・Hackintosher-Mojave-10.14-EFI.zip<br>
+<a href="https://hackintosher.com/guides/how-to-make-a-macos-10-14-mojave-flash-drive-installer/" target="_blank">HOW TO MAKE A MACOS 10.14 MOJAVE FLASH DRIVE INSTALLER</a>
+<br>
+　この中の config.plist設定ファイルだけを使います。<br>
+　config.plist設定ファイルを元に設定内容の修正と追加を行ないます。<br>
+<br>
+<hr>
+<font class="midashi1">●使用した Windowsパソコン</font><br>
+<br>
+<font class="midashi1">● Skylake 第6世代Intel Coreプロセッサ</font><br>
+　HYSTOU Core i3 6100U<br>
+<br>
+・<font class="datetime">2016/10/28</font><br>
+<a href="http://www.neko.ne.jp/~freewing/hardware/hystou_barebone_fmp03_i3_6100u/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/hystou_barebone.png" alt="HYSTOU FMP03 Intel Skylake Core i3-6100U搭載 ファンレス 中華ベアボーン" align="left"> <br>HYSTOU FMP03 Intel Skylake Core i3-6100U搭載 ファンレス 中華ベアボーン</a><br>&nbsp;&nbsp;AliExpress.comで中華ベアボーンを買ってみた HYSTOU FMP03 Fanless Mini PC<br clear="all">
+<br>
+<hr>
+<font class="midashi1">● Windowsパソコンで macOS Mojaveの夢を観た！</font><br>
+<br>
+　手順：<br>
+<font class="midashi2">　1) Apple公式の方法で macOS Mojaveの USBインストールメディアを作成する</font><br>
+<font class="midashi2">　2) Clover EFI bootloader r4769を使用して EFIブート領域を作成する</font><br>
+<font class="midashi2">　3) config.plist設定ファイルを Hackintosher-Mojave-10.14-EFI.zipの物に差し替える</font><br>
+<font class="midashi2">　4) Clover Configurator 5.3.2.0を使用して config.plist設定ファイルを変更する</font><br>
+<font class="midashi2">　5) Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする</font><br>
+　6) 作成した USBインストールメディアを使用して Mojaveをインストールする夢<br>
+<br>
+<hr>
+<font class="midashi1">● Mojave インストール USBメディアを作成するには本物の Mac環境が最初に必要です</font><br>
+<br>
+　Windowsパソコン用 インストール USBメディアを作成するには本物の Mac環境が最初に必要です。<br>
+　一旦 OSX86 Hackintosh環境が構築出来れば以降は不要です。<br>
+　（その場合は動作する OSX86 Hackintosh環境を破壊しない様に注意）<br>
+<br>
+<hr>
+<font class="midashi1">● 手順 1) Apple公式の方法で macOS Mojaveの USBインストールメディアを作成する</font><br>
+<br>
+<a href="https://support.apple.com/ja-jp/HT201372" target="_blank">macOS の起動可能なインストーラを作成する方法</a>
+<br>
+<br>
+　1) Disk Utility.appを起動する<br>
+<br>
+・Disk Utility.appを起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_1.png" alt="Disk Utility.appを起動する"><br><br>
+<br>
+<br>
+　2) USBメモリを Disk Utility.appで初期化する<br>
+　　Name: USB （ここで入力した名前は下記のコマンドラインの所で使用します）<br>
+　　Format: Max OS Extended (Journaled)<br>
+　　Scheme: GUID Partition Map<br>
+<br>
+・USBメモリを Disk Utility.appで初期化する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_2.png" alt="USBメモリを Disk Utility.appで初期化する">
+<br>
+　ディスク類の表示がシンプルな場合は、左上の設定で「Show All Devices」を確認する。<br>
+<br>
+・USBメモリを Disk Utility.appで初期化する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_3.png" alt="USBメモリを Disk Utility.appで初期化する">
+<br>
+　左上の設定で「Show All Devices」を選択する。<br>
+<br>
+・USBメモリを Disk Utility.appで初期化する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_4.png" alt="USBメモリを Disk Utility.appで初期化する"><br><br>
+<br>
+・USBメモリを Disk Utility.appで初期化する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_5.png" alt="USBメモリを Disk Utility.appで初期化する">
+<br>
+　USBメディアを選択して Eraseで消去する。<br>
+　　Name: USB （ここで入力した名前は下記のコマンドラインの所で使用します）<br>
+　　Format: Max OS Extended (Journaled)<br>
+　　Scheme: GUID Partition Map<br>
+<br>
+・USBメモリを Disk Utility.appで初期化する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_6.png" alt="USBメモリを Disk Utility.appで初期化する"><br><br>
+<br>
+・USBメモリを Disk Utility.appで初期化する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_7.png" alt="USBメモリを Disk Utility.appで初期化する"><br><br>
+<br>
+・USBメモリを Disk Utility.appで初期化する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_8.png" alt="USBメモリを Disk Utility.appで初期化する"><br><br>
+<br>
+<br>
+　3) macOS Mojaveを Macの App Storeからダウンロードする<br>
+<br>
+　　macOSのダウンロードは App Store経由なので Mac環境が必要です。<br>
+<br>
+・macOS Mojaveを Macの App Storeからダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_10.png" alt="macOS Mojaveを Macの App Storeからダウンロードする"><br><br>
+<br>
+<br>
+　4) Apple公式の方法で USBインストールメディアを作成する（10.14.1）<br>
+sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/USB<br>
+　　/Volumes/USBの USBは (2)でフォーマット時の Nameの入力内容と同じ。<br>
+<br>
+　※ ここで作成した USBインストールメディアは本物の Macで使用出来ます。<br>
+<br>
+・macOS Mojaveを Macの App Storeからダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_11.png" alt="macOS Mojaveを Macの App Storeからダウンロードする"><br><br>
+<br>
+　LaunchPadから Other（その他）を選択して、<br>
+・macOS Mojaveを Macの App Storeからダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_12.png" alt="macOS Mojaveを Macの App Storeからダウンロードする"><br><br>
+<br>
+　Terminal（ターミナル）を起動します。<br>
+<br>
+・macOS Mojaveを Macの App Storeからダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_13.png" alt="macOS Mojaveを Macの App Storeからダウンロードする"><br><br>
+<br>
+<pre class="column">sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/USB
+</pre>
+　を入力して実行します。<br>
+<br>
+・macOS Mojaveを Macの App Storeからダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_14.png" alt="macOS Mojaveを Macの App Storeからダウンロードする"><br><br>
+<br>
+　Password:はログインアカウントのパスワードを入力します。<br>
+<br>
+・macOS Mojaveを Macの App Storeからダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_15.png" alt="macOS Mojaveを Macの App Storeからダウンロードする"><br><br>
+<br>
+　Yを入力して処理を続行します。<br>
+　USBメディアに Mojaveインストーラーをインストールします。<br>
+<br>
+・macOS Mojaveを Macの App Storeからダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_16.png" alt="macOS Mojaveを Macの App Storeからダウンロードする">
+<br>
+　USBメディアに Mojaveインストーラーをインストールします。<br>
+<br>
+・macOS Mojaveを Macの App Storeからダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_1_17.png" alt="macOS Mojaveを Macの App Storeからダウンロードする">
+<br>
+　しばらく待って、コマンドラインに戻ったら Mojaveインストーラーの作成が完了です。<br>
+<br>
+<hr>
+<font class="midashi1">● 手順 2) Clover EFI bootloader r4769を使用して EFIブート領域を作成する</font><br>
+<br>
+　USBインストールメディアに OSX86 Hackintosh用の特製ブートローダー Clover EFI bootloaderを組み込みます。<br>
+　Clover EFI bootloaderの働きで Windowsパソコンで macOSの夢が観れます。<br>
+　※ 正確には Clover EFI bootloaderと efiファイルや kextファイル等のおかげ<br>
+<br>
+　1) Clover EFI bootloaderをダウンロードして実行する<br>
+<br>
+・Clover EFI bootloaderをダウンロードして実行する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_1.png" alt="Clover EFI bootloaderをダウンロードして実行する"><br><br>
+<br>
+<br>
+　unidentified developer<br>
+　実行する時に「不明な開発者」で怒られる場合は右クリックで「開く」で実行出来ます。<br>
+<a href="https://support.apple.com/ja-jp/HT202491" target="_blank">Mac で App を安全に開く</a>
+<br>
+<br>
+・Clover EFI bootloaderをダウンロードして実行する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_2.png" alt="Clover EFI bootloaderをダウンロードして実行する"><br><br>
+<br>
+・Clover EFI bootloaderをダウンロードして実行する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_3.png" alt="Clover EFI bootloaderをダウンロードして実行する"><br><br>
+<br>
+・Clover EFI bootloaderをダウンロードして実行する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_4.png" alt="Clover EFI bootloaderをダウンロードして実行する"><br><br>
+<br>
+<br>
+・Clover EFI bootloader実行する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_5.png" alt="Clover EFI bootloader実行する"><br><br>
+<br>
+・Clover EFI bootloader実行する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_6.png" alt="Clover EFI bootloader実行する"><br><br>
+<br>
+・Clover EFI bootloader実行する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_7.png" alt="Clover EFI bootloader実行する"><br><br>
+<br>
+<br>
+　2) Clover EFIのインストール先を USBメディアにする<br>
+<br>
+・Clover EFI bootloader実行する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_8.png" alt="Clover EFI bootloader実行する">
+<br>
+<font class="midashi2">　"Machintosh HD"は Mac本体なので注意！！！</font><br>
+<font class="midashi2">　※ 間違って Mac本体側の EFI領域を選択しない様に注意！！！（Mac本体側を Cloverで書き換えると Macが起動しなくなる）</font><br>
+<br>
+　Change Install Location...で Clover EFIのインストール先を USBメディアにする<br>
+<br>
+・Clover EFI bootloader実行する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_9.png" alt="Clover EFI bootloader実行する"><br><br>
+<br>
+・Clover EFI bootloader実行する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_10.png" alt="Clover EFI bootloader実行する">
+<br>
+<font class="midashi2">　"Install macOS Mojave"を確認して、Customizeを押す。</font><br>
+<br>
+　3) Clover EFIでインストールする efi拡張ファイルを選択する<br>
+<br>
+・Clover EFIでインストールする efi拡張ファイルを選択する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_11.png" alt="Clover EFIでインストールする efi拡張ファイルを選択する">
+<br>
+　初期状態から下記の様に変更する。<br>
+<br>
+　Clover EFI bootloaderで全てインストール可能<br>
+drivers64UEFI<br>
+<pre class="column"><font class="midashi1">* Clover for UEFI booting only</font>
+<font class="midashi1">* Install Clover in the ESP</font>
+<font class="midashi1">* Boot Sectors</font>
+Don't update MBR and PBR sectors
+
+<font class="midashi1">* UEFI Drivers</font>
+DataHubDxe-64.efi
+FSInject-64.efi
+SMCHelper-64.efi
+VBoxHfs-64.efi
+ApfsDriverLoader-64.efi
+AptioMemoryFix-64.efi
+PartitionDxe-64.efi
+
+<font class="midashi1">* FileVault 2 UEFI Drivers</font>
+AppleImageCodec-64.efi
+AppleKeyAggregator-64.efi
+AppleUITheme-64.efi
+FirmwareVolume-64.efi
+※ FileVault2は Mac OS X Lionで搭載されたディスク全体を暗号化する仕組み
+</pre>
+<br>
+・Clover EFIでインストールする efi拡張ファイルを選択する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_12.png" alt="Clover EFIでインストールする efi拡張ファイルを選択する"><br><br>
+<br>
+・Clover EFIでインストールする efi拡張ファイルを選択する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_13.png" alt="Clover EFIでインストールする efi拡張ファイルを選択する"><br><br>
+<br>
+・Clover EFIでインストールする efi拡張ファイルを選択する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_14.png" alt="Clover EFIでインストールする efi拡張ファイルを選択する"><br><br>
+<br>
+・Clover EFIでインストールする efi拡張ファイルを選択する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_15.png" alt="Clover EFIでインストールする efi拡張ファイルを選択する">
+<br>
+　設定が完了したら Installを押す。<br>
+<br>
+　4) Clover EFI bootloaderをインストールする<br>
+<br>
+・Clover EFI bootloaderをインストールする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_16.png" alt="Clover EFI bootloaderをインストールする"><br><br>
+<br>
+・Clover EFI bootloaderをインストールする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_17.png" alt="Clover EFI bootloaderをインストールする"><br><br>
+<br>
+・Clover EFI bootloaderをインストールする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_18.png" alt="Clover EFI bootloaderをインストールする"><br><br>
+<br>
+・Clover EFI bootloaderをインストールする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_2_19.png" alt="Clover EFI bootloaderをインストールする">
+<br>
+　Installation Complete !で Clover EFI bootloaderのインストールが完了。<br>
+<br>
+<font class="midashi2">　※ この状態で、USBメディアの EFI領域をマウントしているので後の作業がスムーズに出来ます。</font><br>
+<br>
+<font class="midashi1">● EFI領域とは？</font><br>
+<br>
+　EFI領域とは Extensible Firmware Interfaceの略で、EFIシステム パーティションとも呼ばれます。<br>
+　一言で言えばパソコンの起動時に必要な領域で、今回の USBメディアの場合は Windowsで Mojaveのインストーラを動かす為に必要となります。<br>
+<br>
+<hr>
+<font class="midashi1">● 手順 3) config.plist設定ファイルを Hackintosher-Mojave-10.14-EFI.zipの物に差し替える</font><br>
+<br>
+　Hackintosher-Mojave-10.14-EFI.zipの config.plist設定ファイルを使用します。<br>
+<br>
+　1) Hackintosher-Mojave-10.14-EFI.zipを解凍する<br>
+　2) config.plist設定ファイルを USBの EFI領域の EFI/CLOVERに上書きする<br>
+<br>
+　※ Clover EFI bootloader r4769で自動生成した config.plistだとメーカー製のノートパソコンでリンゴロゴで停止して macOSのインストーラーが起動しませんでした。<br>
+　config.plistを適切に設定すればもちろん動く様になるが、どの項目が影響しているのか調べるのが面倒なので「動く物に差し替え」の解決方法を選んだ。<br>
+<br>
+<hr>
+<font class="midashi1">● 手順 4) Clover Configurator 5.3.2.0を使用して config.plist設定ファイルを変更する</font><br>
+<br>
+　手順 3で上書きした Hackintosher-Mojave-10.14-EFI.zipの config.plist設定ファイルを元にして変更します。<br>
+<br>
+　変更内容は、<br>
+　・Cloverの起動オプションを変更（WhatEverGreen.kext対応）<br>
+　・UseIntelHDMIを「無効」に変更（WhatEverGreen.kext対応）<br>
+　・DVMT Prealloc 32MBパッチ（ノートパソコン対応）<br>
+　・Clover起動時のメニューに不要なパーティションを表示しない設定<br>
+　・Inject Intelを「無効」に変更（WhatEverGreen.kext対応）<br>
+　・SMBIOSの機種設定で iMac 17,1を設定（Skylake対応）<br>
+　・NvidiaWebを「無効」に変更（WhatEverGreen.kext対応）<br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_1.png" alt="Clover Configurator 5.3.2.0を起動する"><br><br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_2.png" alt="Clover Configurator 5.3.2.0を起動する"><br><br>
+<br>
+・config.plist設定ファイルを読み込む<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_3.png" alt="config.plist設定ファイルを読み込む"><br><br>
+<br>
+・config.plist設定ファイルを読み込む<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_4.png" alt="config.plist設定ファイルを読み込む">
+<br>
+　手順 3で上書きした Hackintosher-Mojave-10.14-EFI.zipの config.plist設定ファイルを読み込む。<br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_5.png" alt="Clover Configurator 5.3.2.0を起動する"><br><br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_6.png" alt="Clover Configurator 5.3.2.0を起動する">
+<br>
+　・Cloverの起動オプションを変更（WhatEverGreen.kext対応）<br>
+　　-disablegfxfirmwareをオフ（WhatEverGreen.kext対応）<br>
+　　Custom Flagsを空に（WhatEverGreen.kext対応）<br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_7.png" alt="Clover Configurator 5.3.2.0を起動する"><br><br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_8.png" alt="Clover Configurator 5.3.2.0を起動する"><br><br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_9.png" alt="Clover Configurator 5.3.2.0を起動する">
+<br>
+　・UseIntelHDMIを「無効」に変更（WhatEverGreen.kext対応）<br>
+　・DVMT Prealloc 32MBパッチ（ノートパソコン対応）<br>
+<br>
+・<font class="datenew">[NEW] 2018/11/11</font><br>
+<a href="http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_intel_graphic_dvmt_32mb/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh.png" alt="OSX86 Hackintoshで DVMT Pre-Allocated 32MBでも動く様にする WhateverGreen.kextでのパッチ方法" align="left"> <br>OSX86 Hackintoshで DVMT Pre-Allocated 32MBでも動く様にする WhateverGreen.kextでのパッチ方法</a><br>&nbsp;&nbsp;BIOSに DVMT Pre-Allocatedの設定項目が無いノートパソコンでも Mac Mojaveの夢を観る方法<br clear="all">
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_10.png" alt="Clover Configurator 5.3.2.0を起動する"><br><br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_11.png" alt="Clover Configurator 5.3.2.0を起動する">
+<br>
+　・Clover起動時のメニューに不要なパーティションを表示しない設定<br>
+　　下記のパーティションは使用しないので Clover Menuに表示しない様にします。<br>
+　　・Boot FileVault Preloader from Preboot<br>
+　　・Boot macOS Install Prebooter from Preboot<br>
+　　・Boot Recovery from Recovery（リカバリパーティション）<br>
+<pre class="column">Recovery
+Preboot
+</pre>
+<br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_12.png" alt="Clover Configurator 5.3.2.0を起動する">
+<br>
+　・Inject Intelを「無効」に変更（WhatEverGreen.kext対応）<br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_13.png" alt="Clover Configurator 5.3.2.0を起動する"><br><br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_14.png" alt="Clover Configurator 5.3.2.0を起動する"><br><br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_15.png" alt="Clover Configurator 5.3.2.0を起動する">
+<br>
+　・SMBIOSの機種設定で iMac 17,1を設定（Skylake対応）<br>
+<br>
+・Clover Configurator 5.3.2.0を起動する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_16.png" alt="Clover Configurator 5.3.2.0を起動する">
+<br>
+　・NvidiaWebを「無効」に変更（WhatEverGreen.kext対応）<br>
+<br>
+<font class="midashi1">● WhatEverGreen.kext対応で無効にする項目</font><br>
+<br>
+<a href="https://www.insanelymac.com/forum/topic/334899-intel-framebuffer-patching-using-whatevergreen/" target="_blank">Intel Framebuffer patching using WhateverGreen</a>
+<br>
+Preliminary<br>
+<font class="midashi1">・ 1. Remove:</font><br>
+- FakePCIID_Intel_HD_Graphics<br>
+- IntelGraphicsFixup<br>
+- NvidiaGraphicsFixup<br>
+- CoreDisplayFixup<br>
+- Shiki<br>
+<font class="midashi1">・ 2. Turn off all graphics injections in Clover:</font><br>
+- config.plist/Graphics/Inject/ATI=NO<br>
+- config.plist/Graphics/Inject/Intel=NO<br>
+- config.plist/Graphics/Inject/NVidia=NO<br>
+- config.plist/Graphics/ig-platform-id=<br>
+- config.plist/Devices/FakeID/IntelGFX=<br>
+<font class="midashi1">・ 3. Disable DSDT Clover fixes:</font><br>
+- AddHDMI<br>
+- FixDisplay<br>
+- FixIntelGfx<br>
+- AddIMEI<br>
+<font class="midashi1">・ 4. Disable UseIntelHDMI</font><br>
+<font class="midashi1">・ 5. Remove boot argument: -disablegfxfirmware</font><br>
+<br>
+<font class="midashi1">● Clover Configuratorで変更した差分</font><br>
+<br>
+　Hackintosher-Mojave-10.14-EFI.zipの config.plistとの差分。<br>
+<br>
+・Clover Configuratorで変更した差分<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_17.png" alt="Clover Configuratorで変更した差分"><br><br>
+<br>
+・Clover Configuratorで変更した差分<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_18.png" alt="Clover Configuratorで変更した差分"><br><br>
+<br>
+・Clover Configuratorで変更した差分<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_19.png" alt="Clover Configuratorで変更した差分"><br><br>
+<br>
+・Clover Configuratorで変更した差分<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_20.png" alt="Clover Configuratorで変更した差分"><br><br>
+<br>
+・Clover Configuratorで変更した差分<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_4_21.png" alt="Clover Configuratorで変更した差分"><br><br>
+<br>
+<br>
+<hr>
+<font class="midashi1">● 手順 5) Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする</font><br>
+<br>
+　最後に Kext Updaterを使用して kextをダウンロードします。<br>
+　Kext Updaterを使用する事で、自分で kextの各サイトにアクセスしてダウンロードする手間が省けます。<br>
+<br>
+　kextは下記を入れましたが、動作させる環境によっては微調整が必要となります。<br>
+<br>
+kexts/Other<br>
+<pre class="column"><font class="midashi2">AirportBrcmFixup.kext</font>
+AppleALC.kext
+AtherosE2200Ethernet.kext
+CodecCommander.kext
+FakeSMC.kext
+<font class="midashi2">HibernationFixup.kext</font>
+IntelMausiEthernet.kext
+Lilu.kext
+NullCPUPowerManagement.kext
+RealtekRTL8111.kext
+USBInjectAll.kext
+<font class="midashi2">VoodooPS2Controller.kext</font>
+<font class="midashi2">WhateverGreen.kext</font>
+</pre>
+<font class="midashi2">AirportBrcmFixup.kext</font><br>
+　AzureWave AW-NB290の Broadcom BCM943225HMB WiFiを有効にするため。<br>
+<br>
+<font class="midashi2">HibernationFixup.kext</font><br>
+　ハイバネーションに有効そうだから入れてみたテスト。<br>
+<br>
+<font class="midashi2">VoodooPS2Controller.kext</font><br>
+　ノートパソコンで PS2接続のキーボードに対応する場合に備えて。<br>
+<br>
+<font class="midashi2">WhateverGreen.kext</font><br>
+　IntelGraphicsFixup.kextが WhateverGreen.kextに置き換わったため。<br>
+<br>
+・Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_5_1.png" alt="Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする">
+<br>
+　Check for updatesで Startを押してアップデートをチェックする。<br>
+<br>
+・Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_5_2.png" alt="Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする">
+<br>
+　Load Single Kextで必要な Kextを選択して Startを押してダウンロードする。<br>
+　上記の 13個をダウンロードする。<br>
+<br>
+・Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_5_3.png" alt="Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする">
+<br>
+　ダウンロードした Kextファイルを EFI領域の EFI/CLOVER/kexts/Otherにコピーする。<br>
+<br>
+・Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_5_4.png" alt="Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする"><br><br>
+<br>
+・Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_5_5.png" alt="Kext Updater 2.6.2を使用して Hackintoshに必要な kextをダウンロードする"><br><br>
+<br>
+<br>
+<hr>
+<font class="midashi1">●バニラ状態で macOS Mojaveを OSX86 Hackintoshする事の意義</font><br>
+<br>
+　なお、ここで重要な事としては Hackintosh対応として USBブートメディア側の EFI領域だけで行なっており、macOS側のシステムファイルには改造等の変更を一切加えていないと言う事です。<br>
+　これにより macOSそのものはバニラ状態を保つ事が出来、以降の macOSのアップデート等にも最小限の影響での対応が可能となります。<br>
+<br>
+　※ 「バニラ状態」とは？<br>
+　　オリジナルの状態で改変を加えていない事。<br>
+<br>
+<a href="https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%8B%E3%83%A9_(%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2)" target="_blank">バニラ (ソフトウェア)</a>
+<br>
+　バニラとは、コンピュータソフトウェア、まれにコンピュータのハードウェアまたはアルゴリズムなどで、改変・改修・カスタマイズなどが一切行われていない、提供された状態のまま（原型を留めたままの状態）を指す。<br>
+　デフォルト設定を「バニラ」、好みに沿った出力設定を「モカ」と呼んでいた。<br>
+<br>
+<br>
+<hr>
+<font class="midashi1">● 手順 6) 作成した USBインストールメディアを使用して Mojaveをインストールする夢</font><br>
+<br>
+　上記設定の Mojaveのインストーラの起動確認は、下記の Windowsパソコンで確認しました夢。<br>
+<br>
+・<font class="datenew">[NEW] 2018/11/23</font><br>
+<a href="http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_install_mojave_from_usb_media/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh.png" alt="最新 macOS Mojave 10.14.1を Windowsパソコンにインストールする方法の夢、OSX86 Hackintosh" align="left"> <br>最新 macOS Mojave 10.14.1を Windowsパソコンにインストールする方法の夢、OSX86 Hackintosh</a><br>&nbsp;&nbsp;最新の macOS Mojave 10.14.1を Core i3 6100U Skylake Windows PCにインストールする夢見<br clear="all">
+<br>
+<font class="midashi1">● Skylake 第6世代Intel Coreプロセッサ</font><br>
+　HYSTOU Core i3 6100U Windowsパソコン<br>
+<br>
+・<font class="datetime">2016/10/28</font><br>
+<a href="http://www.neko.ne.jp/~freewing/hardware/hystou_barebone_fmp03_i3_6100u/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/hystou_barebone.png" alt="HYSTOU FMP03 Intel Skylake Core i3-6100U搭載 ファンレス 中華ベアボーン" align="left"> <br>HYSTOU FMP03 Intel Skylake Core i3-6100U搭載 ファンレス 中華ベアボーン</a><br>&nbsp;&nbsp;AliExpress.comで中華ベアボーンを買ってみた HYSTOU FMP03 Fanless Mini PC<br clear="all">
+　確認出来ている不具合：<br>
+　HDMIディスプレイ経由で音が出ない（Intel HDA HDMI Audioデバイスを認識していない）<br>
+　ディスプレイをオフにして長時間経過すると復帰しない（黒画面のままで画面表示しない）<br>
+　スリープから復帰しない（電源長押しやリセット以外に復帰方法が無い）<br>
+　＞ 省エネルギー設定で「ディスプレイをオフにしない」「スリープしない」で回避可能<br>
+<br>
+　S/PDIF光デジタルオーディオで音が出る（Windows 10では SPDIFデバイスを認識しない）<br>
+<br>
+・<font class="datetime">2016/12/20</font><br>
+<a href="http://www.neko.ne.jp/~freewing/hardware/hystou_barebone_fmp03_i3_6100u_modification/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/hystou_barebone.png" alt="中華ベアボーンに内蔵 HDD、圧電ブザーやリセットスイッチ、USB 2.0、光デジタル S/PDIFを増設する改造" align="left"> <br>中華ベアボーンに内蔵 HDD、圧電ブザーやリセットスイッチ、USB 2.0、光デジタル S/PDIFを増設する改造</a><br>&nbsp;&nbsp;HYSTOU FMP03 6100U Fanless Mini PC modification Add HDD、Reset SW、USB 2.0、SPDIF<br clear="all">
+<br>
+<font class="midashi1">● Hasswell 第4世代Intel Coreプロセッサ</font><br>
+　NEC VersaPro VK25LC-K PC-VK25LCZDK Core i3 4100M 2.5GHz 4GB<br>
+　hp Elitebook 840 G1 G4Z43EC Core i5 4300U 1.9GHz 4GB<br>
+<br>
+<font class="midashi1">● Broadwell 第5世代Intel Coreプロセッサ</font><br>
+　Panasonic Let's note CF-NX4 CF-NX4EDHCS Core i5 5300U 2.3GHz 4GB<br>
+　インストール結果<br>
+　・Intel HDグラフィックを認識しない（描画にアクセラレータが無い）<br>
+　　ただし、 Cloverの config.plistは Skylake設定のまま。<br>
+　・オーディオデバイスを認識しない（出力、入力）<br>
+　kextや config.plistを CF-NX4用に適切に書き換えれば認識するのでは？<br>
+<br>
+　・Bluetoothデバイスは認識して使える<br>
+　・リンゴロゴで進行ゲージ 3%位で起動に失敗してリブートする事が有る。<br>
+　・WiFiデバイスを認識しない（そもそも Intel系の WiFiは対応不可）<br>
+　・バッテリーの存在を認識しない（普通に動くから気にしなくても大丈夫そう）<br>
+<br>
+<font class="midashi1">● Skylake 第6世代Intel Coreプロセッサ</font><br>
+　hp Probook 450 G3 T9R66PT Core i5 6200U 2.3GHz 4GB<br>
+　hp Probook 430 G3 N6P79AV Core i5 6200U 2.3GHz 4GB<br>
+<br>
+<br>
+<hr>
+<font class="midashi1">● Intel HDA HDMI Audioデバイスを認識していない場合の対応方法</font><br>
+<br>
+　しかし、対応方法の手順が私には理解不能で試行錯誤するも解決せず。<br>
+<br>
+<a href="https://www.insanelymac.com/forum/topic/324635-applehda-hdmi-audio/" target="_blank">AppleHDA HDMI Audio</a>
+<br>
+　AppleHDA HDMI Audio<br>
+　Most audio codecs/most Intel/AMD/Nvidia graphics systems<br>
+<font class="midashi2">　11/12/18 - DEPRECATED　See  https://github.com/acidanthera/WhateverGreen</font><br>
+<font class="midashi2">　2018/11/12 この内容は WhateverGreen.kextに置き換わりました。</font><br>
+<br>
+<font class="midashi1">● Intel FB-Patcher v1.6.5 Mojave, Lilu + WhateverGreen</font><br>
+<a href="https://www.insanelymac.com/forum/topic/335018-intel-fb-patcher-v165/" target="_blank">Intel FB-Patcher v1.6.5</a>
+<br>
+<font class="midashi1">　Framebuffer Dumps（WhateverGreenも Liluも debugバージョンを使用する）</font><br>
+　Using -igfxdump<br>
+　Using -igfxfbdump<br>
+<font class="midashi1">　USB Port Patching</font><br>
+　USBInjectAll.kext<br>
+<font class="midashi1">　Audio Patching</font><br>
+　Lilu + AppleALC<br>
+<br>
+<a href="https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html" target="_blank">Intel FB-Patcher使用教程及插入姿势</a>
+<br>
+<br>
+<font class="midashi1">● FB-Patcherのダウンロード</font><br>
+<br>
+　2018/11 最新 Intel FB-Patcher v1.6.6<br>
+<br>
+<a href="http://headsoft.com.au/download/mac/FBPatcher.zip" target="_blank">http://headsoft.com.au/download/mac/FBPatcher.zip</a>
+<br>
+<br>
+<a href="https://www.insanelymac.com/forum/topic/322170-intel-hd-530-hdmi-audio-dont-work/" target="_blank">Intel HD 530 HDMI Audio don't work</a>
+<br>
+<br>
+<br>
+<hr>
+<font class="midashi1">● その他) Boot - Argumentsの darkwake=0</font><br>
+<br>
+　darkwake=0にすると Macが Sleepしない様になる。<br>
+　OS X 10.7 Lionからは darkwake=0の設定をしないと Wake-on-LAN（WoL）で起動しなくなる。<br>
+<br>
+<a href="https://discussionsjapan.apple.com/thread/10135959" target="_blank">Darkwake中にスケジュールウエイクアップできません</a>
+<br>
+<br>
+<a href="https://www.insanelymac.com/forum/topic/299222-is-power-nap-possible-for-hackintosh/" target="_blank">Is Power Nap possible for hackintosh?</a>
+<br>
+　darkwake設定は Power Nap機能と関係有るみたい。<br>
+　※ HYSTOUパソコンでスリープ後に復帰しない問題が darkwake=0で治るかな？（結果：治りませんでした）<br>
+<pre class="column">darkwake=0 -&gt; Power Nap Disabled
+darkwake=1 -&gt; Power Nap Fully Enabled (System fully wakes. Fans on, monitors on, Hourly)
+darkwake=2
+darkwake=3
+darkwake=4
+darkwake=5
+darkwake=6
+darkwake=7
+darkwake=8 -&gt; Power Nap Enabled (System Fully wakes, sometimes monitor come on, sometimes not [don't know why])
+darkwake=9
+darkwake=10 -&gt; Power Nap Enabled (Fans &amp; monitors do not come on, system.log show the times that the computer woke from sleep. Time Machine Backup are performed hourly in sleep mode)
+darkwake=11
+</pre>
+<br>
+<a href="https://support.apple.com/ja-jp/HT204032" target="_blank">Mac の Power Nap の機能について</a>
+<br>
+　Power Nap を利用すれば、Mac がスリープ状態のときでも、便利な機能を実行できます。<br>
+<br>
+<hr>
+<font class="midashi1">● その他) Clover Configurator 5.3.2.0を使用して config.plist設定ファイルを変更する</font><br>
+<br>
+　Clover EFI bootloaderの config.plist設定ファイルを変更します。<br>
+　変更内容は、<br>
+　・Cloverのテーマをクリスマスから標準に変更<br>
+　　christmasを embeddedに変更する。<br>
+　・ALCオーディオの有効化<br>
+　・DVMT Prealloc 32MBパッチ<br>
+　・SMBIOSの機種設定で iMac 17,1を設定<br>
+　その他、動作させる環境によっては微調整が必要となります。<br>
+<br>
+　HYSTOU Core i3 6100U Windowsパソコンでのインストールを確認。<br>
+<br>
+<font class="midashi3">　※ Clover EFI bootloader r4769で自動生成した config.plistだとメーカー製のノートパソコンでリンゴロゴで停止して macOSのインストーラーが起動しませんでした。</font><br>
+　config.plistを適切に設定すればもちろん動く様になるが、どの項目が影響しているのか調べるのが面倒なので Hackintosher-Mojave-10.14-EFI.zipの config.plistを使用する解決方法を選んだ。<br>
+<br>
+・Clover EFI bootloaderの config.plist設定ファイルを変更する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_diff_1.png" alt="Clover EFI bootloaderの config.plist設定ファイルを変更する"><br><br>
+<br>
+・Clover EFI bootloaderの config.plist設定ファイルを変更する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_diff_2.png" alt="Clover EFI bootloaderの config.plist設定ファイルを変更する"><br><br>
+<br>
+・Clover EFI bootloaderの config.plist設定ファイルを変更する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_diff_3.png" alt="Clover EFI bootloaderの config.plist設定ファイルを変更する"><br><br>
+<br>
+・Clover EFI bootloaderの config.plist設定ファイルを変更する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_diff_4.png" alt="Clover EFI bootloaderの config.plist設定ファイルを変更する"><br><br>
+<br>
+・Clover EFI bootloaderの config.plist設定ファイルを変更する<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_create_install_usb_media_mojave_diff_5.png" alt="Clover EFI bootloaderの config.plist設定ファイルを変更する"><br><br>
+<br>
+<br>
+<hr>
+<font class="midashi1">● Clover EFI bootloader テーマ</font><br>
+<br>
+<a href="https://clover-wiki.zetam.org/theme-database" target="_blank">Clover Theme database Repository</a>
+<br>
+<br>
+・Clover EFI bootloader テーマ クリスマス christmas<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/clover_efi_bootloader_cristmas_theme.jpg" alt="Clover EFI bootloader テーマ クリスマス christmas"><br><br>
+<br>
+・Clover EFI bootloader テーマ 標準（埋め込み）embedded<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/clover_efi_bootloader_embededd_theme.jpg" alt="Clover EFI bootloader テーマ 標準（埋め込み）embedded"><br><br>
+<br>
+・Clover EFI bootloader テーマ Unibeast tonymacx86<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/clover_efi_bootloader_tonymacx86_unibeast_theme.jpg" alt="Clover EFI bootloader テーマ Unibeast tonymacx86">
+<br>
+　tonymacx86の Unibeastのテーマが可愛いから好きです。<br>
+<br>
+<hr>
+<font class="midashi1">● Hackintosh OSX86で WiFiも Bluetoothも両方使えるコンボカード AzureWave AW-NB290H</font><br>
+<br>
+　macOS Mojave 10.14.2でも使用出来ました。<br>
+<br>
+　AzureWave AW-NB290（AW-NB290H）を購入しました。<br>
+　Hackintosh OSX86 macOS Sierraで Bluetoothも WiFiも問題無く使用出来ています。<br>
+　Broadcom BCM943225HMB BCM2070 Half Mini PCI-Express PCIe Bluetooth Wifi 無線 LANカード<br>
+<br>
+　AzureWave AW-NB290は技適付きなので技適ガー厨にも安心です。<br>
+　結果はアッサリ WiFiが使える様になりました。WiFiを認識するには AirportBrcmFixup.kextが必要です。<br>
+　Bluetoothは何もしないでも認識しました。<br>
+<br>
+・Hackintosh OSX86で WiFiも Bluetoothも両方使えるコンボカード AzureWave AW-NB290 Broadcom BCM943225HMB<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/azurewave_aw_nb290_hackintosh_osx86_wifi_bt_module_1.jpg" alt="Hackintosh OSX86で WiFiも Bluetoothも両方使えるコンボカード AzureWave AW-NB290 Broadcom BCM943225HMB"><br><br>
+<br>
+・Hackintosh OSX86で WiFiも Bluetoothも両方使えるコンボカード AzureWave AW-NB290 Broadcom BCM943225HMB<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/azurewave_aw_nb290_hackintosh_osx86_wifi_bt_module_2.jpg" alt="Hackintosh OSX86で WiFiも Bluetoothも両方使えるコンボカード AzureWave AW-NB290 Broadcom BCM943225HMB"><br><br>
+<br>
+・Hackintosh OSX86で WiFiも Bluetoothも両方使えるコンボカード AzureWave AW-NB290 Broadcom BCM943225HMB<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/azurewave_aw_nb290_hackintosh_osx86_wifi_bt_module_3.jpg" alt="Hackintosh OSX86で WiFiも Bluetoothも両方使えるコンボカード AzureWave AW-NB290 Broadcom BCM943225HMB"><br><br>
+<br>
+・Hackintosh OSX86で WiFiも Bluetoothも両方使えるコンボカード AzureWave AW-NB290 Broadcom BCM943225HMB<br>
+<img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/azurewave_aw_nb290_hackintosh_osx86_wifi_bt_module_4.jpg" alt="Hackintosh OSX86で WiFiも Bluetoothも両方使えるコンボカード AzureWave AW-NB290 Broadcom BCM943225HMB"><br><br>
+<br>
+　Broadcom BCM94313HMGBL WiFi + BT<br>
+<br>
+<font class="midashi1">● miniPCI Expressのピン配置図 miniPCIe</font><br>
+<br>
+<a href="http://pinoutguide.com/Slots/mini_pcie_pinout.shtml" target="_blank">PCI Express Mini Card (Mini PCIe) pinout</a>
+<br>
+<br>
+　Mini PCIeの WiFi Bluetoothコンボカードの種類によっては、<br>
+　・20pinマスク - WiFiを有効化する<br>
+　・51pinマスク - Bluetoothを有効化する<br>
+　が必要になります。<br>
+　俗に言う「51pin問題」で、どちらのピンも Reserved（予約）ですが、メーカー製のノートパソコンだと無線機能の ON/OFFの切り換えに独自に使用している場合があり、その機能が無いパソコンだと無線機能が無効状態になってしまい Mini PCIe基板上の WiFiや Bluetoothデバイスを認識しません。その為にカプトンテープやセロテープ等で端子部分をマスクします。もちろん該当ピンの配線をパターンカットでも良いです。<br>
+<br>
+<a href="https://www.youtube.com/watch?v=yzAKcmlaH1M" target="_blank">How to fix Intel 5100 5300 Mini-PCIE WLAN WIFI Radio on Issue (Covering Pin 20)</a>
+<br>
+　20ピンマスクの例 8:00～<br>
+<a href="https://www.youtube.com/watch?v=Mw5HLg2rGuk" target="_blank">INTEL Dual Band Wireless AC 7260 kein Bluetooth Ultrabook / Notebook / Laptop / 867 Mbit/ (Covering Pin 51)</a>
+<br>
+　51ピンマスクの例 3:16～<br>
+<br>
+<hr>
+<script async="" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/f(6).txt"></script>
+<ins class="adsbygoogle" style="display: block; height: 600px;" data-ad-format="autorelaxed" data-ad-client="ca-pub-8444249238585841" data-ad-slot="3352148243" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:1200px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:1200px;background-color:transparent;"><iframe width="1200" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0px;width:1200px;height:600px;" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/saved_resource(2).html"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr>
+Tags: [<a href="http://www.neko.ne.jp/~freewing/tags/a6229d34.htm">Apple</a>], [<a href="http://www.neko.ne.jp/~freewing/tags/13ec9b51.htm">MacBook</a>], [<a href="http://www.neko.ne.jp/~freewing/tags/ed5b2e4f.htm">Hackintosh</a>]<br>
+<hr>
+<font color="#00FFFF" size="+1">●関連するコンテンツ</font>(この記事を読んだ人は、次の記事も読んでいます)<br><br>
+<a href="http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_virtual_box/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh_virtualbox.png" alt="VirtualBoxに Mac OS X macOS Sierraをインストールの夢" align="left"> <br>VirtualBoxに Mac OS X macOS Sierraをインストールの夢</a><br>&nbsp;&nbsp;Windowsの VirtualBoxに Mac環境を作り OS Xをインストールして動かす夢を見る<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_skylake_6100u/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh.png" alt="Windowsパソコンで Macる。Skylake Platform in OSX86 Hackintoshの夢、BIOS設定内容" align="left"> <br>Windowsパソコンで Macる。Skylake Platform in OSX86 Hackintoshの夢、BIOS設定内容</a><br>&nbsp;&nbsp;Windows PCで iPhone開発、Mac OS Xで Hackintoshの方法、DVMT Pre-Allocated 128MB<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_make_install_usb_media/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh.png" alt="OSX86 Hackintosh用の USBインストールメディアを UniBeastで作成する方法の夢" align="left"> <br>OSX86 Hackintosh用の USBインストールメディアを UniBeastで作成する方法の夢</a><br>&nbsp;&nbsp;Windowsパソコンで Macの夢の準備、UniBeastで macOS Sierra Bootable USBメモリを作る<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_install_usb_device_windows/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh.png" alt="OSX86 Hackintosh Sierraを Core i3 6100U Skylake Windowsパソコンにインストールする方法の夢" align="left"> <br>OSX86 Hackintosh Sierraを Core i3 6100U Skylake Windowsパソコンにインストールする方法の夢</a><br>&nbsp;&nbsp;UniBeastで作成した OSX86 macOS Sierraを Bootable USBデバイスから Windows PCにインストールする<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_post_install_multibeast/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh.png" alt="UniBeastでインストール後の OSX86 Hackintoshの設定を MultiBeastで行なう夢" align="left"> <br>UniBeastでインストール後の OSX86 Hackintoshの設定を MultiBeastで行なう夢</a><br>&nbsp;&nbsp;MultiBeastで HDDにブートローダーを書き込む、Skylake用に各種初期設定を行なう方法<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_whats_dsdt_ssdt/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh.png" alt="OSX86 Hackintoshで良く出てくる DSDTや SSDTって何？取得方法は？の夢" align="left"> <br>OSX86 Hackintoshで良く出てくる DSDTや SSDTって何？取得方法は？の夢</a><br>&nbsp;&nbsp;DSDT.amlや SSDT.amlの取得方法、ACPI電源管理用の情報が書いてあるファイルです<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_hd_graphics_glitch_fix/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/osx86_hackintosh.png" alt="OSX86 Hackintoshで Skylakeの画面左上隅のグラフィックグリッチ症状を治す方法の夢" align="left"> <br>OSX86 Hackintoshで Skylakeの画面左上隅のグラフィックグリッチ症状を治す方法の夢</a><br>&nbsp;&nbsp;How to fix Skylake Intel HD 520 Graphics Glitch in top left in OSX86 Hackintosh<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/hardware/hystou_barebone_fmp03_i3_6100u/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/hystou_barebone.png" alt="HYSTOU FMP03 Intel Skylake Core i3-6100U搭載 ファンレス 中華ベアボーン" align="left"> <br>HYSTOU FMP03 Intel Skylake Core i3-6100U搭載 ファンレス 中華ベアボーン</a><br>&nbsp;&nbsp;AliExpress.comで中華ベアボーンを買ってみた HYSTOU FMP03 Fanless Mini PC<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/hardware/hystou_barebone_fmp03_i3_6100u_modification/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/hystou_barebone.png" alt="中華ベアボーンに内蔵 HDD、圧電ブザーやリセットスイッチ、USB 2.0、光デジタル S/PDIFを増設する改造" align="left"> <br>中華ベアボーンに内蔵 HDD、圧電ブザーやリセットスイッチ、USB 2.0、光デジタル S/PDIFを増設する改造</a><br>&nbsp;&nbsp;HYSTOU FMP03 6100U Fanless Mini PC modification Add HDD、Reset SW、USB 2.0、SPDIF<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/hardware/apple_macbook_air/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/apple_macbook_air.png" alt="Apple MacBook Airを買ってみた。開発者必須アプリの紹介" align="left"> <br>Apple MacBook Airを買ってみた。開発者必須アプリの紹介</a><br>&nbsp;&nbsp;Xcodeで iPhoneの開発の為に、Mac OS X用アプリを Swift言語で作る方法<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/xcode/xcode_swift_1_clipboard/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/xcode_swift.png" alt="Xcodeで Mac OSX用のクリップボード共有＆履歴アプリを作る" align="left"> <br>Xcodeで Mac OSX用のクリップボード共有＆履歴アプリを作る</a><br>&nbsp;&nbsp;Mac OS X用アプリを Swift言語で作る方法、MacOSXでクリップボード監視で変化が有ったら取得<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/xcode/xcode_swift_2_screen_mascot_2/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/xcode_swift.png" alt="Xcode SWIFTで Mac OSX用のスクリーンマスコットアプリを作る" align="left"> <br>Xcode SWIFTで Mac OSX用のスクリーンマスコットアプリを作る</a><br>&nbsp;&nbsp;Mac OS X用アプリを Swift言語で作る方法、デスクトップ画面に画像をオーバーレイで描画する方法<br clear="all"><br>
+<a href="http://www.neko.ne.jp/~freewing/xcode/xcode_swift_3_screen_capture/"><img src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/xcode_swift.png" alt="Xcode SWIFTで Mac OSX用のスクリーンキャプチャアプリ＆画像保存を作る" align="left"> <br>Xcode SWIFTで Mac OSX用のスクリーンキャプチャアプリ＆画像保存を作る</a><br>&nbsp;&nbsp;Mac OS X用アプリを Swift言語で作る方法、デスクトップの画像をキャプチャする方法<br clear="all"><br>
+<br>
+<hr>
+<a href="http://www.neko.ne.jp/~freewing/">[HOME]</a>
+ |
+<a href="http://www.neko.ne.jp/~freewing/software/">[BACK]</a>
+<hr>
+リンクフリー(連絡不要、ただしトップページ以外は Web構成の変更で移動する場合があります)<br>
+Copyright (c)
+2018  FREE WING,Y.Sakamoto<br>
+Powered by <b>猫屋敷工房</b> &amp; <b>HTML Generator</b><br>
+<br>
+http://www.neko.ne.jp/~freewing/software/osx86_hackintosh_create_install_usb_media_mojave/<br>
+<br><br><br><br>
+<script type="text/javascript">
+    amzn_assoc_ad_type = "link_enhancement_widget";
+    amzn_assoc_tracking_id = "freewing-22";
+    amzn_assoc_linkid = "f066f8e255e26aab2ffe08d764544a96";
+    amzn_assoc_placement = "";
+    amzn_assoc_marketplace = "amazon";
+    amzn_assoc_region = "JP";
+</script>
+<script src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/q"></script><div id="amzn_assoc_ad_div_adunit_0"></div>
+
+
+<iframe id="google_osd_static_frame_5598791991790" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/saved_resource(3).html"></iframe></body><iframe id="google_shimpl" style="display: none;" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/saved_resource(4).html"></iframe><iframe id="google_esf" name="google_esf" src="./最新 macOS Mojave 10.14.1の OSX86 Hackintosh用インストール USBメディアを作成する方法 (最新の macOS Mojave 10.14.1の Bootable USBデバイスを作成する方法、レッツノート CF-NX4にも対応)_files/zrt_lookup.html" data-ad-client="ca-pub-8444249238585841" style="display: none;"></iframe></html>

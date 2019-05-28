@@ -1,0 +1,36 @@
+.search::-ms-clear {
+    display: none;
+}
+#messages_group li { margin-left: 18px;}
+
+body .searchtitle {
+    height:auto;
+}
+body div#above_threadlist {
+z-index: 2;
+ }
+ body .pmlist .blockrow .datetime{
+     margin-right: 40px;
+ }
+ .rog-header .nav-menu .nav-bar .nav-option .sub-option.search-option .btn-search {
+  width: 18px;
+  height: 21px;
+  display: inline-block;
+  position: absolute;
+  right: 7px;
+  top: 1px;
+  z-index: 2;
+  cursor: pointer;
+  background: #313131 url("../images/icons/icon-search.png") center center no-repeat;
+  border: 0;
+}
+
+.rog-header .nav-menu .nav-sub-bar.forum-sub-bar .nav-main ul.nav-forum {
+  height: auto;
+}
+input {
+  width: auto;
+}
+.search-option input {
+margin: 0;
+}

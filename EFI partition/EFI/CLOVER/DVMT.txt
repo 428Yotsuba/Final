@@ -1,0 +1,64 @@
+Since WhateverGreen aims to be an ultimate graphic solution which replace all other graphic fixes, those other solutions are now deprecated and integrated in WhateverGreen. That includes IntelGraphicsDVMTFixup too, but do not expect that your DVMT problem would be fixed just by adding WhateverGreen to your Clover kexts folder as it was a case with IntelGraphicsDVMTFixup. 
+DVMT patch doesn't work "as is" and currently there is no simple switch that you can use. To fix DVMT, you need to set few framebuffer properties in Devices/Properties of your Clover config. Detail info here. Please check details in Preliminary part, since there is a list of things that should be removed if you are using WhateverGreen. 
+In short, you need to remove all other kexts and graphics injections and fixes in Clover related to graphics and to set framebuffer patches in Devices/Properties like this: 
+
+framebuffer-patch-enable - 0100 0000 (this is actually 0000 0001, but it needs to be in reverse order) - enable patch 
+                           xhxx cxxb                   abcd efgh
+framebuffer-stolenmem - 0000 3001 (this is actually 0130 0000) - set framebuffer to 19MB
+                             cdab                   abcd efgh 
+
+framebuffer-fbmem - 0000 9000 (this is actually 0090 0000) - set cursor to 9MB 
+
+0000 0080 -> 8000 0000
+     cdab -> abcd efgh
+
+whate about for HD520. 
+
+framebuffer patches: 
+
+AAPL,ig-platform-id - 00001619 
+
+framebuffer-patch-enable - 01000000 (this is actually 00000001, but it needs to be in reverse order) - enable patch 
+
+framebuffer-stolenmem - 00003001 (this is actually 01300000) - set framebuffer to 19MB 
+
+framebuffer-fbmem - 00009000 (this is actually 00900000) - set cursor to 9MB 
+
+My Dell 5570 has  these values : 
+
+Setting: DVMT Pre-Allocated, Variable: 0x795 {05 91 30 05 43 05 39 27 01 00 95 07 14 10 00 FE 00}
+ 0x3EEC0                 Option: 0M, Value: 0x0 {09 07 31 05 00 00 00}
+ 0x3EEC7                 Option: 32M, Value: 0x1 {09 07 32 05 30 00 01}
+ 0x3EECE                 Option: 64M, Value: 0x2 {09 07 33 05 00 00 02}
+ 0x3EED5                 Option: 4M, Value: 0xF0 {09 07 34 05 00 00 F0}
+ 0x3EEDC                 Option: 8M, Value: 0xF1 {09 07 35 05 00 00 F1}
+ 0x3EEE3                 Option: 12M, Value: 0xF2 {09 07 36 05 00 00 F2}
+ 0x3EEEA                 Option: 16M, Value: 0xF3 {09 07 37 05 00 00 F3}
+ 0x3EEF1                 Option: 20M, Value: 0xF4 {09 07 38 05 00 00 F4}
+ 0x3EEF8                 Option: 24M, Value: 0xF5 {09 07 39 05 00 00 F5}
+ 0x3EEFF                 Option: 28M, Value: 0xF6 {09 07 3A 05 00 00 F6}
+ 0x3EF06                 Option: 32M/F7, Value: 0xF7 {09 07 3B 05 00 00 F7}
+ 0x3EF0D                 Option: 36M, Value: 0xF8 {09 07 3C 05 00 00 F8}
+ 0x3EF14                 Option: 40M, Value: 0xF9 {09 07 3D 05 00 00 F9}
+ 0x3EF1B                 Option: 44M, Value: 0xFA {09 07 3E 05 00 00 FA}
+ 0x3EF22                 Option: 48M, Value: 0xFB {09 07 3F 05 00 00 FB}
+ 0x3EF29                 Option: 52M, Value: 0xFC {09 07 40 05 00 00 FC}
+ 0x3EF30                 Option: 56M, Value: 0xFD {09 07 41 05 00 00 FD}
+ 0x3EF37                 Option: 60M, Value: 0xFE {09 07 42 05 00 00 FE}
+ 0x3EF3E             End of Options {29 02} 
+
+  
+
+I changed to 0x2 and got DVMT=64. I would like to set it to 128 but I don't see such value. That means that my laptop can only get up to 64MB? 
+
+  
+
+Also ,  
+
+should I change this value to max (default is 256) ? 
+
+Setting: DVMT Total Gfx Mem, Variable: 0x796 {05 91 44 05 45 05 F4 04 01 00 96 07 10 10 01 03 00}
+ 0x3EF53             Option: 256M, Value: 0x2 {09 07 47 05 30 00 02}
+ 0x3EF5A             Option: 128M, Value: 0x1 {09 07 46 05 00 00 01}
+ 0x3EF61             Option: MAX, Value: 0x3 {09 07 48 05 00 00 03}
+ 0x3EF68         End of Options {29 02} 

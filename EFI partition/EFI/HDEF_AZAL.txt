@@ -1,0 +1,26 @@
+         <dict>
+          <key>Comment</key>
+          <string>Rename HDEF to AZAL</string>
+          <key>Find</key>
+          <data>SERFRg==</data>
+          <key>Replace</key>
+          <data>QVpBTA==</data>
+        </dict>
+
+Bitbar+Übersicht
+
+FakeSMC系kext(HWMonitorも導入)
+FakePCIID系kext(デバイスID偽装)
+AtherosE2200Ethernet.kext(Ethernet動作)
+AHCI_Intel_Generic_SATA.kext(いらないかも)
+USBInjectAll.kext(USB数制限対策)
+CodecCommander.kext(スリープ復帰後無音対策)
+audio_cloverALC-120_v1.0d.commandによるkext作成(オーディオ) 
+SSDTPRGen.shによるSSDT作成(CPU制御)
+AMDRadeonX4100.kext改変(RX480動作)
+BIOSにてプライマリGPUをIGFXに変更(RX480動作)
+Clover設定の調整
+以上により、オーディオやスリープなどは完璧に動作するようになりました。
+
+1つ躓いた点として、私はいつもkextを/EFI/CLOVER/kext/バージョン名に入れているのですが、
+CodecCommander.kextは/System/Library/Extensionsに入れないと動作しませんでした。

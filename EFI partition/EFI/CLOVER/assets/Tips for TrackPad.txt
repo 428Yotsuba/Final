@@ -1,0 +1,11 @@
+By Steve
+
+1. Delete `BOOT` folder and `CLOVER` folder in your EFI partition and copy these two folders from this pack.
+
+2. Run `Kext Utility.app`, or type `sudo kextcache -i /` in `Terminal.app`. Then restart.
+
+3. Please go to "System Preferences" - "Trackpad" - "Scroll & Zoom” and uncheck the Smart zoom to let trackpad work perfect.
+
+4. If the trackpad still doesn’t work, try to press F9.
+
+5. The final solution is to boot in Windows and play with the trackpad for a while, then restart into macOS.

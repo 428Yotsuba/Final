@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://phexcel.work/hackintosh-mojave/ -->
+<html lang="ja" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/osd.js.ダウンロード"></script><script src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/ca-pub-8801361072649610.js.ダウンロード"></script><script type="text/javascript" async="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/analytics.js.ダウンロード"></script><script async="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118891220-3');
+</script>
+<!-- /Global site tag (gtag.js) - Google Analytics -->
+
+  <meta name="viewport" content="width=1280, maximum-scale=1, user-scalable=yes">
+<link rel="alternate" type="application/rss+xml" title="フェクセル.WORK RSS Feed" href="https://phexcel.work/feed/">
+<link rel="pingback" href="https://phexcel.work/wp/xmlrpc.php">
+<meta name="description" content="今回は、Windows機にMacを入れるという夢、いわゆる「Hackintosh」をやる方法を紹介します。今回のHackintoshのターゲットはこの間出たばかりのmacOS Mojaveです。Hackintoshをやるにはいくつかの方法が">
+<meta name="keywords" content="Hackintosh">
+
+
+<link href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/icon" rel="stylesheet">
+
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems);
+});
+</script>
+<title>【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v9.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://phexcel.work/hackintosh-mojave/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK">
+<meta property="og:description" content="今回は、Windows機にMacを入れるという夢、いわゆる「Hackintosh」をやる方法を紹介します。 今回のHackintoshのターゲットはこの間出たばかりのmacOS Mojaveです。 Hackintoshを...">
+<meta property="og:url" content="https://phexcel.work/hackintosh-mojave/">
+<meta property="og:site_name" content="フェクセル.WORK">
+<meta property="article:tag" content="Hackintosh">
+<meta property="article:tag" content="Mac">
+<meta property="article:tag" content="macOS">
+<meta property="article:tag" content="Mojave">
+<meta property="article:tag" content="Windows">
+<meta property="article:section" content="Hackintosh">
+<meta property="article:published_time" content="2018-10-11T14:24:10+00:00">
+<meta property="fb:app_id" content="1837029073012949">
+<meta property="og:image" content="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/6601c20ab96b9093a51dfbcb55930eae.png?fit=838%2C628&amp;ssl=1">
+<meta property="og:image:secure_url" content="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/6601c20ab96b9093a51dfbcb55930eae.png?fit=838%2C628&amp;ssl=1">
+<meta property="og:image:width" content="838">
+<meta property="og:image:height" content="628">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="今回は、Windows機にMacを入れるという夢、いわゆる「Hackintosh」をやる方法を紹介します。 今回のHackintoshのターゲットはこの間出たばかりのmacOS Mojaveです。 Hackintoshを...">
+<meta name="twitter:title" content="【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK">
+<meta name="twitter:site" content="@PHEXCELs">
+<meta name="twitter:image" content="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/6601c20ab96b9093a51dfbcb55930eae.png?fit=838%2C628&amp;ssl=1">
+<meta name="twitter:creator" content="@PHEXCELs">
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Person","url":"https:\/\/phexcel.work\/","sameAs":["https:\/\/twitter.com\/PHEXCELs"],"@id":"#person","name":"PHEXCEL"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="フェクセル.WORK » フィード" href="https://phexcel.work/feed/">
+<link rel="alternate" type="application/rss+xml" title="フェクセル.WORK » コメントフィード" href="https://phexcel.work/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="フェクセル.WORK » 【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 のコメントのフィード" href="https://phexcel.work/hackintosh-mojave/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/phexcel.work\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/wp-emoji-release.min.js.ダウンロード" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+		<style type="text/css">
+				</style>
+	<link rel="stylesheet" id="materialize-style-css" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/materialize.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="simplicity-style-css" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-style-css" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="icomoon-style-css" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="code-highlight-style-css" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/github.css" type="text/css" media="all">
+<link rel="stylesheet" id="print-style-css" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/print.css" type="text/css" media="print">
+<link rel="stylesheet" id="frontend-css" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="toc-screen-css" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/screen.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="fancybox-css" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/jquery.fancybox.1.3.23.min.css" type="text/css" media="screen">
+<link rel="stylesheet" id="jetpack_css-css" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/jetpack.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-paginate-css" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/wp-paginate.css" type="text/css" media="screen">
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/jquery.min.js.ダウンロード"></script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/materialize.min.js.ダウンロード"></script>
+<link rel="shortlink" href="https://wp.me/p9XLd4-PB">
+<link rel="alternate" type="application/json+oembed" href="https://phexcel.work/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphexcel.work%2Fhackintosh-mojave%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://phexcel.work/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fphexcel.work%2Fhackintosh-mojave%2F&amp;format=xml">
+    <script src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/p7sdk.js.ダウンロード"></script><style type="text/css">.p7button {
+  display: inline-flex;
+  align-items: stretch;
+  min-width: 85px;
+  user-select: none;
+  -webkit-user-select: none; }
+  .p7button[data-align="top"] {
+    flex-direction: column;
+    min-width: 85px; }
+  .p7button[data-align="right"] {
+    min-width: 140px; }
+    .p7button[data-align="right"] > div {
+      display: flex; }
+  .p7button a {
+    min-width: 85px;
+    box-sizing: border-box;
+    padding: 0 1em;
+    height: 23px;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #EEAC00;
+    text-decoration: none;
+    border-radius: 2px;
+    cursor: pointer; }
+    .p7button a:hover {
+      background-color: #D69A00; }
+    .p7button a svg {
+      width: 8px;
+      margin-right: 5px; }
+    .p7button a span {
+      line-height: 100%; }
+  .p7button .p7button-top, .p7button .p7button-right {
+    display: none; }
+  .p7button[data-align='top'] .p7button-top {
+    display: block;
+    color: #333;
+    min-width: 77px;
+    height: 19px;
+    padding: 2px 3px;
+    font-size: 12px;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px; }
+    .p7button[data-align='top'] .p7button-top::before {
+      display: block;
+      bottom: -6.3px;
+      left: 36px;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      transform: rotate(-135deg);
+      background: -webkit-linear-gradient(135deg, transparent, transparent calc(50% - 1px), #fff calc(50% - 1px), #fff);
+      background: linear-gradient(-45deg, transparent, transparent calc(50% - 1px), #fff calc(50% - 1px), #fff);
+      content: "";
+      border-left: 1px solid #ccc;
+      border-top: 1px solid #ccc; }
+  .p7button[data-align='right'] > div {
+    display: flex; }
+  .p7button[data-align='right'] .p7button-right {
+    display: block;
+    color: #333;
+    min-width: 40px;
+    height: 19px;
+    padding: 2px 3px;
+    font-size: 12px;
+    margin-left: 10px;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    position: relative;
+    text-align: center; }
+    .p7button[data-align='right'] .p7button-right::before {
+      display: block;
+      left: -6.45px;
+      top: 6px;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      transform: rotate(-45deg);
+      background: -webkit-linear-gradient(135deg, transparent, transparent calc(50% - 1px), #fff calc(50% - 1px), #fff);
+      background: linear-gradient(-45deg, transparent, transparent calc(50% - 1px), #fff calc(50% - 1px), #fff);
+      content: "";
+      border-left: 1px solid #ccc;
+      border-top: 1px solid #ccc; }
+
+#p7box, #p7box *, #p7box *::before, #p7box *::after {
+  box-sizing: border-box; }
+
+#p7box {
+  position: fixed;
+  z-index: 2147483647;
+  left: calc(50% - 200px);
+  width: 400px;
+  padding: 10px;
+  display: block;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+  font-family: "Hiragino Sans", Avenir ,"Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "Yu Gothic" , "YuGothic" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , Meiryo , "MS PGothic" , sans-serif;
+  background-color: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  border-radius: 0 0 6px 6px / 0 0 6px 6px; }
+  #p7box .p7box-inner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+    #p7box .p7box-inner .p7box-top {
+      display: flex;
+      margin: 10px 0; }
+      #p7box .p7box-inner .p7box-top .p7box-img {
+        margin: 0 10px 0 0;
+        font-size: 0; }
+        #p7box .p7box-inner .p7box-top .p7box-img img {
+          width: 80px; }
+      #p7box .p7box-inner .p7box-top .p7box-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: auto; }
+        #p7box .p7box-inner .p7box-top .p7box-text p {
+          margin: 0;
+          -webkit-font-smoothing: antialiased; }
+        #p7box .p7box-inner .p7box-top .p7box-text .p7box-title {
+          font-weight: 600;
+          margin-bottom: 0.3em;
+          font-size: 1em;
+          width: 280px;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          -webkit-font-smoothing: antialiased; }
+        #p7box .p7box-inner .p7box-top .p7box-text .p7box-message {
+          font-size: 13px;
+          font-weight: 300;
+          letter-spacing: 0.8px;
+          word-break: break-all;
+          -webkit-font-smoothing: antialiased; }
+    #p7box .p7box-inner .p7box-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      #p7box .p7box-inner .p7box-bottom .p7box-buttons {
+        width: 60%;
+        display: flex;
+        align-content: center;
+        justify-content: space-around; }
+        #p7box .p7box-inner .p7box-bottom .p7box-buttons a.p7box-btn {
+          display: block;
+          max-width: 90px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          padding: 0.6em 1.1em;
+          text-decoration: none;
+          font-size: 0.9em;
+          font-weight: 300;
+          line-height: 1.3em;
+          border-radius: 2px;
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+          -webkit-font-smoothing: antialiased; }
+          #p7box .p7box-inner .p7box-bottom .p7box-buttons a.p7box-btn.p7box-allow {
+            color: white;
+            background-color: #eeac00; }
+          #p7box .p7box-inner .p7box-bottom .p7box-buttons a.p7box-btn.p7box-deny {
+            color: white;
+            background-color: #cccccc; }
+      #p7box .p7box-inner .p7box-bottom .p7box-credit {
+        width: 40%;
+        font-size: 12px;
+        color: #999999; }
+
+@media screen and (min-width: 460px) {
+  #p7box {
+    top: -200px;
+    transition: top 0.2s ease-out; }
+    #p7box.active {
+      top: -10px; } }
+
+@media screen and (max-width: 460px) {
+  #p7box {
+    width: 100%;
+    left: 0;
+    top: auto;
+    bottom: -200px;
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.1);
+    font-size: 0.85em;
+    padding-top: 0;
+    transition: bottom 0.2s ease-out; }
+    #p7box.active {
+      bottom: 0; }
+    #p7box .p7box-inner {
+      padding-top: 0; }
+      #p7box .p7box-inner .p7box-bottom .p7box-credit {
+        font-size: 10px; } }
+</style>
+    <script>p7.init("c589f0bc607e4b6caeb3b7694edc9277");</script>
+    <style type="text/css">div#toc_container {background: #44484e;border: 1px solid #44484e;}</style><script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//phexcel.work/?wordfence_lh=1&hid=62643525DCF63DD8942563A0035BB8FC');
+</script>
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<link rel="dns-prefetch" href="https://i0.wp.com/">
+<link rel="dns-prefetch" href="https://i1.wp.com/">
+<link rel="dns-prefetch" href="https://i2.wp.com/">
+<style type="text/css">img#wpstats{display:none}</style>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<script async="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/f(6).txt"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-8801361072649610",
+          enable_page_level_ads: true
+     });
+</script>
+
+<script type="text/javascript" async="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource"></script><link rel="preload" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/f(7).txt" as="script"><script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/f(7).txt"></script><link rel="preload" href="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/f(8).txt" as="script"><script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/f(8).txt"></script><link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/r20190122/r20180604/show_ads_impl.js" as="script"><style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln .hljs-ln-n:before{content:attr(data-line-number)}</style><script charset="utf-8" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/button.e96bb6acc0f8bda511c0c46a84ee18e4.js.ダウンロード"></script></head><remove-web-limits-iqxin id="rwl-iqxin" class="rwl-exempt" style="position: fixed; top: 0px; left: 0px;"><button type="button" id="rwl-setbtn"> set </button> <lalala style="cursor:move;">限制解除</lalala> <input type="checkbox" name="" id="black_node"><style type="text/css">#rwl-iqxin{position:fixed;transform:translate(-90px,0);width:85px;height:25px;font-size:12px;font-weight: 500;font-family:Verdana, Arial, '宋体';color:#fff;background:#333;z-index:2147483647;margin: 0;opacity:0.05;transition:0.3s;overflow:hidden;user-select:none;text-align:center;white-space:nowrap;line-height:25px;padding:0 16px;border:1px solid #ccc;border-width:1px 1px 1px 0;border-bottom-right-radius:5px;box-sizing: content-box;}#rwl-iqxin input{margin: 0;padding: 0;vertical-align:middle;-webkit-appearance:checkbox;-moz-appearance:checkbox;position: static;clip: auto;opacity: 1;cursor: pointer;}#rwl-iqxin.rwl-active-iqxin{left: 0px;transform:translate(0,0);opacity: 0.9;height: 32px;line-height: 32px}#rwl-iqxin label{margin:0;padding:0;font-weight:500;}#rwl-iqxin button{margin: 0;padding: 0 2px;border: none;border-radius: 2px;cursor: pointer;}#rwl-setMenu{text-align:left;font-size:14px;z-index:999999;border: 1px solid cornflowerblue;}#rwl-setMenu p{margin:5px auto;} </style></remove-web-limits-iqxin>
+  <body class="post-template-default single single-post postid-3199 single-format-standard categoryid-106" itemscope="" itemtype="https://schema.org/WebPage">
+    <div id="container">
+      <div id="top-nav">
+        <div class="container">
+          <div id="description">
+          	IT系の話題を幅広く取り扱います。iPhone、Mac、アプリ開発、ダウンロード方法など。
+          </div>
+          <div class="menu-%e3%83%88%e3%83%83%e3%83%97%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container"><ul id="menu-%e3%83%88%e3%83%83%e3%83%97%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu"><li id="menu-item-3561" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3561"><a href="https://twitter.com/PHEXCELs"><span class="fa fa-twitter"></span></a></li>
+<li id="menu-item-3564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3564"><a href="https://phexcel.work/feed/"><span class="fa fa-feed"></span></a></li>
+<li id="menu-item-3562" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3562"><a href="https://github.com/PHEXCEL"><span class="fa fa-github"></span></a></li>
+<li id="menu-item-3563" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3563"><a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fphexcel.work%2Ffeed%2F"><span class="icon-feedly"></span></a></li>
+<li id="menu-item-3565" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3565"><a href="https://phexcel.app.push7.jp/"><span class="icon-push7"></span></a></li>
+</ul></div>        </div>
+      </div>
+      <!-- header -->
+      <header itemscope="" itemtype="https://schema.org/WPHeader">
+        <!-- Navigation -->
+        <nav class="nav-extended" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+          <div class="nav-wrapper">
+            <div class="row container">
+            <div class="col l3 m12 s12 logo_container" itemscope="" itemtype="https://schema.org/Organization">
+              <a class="brand-logo" href="https://phexcel.work/" title="フェクセル.WORK">
+                <img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/35022a081d5fdfdb6621c2ea9f3cd8dd.png" alt="フェクセル.WORK">
+              </a>
+            </div>
+            <div class="col l12">
+              <a href="https://phexcel.work/hackintosh-mojave/#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <div class="menu-%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container"><ul id="menu-%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu"><li id="menu-item-366" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-366"><a href="https://phexcel.work/">Home</a></li>
+<li id="menu-item-3445" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-has-children menu-item-3445"><a href="https://phexcel.work/tag/works/">Works</a>
+<ul class="sub-menu">
+	<li id="menu-item-3603" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3603"><a href="https://phexcel.work/qlzipimageviewer/">qlZipImageViewer<br><span style="font-size:10px">ZIP画像用のQuickLookプラグイン</span></a></li>
+	<li id="menu-item-3604" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3604"><a href="https://phexcel.work/abuguru-downloader-released/">Abuguru Downloader</a></li>
+	<li id="menu-item-3605" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3605"><a href="https://phexcel.work/avgle-download-curl-script/">Avgleダウンロードスクリプト</a></li>
+	<li id="menu-item-3606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3606"><a href="https://phexcel.work/avgle-download-curl-script-windows/">Avgleダウンロードスクリプト(Windows)</a></li>
+</ul>
+</li>
+<li id="menu-item-2780" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2780"><a href="https://phexcel.work/category/mac/">Mac</a></li>
+<li id="menu-item-2781" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2781"><a href="https://phexcel.work/category/ios/">iOS</a></li>
+<li id="menu-item-2783" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-2783"><a href="https://phexcel.work/tag/iphone/">iPhone</a></li>
+<li id="menu-item-3704" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-3704"><a href="https://phexcel.work/tag/review/">レビュー</a></li>
+<li id="menu-item-2782" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-2782"><a href="https://phexcel.work/tag/avgle/">avgleダウンロード</a></li>
+</ul></div>              </ul>
+            </div>
+          </div>
+          </div>
+        </nav>
+        <!-- /Navigation -->
+        <ul class="sidenav" id="mobile-demo">
+            <div class="menu-%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container"><ul id="menu-%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-366"><a href="https://phexcel.work/">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-has-children menu-item-3445"><a href="https://phexcel.work/tag/works/">Works</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3603"><a href="https://phexcel.work/qlzipimageviewer/">qlZipImageViewer<br><span style="font-size:10px">ZIP画像用のQuickLookプラグイン</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3604"><a href="https://phexcel.work/abuguru-downloader-released/">Abuguru Downloader</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3605"><a href="https://phexcel.work/avgle-download-curl-script/">Avgleダウンロードスクリプト</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3606"><a href="https://phexcel.work/avgle-download-curl-script-windows/">Avgleダウンロードスクリプト(Windows)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2780"><a href="https://phexcel.work/category/mac/">Mac</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2781"><a href="https://phexcel.work/category/ios/">iOS</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-2783"><a href="https://phexcel.work/tag/iphone/">iPhone</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-3704"><a href="https://phexcel.work/tag/review/">レビュー</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-2782"><a href="https://phexcel.work/tag/avgle/">avgleダウンロード</a></li>
+</ul></div>        </ul>
+      </header>
+
+
+      <!-- 本体部分 -->
+      <div id="body">
+        <div class="container row">
+        <div class="top-ad">
+          <!-- TOP -->
+                    <ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-8801361072649610" data-ad-slot="2308139073" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:1140px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:1140px;background-color:transparent;"><iframe width="1140" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:1140px;height:90px;" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(4).html"></iframe></ins></ins></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+                    </div>
+          <div class="col card hide-on-med-and-up new-entry-sp">
+            <div class="new-entry-sp-title">新着記事</div>
+            <ul>
+                          <li>
+                <a href="https://phexcel.work/post-3752/">[IPSWダウンロード] iOS 12.1.3 正式版 (16D39 | 16D40) リリース</a>
+              </li>
+                          <li>
+                <a href="https://phexcel.work/nubwo-n11-review/">【激安USBヘッドセット】NUBWO  N11 レビュー</a>
+              </li>
+                          <li>
+                <a href="https://phexcel.work/post-3727/">お正月なのでMacを買おう！【Mac整備済製品情報】</a>
+              </li>
+                          <li>
+                <a href="https://phexcel.work/iphone-darker/">【Tips】iPhoneで最低輝度をもっと下げる方法</a>
+              </li>
+                          <li>
+                <a href="https://phexcel.work/download-yt-video/">iPhoneでYoutube動画をダウンロードする方法【Clipbox代替アプリ・MyMediaの使い方】</a>
+              </li>
+                        </ul>
+          </div>
+
+          
+          <!-- main -->
+          <main class="col l8 s12 m12" itemscope="" itemprop="mainContentOfPage">
+            <div id="main" itemscope="" itemtype="https://schema.org/Blog">
+
+  
+  <div id="breadcrumb" class="breadcrumb-category"><div itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="breadcrumb-home"><span class="fa fa-home fa-fw"></span><a href="https://phexcel.work/" itemprop="url"><span itemprop="title">ホーム</span></a><span class="sp"><span class="fa fa-angle-right"></span></span></div><div itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""><span class="fa fa-folder fa-fw"></span><a href="https://phexcel.work/category/hackintosh/" itemprop="url"><span itemprop="title">Hackintosh</span></a></div></div><!-- /#breadcrumb -->  <div id="post-3199" class="card row article-wrapper post-3199 post type-post status-publish format-standard has-post-thumbnail hentry category-hackintosh tag-hackintosh tag-mac tag-macos tag-mojave tag-windows">
+                  <a href="https://phexcel.work/hackintosh-mojave/" class="entry-image entry-image-link" title="【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】"><img width="838" height="628" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/6601c20ab96b9093a51dfbcb55930eae.png" class="entry-thumnail wp-post-image" alt="" srcset="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/6601c20ab96b9093a51dfbcb55930eae.png?w=838&amp;ssl=1 838w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/6601c20ab96b9093a51dfbcb55930eae.png?resize=300%2C225&amp;ssl=1 300w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/6601c20ab96b9093a51dfbcb55930eae.png?resize=768%2C576&amp;ssl=1 768w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/6601c20ab96b9093a51dfbcb55930eae.png?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 838px) 100vw, 838px"></a>
+            <article class="article">
+  
+  
+  <header>
+    <h1 class="entry-title">【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】</h1>
+            <span class="chip blue-grey lighten-5"><span class="fa fa-clock-o fa-fw"></span><time class="entry-date date published updated" datetime="2018-10-11T23:24:10+00:00">2018/10/11</time></span>
+    
+      <span class="chip blue-grey lighten-5"><span class="fa fa-folder fa-fw"></span><a href="https://phexcel.work/category/hackintosh/" rel="category tag">Hackintosh</a></span>
+
+      
+      
+      
+      
+      
+
+    
+    
+    
+      </header>
+
+  
+  <div id="the-content" class="entry-content">
+  <p>今回は、Windows機にMacを入れるという夢、いわゆる「<strong>Hackintosh</strong>」をやる方法を紹介します。</p>
+<p>今回のHackintoshのターゲットはこの間出たばかりの<strong>macOS Mojave</strong>です。</p>
+<p>Hackintoshをやるにはいくつかの方法があるのですが、今回は<strong>Macを必要としない方法</strong>を紹介します（Windowsだけで準備が完結します！）。</p>
+<p>具体的には「<strong>Mojave Olarila</strong>」を使った方法です。内部にmacOS Mojaveのイメージが含まれているのでMacがなくてもインストールできます（良いか悪いかは別にして）。</p>
+  <!-- 広告 -->
+                     <div class=" ad-space">
+          <div class="ad-label">スポンサーリンク</div>
+          <div class="ad-pc adsense-336"><div class="textwidget custom-html-widget">  <ins class="adsbygoogle" style="display: block; text-align: center; height: 183px;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-8801361072649610" data-ad-slot="8619903155" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:183px;margin:0;padding:0;position:relative;visibility:visible;width:730px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:183px;margin:0;padding:0;position:relative;visibility:visible;width:730px;background-color:transparent;"><iframe width="730" height="183" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0px;width:730px;height:183px;" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(5).html"></iframe></ins></ins></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div></div>
+        </div>
+            <div id="toc_container" class="no_bullets"><p class="toc_title">目次 <span class="toc_toggle">[<a href="https://phexcel.work/hackintosh-mojave/#">hide</a>]</span></p><ul class="toc_list"><li><a href="https://phexcel.work/hackintosh-mojave/#i"><span class="toc_number toc_depth_1">1</span> 注意</a></li><li><a href="https://phexcel.work/hackintosh-mojave/#i-2"><span class="toc_number toc_depth_1">2</span> 動作環境</a><ul><li><a href="https://phexcel.work/hackintosh-mojave/#GPU"><span class="toc_number toc_depth_2">2.1</span> GPU</a></li><li><a href="https://phexcel.work/hackintosh-mojave/#i-3"><span class="toc_number toc_depth_2">2.2</span> 筆者の環境</a></li></ul></li><li><a href="https://phexcel.work/hackintosh-mojave/#i-4"><span class="toc_number toc_depth_1">3</span> 必要なもの</a></li><li><a href="https://phexcel.work/hackintosh-mojave/#i-5"><span class="toc_number toc_depth_1">4</span> イメージの準備</a></li><li><a href="https://phexcel.work/hackintosh-mojave/#macOS"><span class="toc_number toc_depth_1">5</span> macOSのインストール</a></li><li><a href="https://phexcel.work/hackintosh-mojave/#Mac"><span class="toc_number toc_depth_1">6</span> Macのセットアップ</a></li><li><a href="https://phexcel.work/hackintosh-mojave/#Multibeast"><span class="toc_number toc_depth_1">7</span> Multibeastでドライバのインストール</a></li><li><a href="https://phexcel.work/hackintosh-mojave/#i-6"><span class="toc_number toc_depth_1">8</span> 完了</a><ul><li><a href="https://phexcel.work/hackintosh-mojave/#WiFi"><span class="toc_number toc_depth_2">8.1</span> WiFiについて</a></li></ul></li></ul></div>
+<h3><span id="i">注意</span></h3>
+<p>Hackintoshは<strong>非公式</strong>です。この方法を参考にしたり実践する際は<strong>自己責任</strong>でお願いします。</p>
+<p>また、今回の方法は一般的なHackintoshの方法とは違うため、動作しなかったり、不安定になるなどの不具合が存在する可能性があります。</p>
+<h3><span id="i-2">動作環境</span></h3>
+<div style="text-align:center">
+<a href="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macproold.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/macproold.jpg" alt="" width="300" height="300" class="alignnone size-full wp-image-3257" srcset="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macproold.jpg?w=500&amp;ssl=1 500w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macproold.jpg?resize=150%2C150&amp;ssl=1 150w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macproold.jpg?resize=300%2C300&amp;ssl=1 300w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macproold.jpg?resize=100%2C100&amp;ssl=1 100w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macproold.jpg?resize=320%2C320&amp;ssl=1 320w" sizes="(max-width: 300px) 100vw, 300px"></a>
+</div>
+<p><strong>Hackintoshは動作環境を選びます</strong>。適した環境でないと動かなかったり、動作が不安定になったりします。</p>
+<p>ご使用の環境でHackintoshできるかどうかはググればたいてい出てきます。</p>
+<p>また、下のサイト（tonymacx86)では動作するCPUやマザーボード、グラフィックカードなどが紹介されています。</p>
+<div class="blog-card external-blog-card blog-card-thumbnail-left cf"><div class="blog-card-thumbnail"><a href="https://www.tonymacx86.com/buyersguide/building-a-customac-hackintosh-the-ultimate-buyers-guide/" class="blog-card-thumbnail-link" target="_blank"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/6fdd47a8b279dcf1a16170975921cbac.png" alt="" class="blog-card-thumb-image" height="100" width="100"></a></div><div class="blog-card-content"><div class="blog-card-title"><a href="https://www.tonymacx86.com/buyersguide/building-a-customac-hackintosh-the-ultimate-buyers-guide/" class="blog-card-title-link" target="_blank">Building a CustoMac Hackintosh: The Ultimate Buyer's Guide </a></div><div class="blog-card-excerpt"></div></div><div class="blog-card-footer"><div class="blog-card-site"><span class="blog-card-favicon"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/favicons" class="blog-card-favicon-img" alt="" width="16" height="16"></span>www.tonymacx86.com</div><div class="blog-card-hatebu"><a href="https://b.hatena.ne.jp/entry/https://www.tonymacx86.com/buyersguide/building-a-customac-hackintosh-the-ultimate-buyers-guide/" target="_blank" rel="nofollow"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(1)" alt=""></a></div></div></div>
+<p>なお、AMDのCPUは現時点では不可能に近いです。</p>
+<h4><span id="GPU">GPU</span></h4>
+<p>GPUはAMDを選んでおけば問題なさそうです。というのも近年のMacがAMDを使っているためです。</p>
+<p>NVIDIAのカードでも動作はしますが、別途ドライバーが必要です。ドライバーのインストールは「Web driver」を使えば簡単です（しかし2018/10/11現在、Mojave用は公開されていない）。<br>
+Kepler(GTX 600シリーズ)以前のモデルですと、標準でドライバーが含まれています。</p>
+<p>内蔵GPUなら問題なく使えるでしょう。</p>
+<h4><span id="i-3">筆者の環境</span></h4>
+<p>参考程度に私の環境を紹介します（自作PCです）。</p>
+<div class="table_container">
+<div class="scrollable-table"><table class="responsive-table centered striped">
+<thead>
+<tr>
+<th>パーツ</th>
+<th>型番</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>マザーボード</td>
+<td>Gigabyte GA-H97-D3H</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>Intel Core i5-4590</td>
+</tr>
+<tr>
+<td>GPU</td>
+<td>NVIDIA Geforce GTX 670</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<h3><span id="i-4">必要なもの</span></h3>
+<ol>
+<li>8GB以上のUSBメモリ</li>
+<li>Multibeast移動用のUSBメモリ</li>
+<li><a href="https://sourceforge.net/projects/win32diskimager/">Win32 Disk Imager</a></li>
+<li><a href="https://olarila.com/forum/viewtopic.php?f=51&amp;t=6743">Mojave Olarila</a></li>
+<li><a href="https://www.tonymacx86.com/resources/multibeast-10-4-0-high-sierra.401/">Multibeast</a></li>
+</ol>
+<h3><span id="i-5">イメージの準備</span></h3>
+<p>今回使用するイメージは「<strong>Mojave Olarila</strong>」というものです。ブートローダーのCloverからmacOS Mojaveのインストーラーまで何でも入っています。これを使えば、Macは必要ありません。</p>
+<p><b>Step1.</b> 下のリンクからMojave Olarilaをダウンロードしてください。</p>
+<p><a href="https://drive.google.com/file/d/1XoJS2x86JJ9VuOMcVJvLWsFTt27xzGAF/view" target="_blank">https://drive.google.com/file/d/1XoJS2x86JJ9VuOMcVJvLWsFTt27xzGAF/view&gt;</a></p>
+<p><br><br>
+<b>Step2.</b> ダウンロードした圧縮ファイルを解凍してください。「Olarila Mojave GM.raw」というファイルが出てくると思います。</p>
+<p><br><br>
+<b>Step3.</b> <a href="https://sourceforge.net/projects/win32diskimager/" target="_blank">Win32 Disk Imager</a>をダウンロードしてインストールしてください。</p>
+<p><br><br>
+<b>Step4.</b> USBメモリを接続してください。<b>USBメモリはフォーマットされますので、必要なファイルがあったら必ず退避させてください</b>。</p>
+<p><br><br>
+<b>Step5.</b> Win32 Disk Imagerを開いて「Olarila Mojave GM.raw」を読み込んで、「<b>Write</b>」を押してください。<br>
+<a href="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/49ef72b19c9b2addea8db508ca9b00b7.png?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/49ef72b19c9b2addea8db508ca9b00b7.png" alt="" width="482" height="335" class="alignnone size-full wp-image-3208" srcset="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/49ef72b19c9b2addea8db508ca9b00b7.png?w=482&amp;ssl=1 482w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/49ef72b19c9b2addea8db508ca9b00b7.png?resize=300%2C209&amp;ssl=1 300w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/49ef72b19c9b2addea8db508ca9b00b7.png?resize=320%2C222&amp;ssl=1 320w" sizes="(max-width: 482px) 100vw, 482px"></a></p>
+<p><br><br>
+<b>Step6.</b> <a href="https://www.tonymacx86.com/resources/multibeast-10-4-0-high-sierra.401/" target="_blank">Multibeast</a>（ログインが必要）をダウンロードして、「Multibeast.app」を「Multibeast移動用のUSBメモリ」にコピーしてください。</p>
+  <!-- 広告 -->
+                     <div class=" ad-space">
+          <div class="ad-label">スポンサーリンク</div>
+          <div class="ad-pc adsense-336"><div class="textwidget custom-html-widget">  <ins class="adsbygoogle" style="display: block; text-align: center; height: 183px;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-8801361072649610" data-ad-slot="8619903155" data-adsbygoogle-status="done"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:183px;margin:0;padding:0;position:relative;visibility:visible;width:730px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:183px;margin:0;padding:0;position:relative;visibility:visible;width:730px;background-color:transparent;"><iframe width="730" height="183" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0px;width:730px;height:183px;" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(6).html"></iframe></ins></ins></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div></div>
+        </div>
+            
+<h3><span id="macOS">macOSのインストール</span></h3>
+<p><b>Step1. </b>deleteキーを押して（GIGABYTEの場合）UEFIを起動させてください。そして、下記のように設定を変更してください。</p>
+<ul>
+<li><b>VT-d</b> : disable</li>
+<li><b>CFG-Lock</b> : disable （GIGABYTEマザーには項目なし）</li>
+<li><b>Secure Boot Mode</b> : disable</li>
+<li><b>OS Type</b> : Other OS</li>
+<li><b>IO Serial Port</b> : disable</li>
+<li>XHCI Handoff : <b>enable</b><br>
+<a href="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b6.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/UNADJUSTEDNONRAW_thumb_11b6.jpg" alt="" width="680" height="510" class="alignnone size-large wp-image-3218" srcset="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b6.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b6.jpg?resize=300%2C225&amp;ssl=1 300w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b6.jpg?resize=768%2C576&amp;ssl=1 768w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b6.jpg?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></li>
+</ul>
+<p><b>Step2. </b><b>USBメモリからシステムをブートしてください</b>。そうすると、ブートローダのCloverが表示されます。<br>
+「Boot macOS Install from Install macOS Mojave」を選択してEnterキーを押してください。<br>
+<a href="https://i0.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11ba.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/UNADJUSTEDNONRAW_thumb_11ba.jpg" alt="" width="680" height="510" class="alignnone size-large wp-image-3219" srcset="https://i0.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11ba.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11ba.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11ba.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11ba.jpg?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></p>
+<p><b>Step3. </b>そうすると、ログがバーっと表示された後にmacOSのインストール画面が表示されます。<br>
+<a href="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b8.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/UNADJUSTEDNONRAW_thumb_11b8.jpg" alt="" width="680" height="510" class="alignnone size-large wp-image-3224" srcset="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b8.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b8.jpg?resize=300%2C225&amp;ssl=1 300w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b8.jpg?resize=768%2C576&amp;ssl=1 768w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b8.jpg?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></p>
+<p><b>Step4. </b>ディスクユーティリティを起動して、インストール先のディスクを初期化します。<br>
+<a href="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b7.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/UNADJUSTEDNONRAW_thumb_11b7.jpg" alt="" width="680" height="510" class="alignnone size-large wp-image-3226" srcset="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b7.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b7.jpg?resize=300%2C225&amp;ssl=1 300w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b7.jpg?resize=768%2C576&amp;ssl=1 768w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11b7.jpg?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></p>
+<p>インストール先のディスクを選択して「<b>消去</b>」を押してください。名前は「<b>Mojave</b>」（任意）、フォーマットは「<b>Mac OS拡張（ジャーナリング）</b>」を選択してください。（<strong>これを実行するとディスクは完全にフォーマットされます。間違って大事なディスクをフォーマットしないように注意してください</strong>）<br>
+<a href="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bc.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/UNADJUSTEDNONRAW_thumb_11bc.jpg" alt="" width="680" height="510" class="alignnone size-large wp-image-3227" srcset="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bc.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bc.jpg?resize=300%2C225&amp;ssl=1 300w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bc.jpg?resize=768%2C576&amp;ssl=1 768w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bc.jpg?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></p>
+<div></div>
+<p><b>Step5. </b>ディスクユーティリティを閉じて「<strong>macOSインストール</strong>」を選択してください。<br>
+<a href="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c4.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/UNADJUSTEDNONRAW_thumb_11c4.jpg" alt="" width="680" height="510" class="alignnone size-large wp-image-3230" srcset="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c4.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c4.jpg?resize=300%2C225&amp;ssl=1 300w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c4.jpg?resize=768%2C576&amp;ssl=1 768w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c4.jpg?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></p>
+<p><b>Step6. </b>インストール画面が表示されますので、指示に従ってください。<br>
+<a href="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bf.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/UNADJUSTEDNONRAW_thumb_11bf.jpg" alt="" width="680" height="510" class="alignnone size-large wp-image-3231" srcset="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bf.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bf.jpg?resize=300%2C225&amp;ssl=1 300w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bf.jpg?resize=768%2C576&amp;ssl=1 768w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bf.jpg?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></p>
+<p>インストール先は先程のフォーマットしたディスクを選択してください。<br>
+<a href="https://i0.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c1.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/UNADJUSTEDNONRAW_thumb_11c1.jpg" alt="" width="680" height="510" class="alignnone size-large wp-image-3232" srcset="https://i0.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c1.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c1.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c1.jpg?resize=768%2C576&amp;ssl=1 768w, https://i0.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c1.jpg?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></p>
+<p>「インストール」を押せばインストールが開始されます。<br>
+<a href="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bd.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/UNADJUSTEDNONRAW_thumb_11bd.jpg" alt="" width="680" height="510" class="alignnone size-large wp-image-3234" srcset="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bd.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bd.jpg?resize=300%2C225&amp;ssl=1 300w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bd.jpg?resize=768%2C576&amp;ssl=1 768w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11bd.jpg?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></p>
+<p><b>Step7. </b>インストールが終了したら再起動が入ります。再起動後もまたCloverが表示されます。今度は「Boot macOS from Mojave」(Mojaveはディスク名)を選択してください（今後Macを起動する際はこれを選択する）。<br>
+<a href="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c6.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/UNADJUSTEDNONRAW_thumb_11c6.jpg" alt="" width="680" height="510" class="alignnone size-large wp-image-3235" srcset="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c6.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c6.jpg?resize=300%2C225&amp;ssl=1 300w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c6.jpg?resize=768%2C576&amp;ssl=1 768w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c6.jpg?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></p>
+<h3><span id="Mac">Macのセットアップ</span></h3>
+<p>上記が完了したらMacのセットアップ画面がでてきます。<br>
+<a href="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c9.jpg?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/UNADJUSTEDNONRAW_thumb_11c9.jpg" alt="" width="680" height="510" class="alignnone size-large wp-image-3237" srcset="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c9.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c9.jpg?resize=300%2C225&amp;ssl=1 300w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c9.jpg?resize=768%2C576&amp;ssl=1 768w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/UNADJUSTEDNONRAW_thumb_11c9.jpg?resize=320%2C240&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></p>
+<p>指示にしたがって、セットアップを完了させてください。</p>
+<h3><span id="Multibeast">Multibeastでドライバのインストール</span></h3>
+<p>Multibeast移動用のUSBメモリに保存した「Multibeast.app」をMacにコピーして起動してください。<br>
+<a href="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/d5ec889f682a95569e0e512b7006cd04.png?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/d5ec889f682a95569e0e512b7006cd04.png" alt="" width="680" height="552" class="alignnone size-full wp-image-3239" srcset="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/d5ec889f682a95569e0e512b7006cd04.png?w=913&amp;ssl=1 913w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/d5ec889f682a95569e0e512b7006cd04.png?resize=300%2C243&amp;ssl=1 300w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/d5ec889f682a95569e0e512b7006cd04.png?resize=768%2C623&amp;ssl=1 768w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/d5ec889f682a95569e0e512b7006cd04.png?resize=320%2C260&amp;ssl=1 320w" sizes="(max-width: 680px) 100vw, 680px"></a></p>
+<p>設定項目は環境によって異なります。私の環境ですと下記のようにすれば正常に動作しました。</p>
+<ul>
+<li>Quickstart: UEFI Bootmode（これを選択するとCloverが変更されます）</li>
+<li>Drivers:
+<ul>
+<li>Audio: AppleALC</li>
+<li>Misc: Fake SMC, Fake SMC Plugins</li>
+<li>Network: Apple Intel E1000e v3.3.6</li>
+</ul>
+</li>
+<li>USB: 7/8/9/ Series USB Support,</li>
+<li>Bootloaders: UEFI Bootmode</li>
+<li>Customize: System Definitions: iMac 14,2</li>
+</ul>
+<p>設定項目は「マザーボードの型番 multibeast」でググればいろいろ出てくるのではと思います。</p>
+<p>設定が完了したら、「Build」タブの「Install」でインストールしてください。完了したら再起動してください。</p>
+<h3><span id="i-6">完了</span></h3>
+<p><a href="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/1e290430c29d714c227f5f9a9278512f-1.png?ssl=1" class="fancybox image"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/1e290430c29d714c227f5f9a9278512f-1.png" alt="" width="680" height="382" class="alignnone size-large wp-image-3268" srcset="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/1e290430c29d714c227f5f9a9278512f-1.png?resize=1024%2C576&amp;ssl=1 1024w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/1e290430c29d714c227f5f9a9278512f-1.png?resize=300%2C169&amp;ssl=1 300w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/1e290430c29d714c227f5f9a9278512f-1.png?resize=768%2C432&amp;ssl=1 768w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/1e290430c29d714c227f5f9a9278512f-1.png?resize=320%2C180&amp;ssl=1 320w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/1e290430c29d714c227f5f9a9278512f-1.png?w=1360&amp;ssl=1 1360w" sizes="(max-width: 680px) 100vw, 680px"></a><br>
+私の環境では上記のプロセスでうまくいきました。<br>
+ちょっと使った感じでは問題はなさそうです。</p>
+<p>今後、様子を見て不具合等でたら報告したいと思います。</p>
+<h4><span id="WiFi">WiFiについて</span></h4>
+<p>HackintoshにおいてWIFIは難しい問題だと思います。一般的な方法としては純正の無線モジュールを使うというものがあるそうです。<a href="http://siroanko.hatenablog.com/entry/2017/09/10/175816">こちら</a>のサイトで詳しい解説があります。</p>
+<p>私は家にあったElecomの無線LANアダプタ「WDC-300SU2SWH」を使いました。ドライバはGithubで奇跡的に公開されているものを使いました。ElecomのほかにもIODATAやBuffalloなどのアダプタも使えるらしいです（未確認）。</p>
+<div class="blog-card external-blog-card blog-card-thumbnail-left cf"><div class="blog-card-thumbnail"><a href="https://github.com/chris1111/Wireless-USB-Adapter-Clover" class="blog-card-thumbnail-link" target="_blank"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/6248794" alt="" class="blog-card-thumb-image" height="100" width="100"></a></div><div class="blog-card-content"><div class="blog-card-title"><a href="https://github.com/chris1111/Wireless-USB-Adapter-Clover" class="blog-card-title-link" target="_blank">chris1111/Wireless-USB-Adapter-Clover</a></div><div class="blog-card-excerpt">Visit :  Contribute to chris1111/Wireless-USB-Adapter-Clover development by creating an account on GitHub.</div></div><div class="blog-card-footer"><div class="blog-card-site"><span class="blog-card-favicon"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/favicons(1)" class="blog-card-favicon-img" alt="" width="16" height="16"></span>github.com</div><div class="blog-card-hatebu"><a href="https://b.hatena.ne.jp/entry/https://github.com/chris1111/Wireless-USB-Adapter-Clover" target="_blank" rel="nofollow"><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/Wireless-USB-Adapter-Clover" alt=""></a></div></div></div>
+<p>上記のおかげでインターネットは問題なく使えています。<br>
+ただ、Handoffは使用できないようです。まあこれは仕方ない。<br>
+<br><br></p>
+<div>どうぞ、よいHackintoshの夢を！</div>
+  </div>
+
+  <footer>
+    <!-- ページリンク -->
+    
+      <!-- 文章下広告 -->
+                     <div class="ad-article-bottom ad-space">
+          <div class="ad-label">スポンサーリンク</div>
+          <div class="ad-left ad-pc adsense-336"><div class="textwidget custom-html-widget">  <ins class="adsbygoogle" style="display: block; text-align: center; height: 280px;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-8801361072649610" data-ad-slot="8619903155" data-adsbygoogle-status="done"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><ins id="aswift_4_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;border:0px;width:336px;height:280px;" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(7).html"></iframe></ins></ins></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div></div>
+          <div class="ad-right ad-pc adsense-336"><div class="textwidget custom-html-widget">  <ins class="adsbygoogle" style="display: block; text-align: center; height: 280px;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-8801361072649610" data-ad-slot="8619903155" data-adsbygoogle-status="done"><ins id="aswift_5_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><ins id="aswift_5_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;border:0px;width:336px;height:280px;" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(8).html"></iframe></ins></ins></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div></div>
+          <div class="clear"></div>
+        </div>
+            
+
+    
+    <div id="sns-group" class="sns-group sns-group-bottom">
+    <div class="sns-group sns-group-viral">
+  <div class="sns-buttons sns-buttons-icon sns-group-viral">
+    <p class="sns-share-msg">シェアする</p>
+    <ul class="snsb clearfix snsbs">
+      	<li class="twitter-btn-icon"><a href="https://twitter.com/intent/tweet?text=%E3%80%90Hackintosh%E3%80%91Win%E6%A9%9F%E3%81%ABmacOS+Mojave%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%80%90Mac%E4%B8%8D%E8%A6%81%E3%80%91&amp;url=https%3A%2F%2Fphexcel.work%2Fhackintosh-mojave%2F" class="btn-icon-link twitter-btn-icon-link" target="blank" rel="nofollow"><span class="social-icon icon-twitter"></span><span class="social-count twitter-count"></span></a></li>
+                    <li class="hatena-btn-icon"><a href="https://b.hatena.ne.jp/entry/s/phexcel.work/hackintosh-mojave/" class="btn-icon-link hatena-bookmark-button hatena-btn-icon-link" data-hatena-bookmark-layout="simple" title="【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】" rel="nofollow" data-hatena-bookmark-initialized="1"><span class="social-icon icon-hatena"></span><span class="social-count hatebu-count"><span class="fa fa-spinner fa-pulse"></span></span></a></li>
+          	<li class="pocket-btn-icon"><a href="https://getpocket.com/edit?url=https://phexcel.work/hackintosh-mojave/" class="btn-icon-link pocket-btn-icon-link" target="blank" rel="nofollow"><span class="social-icon icon-pocket"></span><span class="social-count pocket-count"><span class="fa fa-spinner fa-pulse"></span></span></a></li>
+            	<li class="line-btn-icon"><a href="https://timeline.line.me/social-plugin/share?url=https%3A%2F%2Fphexcel.work%2Fhackintosh-mojave%2F" class="btn-icon-link line-btn-icon-link" target="blank" rel="nofollow"><span class="social-icon icon-line"></span></a></li>
+                      </ul>
+</div>
+</div>
+    <!-- SNSページ -->
+<div class="sns-pages">
+<p class="sns-follow-msg">フォローする</p>
+<ul class="snsp">
+  </ul>
+</div>
+    </div>
+    <div>
+      <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fphexcel.work%2Ffeed%2F" target="blank"><img id="theButton" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/feedly-follow-rectangle-flat-big_2x.png" alt="follow" width="131" height="56" style="margin-bottom:14px;"></a>
+    </div>
+    <div style="margin-bottom:14px;">
+      <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 213px; height: 28px;" title="Twitter Follow Button" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/follow_button.a600a62a1c92aa33bb89e73fa1e8b3b3.ja.html" data-screen-name="PHEXCELs"></iframe><script async="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/widgets.js.ダウンロード" charset="utf-8"></script>
+    </div>
+    <div class="p7button" data-button-text="プッシュで購読する"><div><a target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.46 214.32" style=""><defs><style>.cls-1 {fill: #fff;}</style></defs><polygon class="cls-1" points="64.61 0 0 121.34 66.18 121.34 40.97 214.32 113.46 86.67 44.12 86.67 64.61 0"></polygon></svg><span>プッシュで購読する</span></a></div></div>
+
+    
+    <p class="footer-post-meta">
+
+            <span class="post-tag"><span class="fa fa-tags fa-fw"></span><a href="https://phexcel.work/tag/hackintosh/" rel="tag">Hackintosh</a><span class="tag-separator">, </span><a href="https://phexcel.work/tag/mac/" rel="tag">Mac</a><span class="tag-separator">, </span><a href="https://phexcel.work/tag/macos/" rel="tag">macOS</a><span class="tag-separator">, </span><a href="https://phexcel.work/tag/mojave/" rel="tag">Mojave</a><span class="tag-separator">, </span><a href="https://phexcel.work/tag/windows/" rel="tag">Windows</a></span>
+      
+      <span class="post-author vcard author"><span class="fa fa-user fa-fw"></span><span class="fn"><a href="https://phexcel.work/author/1/">PHEXCEL</a>
+</span></span>
+
+      
+          </p>
+  </footer>
+  </article><!-- .article -->
+  </div><!-- .post -->
+
+      <div id="under-entry-body">
+
+            <aside id="related-entries row">
+        <h2>関連記事</h2>
+                <article class="related-entry cf card col">
+  <div class="related-entry-thumb">
+    <a href="https://phexcel.work/review-chrome-new-design/" title="MacでChromeの新しいデザインを試してみた">
+        <img width="100" height="100" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/2018-09-03-22.21.38.png" class="related-entry-thumb-image wp-post-image" alt="" srcset="https://i2.wp.com/phexcel.work/wp/wp-content/uploads/2018-09-03-22.21.38.png?resize=150%2C150&amp;ssl=1 150w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/2018-09-03-22.21.38.png?zoom=2&amp;resize=100%2C100&amp;ssl=1 200w, https://i2.wp.com/phexcel.work/wp/wp-content/uploads/2018-09-03-22.21.38.png?zoom=3&amp;resize=100%2C100&amp;ssl=1 300w" sizes="(max-width: 100px) 100vw, 100px">        </a>
+  </div><!-- /.related-entry-thumb -->
+
+  <div class="related-entry-content">
+    <header>
+      <h3 class="related-entry-title">
+        <a href="https://phexcel.work/review-chrome-new-design/" class="related-entry-title-link" title="MacでChromeの新しいデザインを試してみた">
+        MacでChromeの新しいデザインを試してみた        </a></h3>
+    </header>
+    <p class="related-entry-snippet">
+   Google Chrome v68よりMacでも新しいGoogle Chromeのデザインを試せるようになりました！
+
+今回はそんなChro...</p>
+
+
+  </div><!-- /.related-entry-content -->
+</article><!-- /.elated-entry -->
+      <article class="related-entry cf card col">
+  <div class="related-entry-thumb">
+    <a href="https://phexcel.work/macos-mojave-10-14-public-beta-1-18a314k/" title="macOS Mojave 10.14  Public Beta 1 (18A314k) リリース！">
+        <img width="100" height="100" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/macOSMojave-4.jpg" class="related-entry-thumb-image wp-post-image" alt="" srcset="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-4.jpg?resize=150%2C150&amp;ssl=1 150w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-4.jpg?resize=120%2C120&amp;ssl=1 120w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-4.jpg?resize=70%2C70&amp;ssl=1 70w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-4.jpg?zoom=2&amp;resize=100%2C100&amp;ssl=1 200w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-4.jpg?zoom=3&amp;resize=100%2C100&amp;ssl=1 300w" sizes="(max-width: 100px) 100vw, 100px">        </a>
+  </div><!-- /.related-entry-thumb -->
+
+  <div class="related-entry-content">
+    <header>
+      <h3 class="related-entry-title">
+        <a href="https://phexcel.work/macos-mojave-10-14-public-beta-1-18a314k/" class="related-entry-title-link" title="macOS Mojave 10.14  Public Beta 1 (18A314k) リリース！">
+        macOS Mojave 10.14  Public Beta 1 (18A314k) リリース！        </a></h3>
+    </header>
+    <p class="related-entry-snippet">
+   Appleは26日、「macOS Mojave 10.14 Public Beta 1 (18A314k)」をリリースしました。
+
+Publ...</p>
+
+
+  </div><!-- /.related-entry-content -->
+</article><!-- /.elated-entry -->
+      <article class="related-entry cf card col">
+  <div class="related-entry-thumb">
+    <a href="https://phexcel.work/iphone-announce-event-2018/" title="Apple、新型iPhone発表イベントを9月13日（日本時間）に開催！">
+        <img width="100" height="100" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/Dl3B9KLX4AEHlS9.jpg-large.jpeg" class="related-entry-thumb-image wp-post-image" alt="" srcset="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/Dl3B9KLX4AEHlS9.jpg-large.jpeg?resize=150%2C150&amp;ssl=1 150w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/Dl3B9KLX4AEHlS9.jpg-large.jpeg?resize=120%2C120&amp;ssl=1 120w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/Dl3B9KLX4AEHlS9.jpg-large.jpeg?resize=70%2C70&amp;ssl=1 70w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/Dl3B9KLX4AEHlS9.jpg-large.jpeg?zoom=2&amp;resize=100%2C100&amp;ssl=1 200w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/Dl3B9KLX4AEHlS9.jpg-large.jpeg?zoom=3&amp;resize=100%2C100&amp;ssl=1 300w" sizes="(max-width: 100px) 100vw, 100px">        </a>
+  </div><!-- /.related-entry-thumb -->
+
+  <div class="related-entry-content">
+    <header>
+      <h3 class="related-entry-title">
+        <a href="https://phexcel.work/iphone-announce-event-2018/" class="related-entry-title-link" title="Apple、新型iPhone発表イベントを9月13日（日本時間）に開催！">
+        Apple、新型iPhone発表イベントを9月13日（日本時間）に開催！        </a></h3>
+    </header>
+    <p class="related-entry-snippet">
+   Appleは9月12日午前10時（日本時間13日午前2時)に新型iPhoneなどを発表するイベント「Gather round」の開催を発表し...</p>
+
+
+  </div><!-- /.related-entry-content -->
+</article><!-- /.elated-entry -->
+      <article class="related-entry cf card col">
+  <div class="related-entry-thumb">
+    <a href="https://phexcel.work/macos-mojave-10-14-1-18b75/" title="macOS Mojave 10.14.1 正式版 (18B75) リリースされました">
+        <img width="100" height="100" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/macOSMojave-9.jpg" class="related-entry-thumb-image wp-post-image" alt="" srcset="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-9.jpg?resize=150%2C150&amp;ssl=1 150w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-9.jpg?resize=120%2C120&amp;ssl=1 120w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-9.jpg?resize=70%2C70&amp;ssl=1 70w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-9.jpg?zoom=2&amp;resize=100%2C100&amp;ssl=1 200w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-9.jpg?zoom=3&amp;resize=100%2C100&amp;ssl=1 300w" sizes="(max-width: 100px) 100vw, 100px">        </a>
+  </div><!-- /.related-entry-thumb -->
+
+  <div class="related-entry-content">
+    <header>
+      <h3 class="related-entry-title">
+        <a href="https://phexcel.work/macos-mojave-10-14-1-18b75/" class="related-entry-title-link" title="macOS Mojave 10.14.1 正式版 (18B75) リリースされました">
+        macOS Mojave 10.14.1 正式版 (18B75) リリースされました        </a></h3>
+    </header>
+    <p class="related-entry-snippet">
+   Appleは31日、「macOS Mojave 10.14.1 (18B75)」をリリースしています。
+
+10.14.1では最大で32人でチ...</p>
+
+
+  </div><!-- /.related-entry-content -->
+</article><!-- /.elated-entry -->
+      <article class="related-entry cf card col">
+  <div class="related-entry-thumb">
+    <a href="https://phexcel.work/macos-mojave-10-14-beta-2-18a314h/" title="macOS Mojave 10.14  beta 2 (18A314h) リリース！">
+        <img width="100" height="100" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/macOSMojave-4.jpg" class="related-entry-thumb-image wp-post-image" alt="" srcset="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-4.jpg?resize=150%2C150&amp;ssl=1 150w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-4.jpg?resize=120%2C120&amp;ssl=1 120w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-4.jpg?resize=70%2C70&amp;ssl=1 70w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-4.jpg?zoom=2&amp;resize=100%2C100&amp;ssl=1 200w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/macOSMojave-4.jpg?zoom=3&amp;resize=100%2C100&amp;ssl=1 300w" sizes="(max-width: 100px) 100vw, 100px">        </a>
+  </div><!-- /.related-entry-thumb -->
+
+  <div class="related-entry-content">
+    <header>
+      <h3 class="related-entry-title">
+        <a href="https://phexcel.work/macos-mojave-10-14-beta-2-18a314h/" class="related-entry-title-link" title="macOS Mojave 10.14  beta 2 (18A314h) リリース！">
+        macOS Mojave 10.14  beta 2 (18A314h) リリース！        </a></h3>
+    </header>
+    <p class="related-entry-snippet">
+   Appleは20日、「macOS Mojave 10.14 beta 2（Build:18A314h）」を開発者向けにリリースしました。
+
+...</p>
+
+
+  </div><!-- /.related-entry-content -->
+</article><!-- /.elated-entry -->
+      <article class="related-entry cf card col">
+  <div class="related-entry-thumb">
+    <a href="https://phexcel.work/finder-context-menu-image-search/" title="MacのFinderで右クリックからGoogle画像検索する方法">
+        <img width="100" height="100" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/f8a37b2b9c59dcd0c3c364cdcba4b055.png" class="related-entry-thumb-image wp-post-image" alt="" srcset="https://i1.wp.com/phexcel.work/wp/wp-content/uploads/f8a37b2b9c59dcd0c3c364cdcba4b055.png?resize=150%2C150&amp;ssl=1 150w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/f8a37b2b9c59dcd0c3c364cdcba4b055.png?resize=100%2C100&amp;ssl=1 100w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/f8a37b2b9c59dcd0c3c364cdcba4b055.png?zoom=2&amp;resize=100%2C100&amp;ssl=1 200w, https://i1.wp.com/phexcel.work/wp/wp-content/uploads/f8a37b2b9c59dcd0c3c364cdcba4b055.png?zoom=3&amp;resize=100%2C100&amp;ssl=1 300w" sizes="(max-width: 100px) 100vw, 100px">        </a>
+  </div><!-- /.related-entry-thumb -->
+
+  <div class="related-entry-content">
+    <header>
+      <h3 class="related-entry-title">
+        <a href="https://phexcel.work/finder-context-menu-image-search/" class="related-entry-title-link" title="MacのFinderで右クリックからGoogle画像検索する方法">
+        MacのFinderで右クリックからGoogle画像検索する方法        </a></h3>
+    </header>
+    <p class="related-entry-snippet">
+   今回は、MacのFinderで画像を右クリックして表示されるメニューに「Google画像検索」（似た画像検索）を追加する方法を紹介します。
+...</p>
+
+
+  </div><!-- /.related-entry-content -->
+</article><!-- /.elated-entry -->
+  
+  <br style="clear:both;">      </aside><!-- #related-entries -->
+      
+
+
+      
+      
+      <!-- post navigation -->
+<div class="google-auto-placed" style="text-align: center; width: 100%; height: auto; clear: both;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-8801361072649610" data-adsbygoogle-status="done" style="display: block; margin: 10px auto; background-color: transparent; height: 90px;"><ins id="aswift_7_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:760px;background-color:transparent;"><ins id="aswift_7_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:760px;background-color:transparent;"><iframe width="760" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_7" name="aswift_7" style="left:0;position:absolute;top:0;border:0px;width:760px;height:90px;" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(9).html"></iframe></ins></ins></ins></div><div class="navigation">
+      <div class="prev"><a href="https://phexcel.work/ios-12-1-beta-3-16b5077c/" rel="prev"><span class="fa fa-arrow-left fa-2x pull-left"></span>iOS 12.1 beta 3 (Build:16B5077c)  / Public beta 3 リリース！</a></div>
+      <div class="next"><a href="https://phexcel.work/ios-12-1-beta-4-build-16b5084a/" rel="next"><span class="fa fa-arrow-right fa-2x pull-left"></span>iOS 12.1 beta 4 (Build: 16B5084a)  / Public beta 4</a></div>
+  </div>
+<!-- /post navigation -->
+      <!-- comment area -->
+<div id="comment-area">
+			<section>
+			<h2 id="comments">コメント</h2>
+
+			<ol class="commets-list">
+			    <li class="comment even thread-even depth-1 parent" id="comment-805">
+            <div id="div-comment-805" class="card row comment-body">
+        <div class="card-content">
+      <div class="comment-author vcard">
+          <img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/a9fdb6e7eb9c10abd72059ef5f50fb8d.png" srcset="https://secure.gravatar.com/avatar/a9fdb6e7eb9c10abd72059ef5f50fb8d?s=110&amp;d=mm&amp;r=g 2x" class="avatar avatar-55 photo" height="55" width="55">          <cite class="fn">シライシ</cite> <span class="says">says:</span>      </div>
+      
+      <div class="comment-meta commentmetadata"><a href="https://phexcel.work/hackintosh-mojave/#comment-805">
+          2019年1月18日 11:06 AM</a>      </div>
+
+      <p>【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】のサイトを見てhackintoshにチャレンジしています。参考になる情報ありがとうございます。<br>
+さて、イメージの準備のStep.6の途中までは出来たつもりですが、それ以降で躓いています。<br>
+具体的には、Multibeast.appの入手して、USBメモリ上の「FILES」フォルダに入れようとしたのですが、Windows10のパソコンでUSBメモリを見てもFILESファオルダは見当たらないです。<br>
+なにかアドバイスいただければ幸いです。</p>
+
+    </div>
+    <div class="card-action">
+        <a rel="nofollow" class="comment-reply-link" href="https://phexcel.work/hackintosh-mojave/#comment-805" onclick="return addComment.moveForm( &quot;div-comment-805&quot;, &quot;805&quot;, &quot;respond&quot;, &quot;3199&quot; )" aria-label="シライシ に返信">返信</a>    </div>
+        </div>
+        <ul class="children">
+    <li class="comment byuser comment-author-1 bypostauthor odd alt depth-2 parent" id="comment-806">
+            <div id="div-comment-806" class="card row comment-body">
+        <div class="card-content">
+      <div class="comment-author vcard">
+          <img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/eb29b201fad036c30240613c3bc26f9a.png" srcset="https://secure.gravatar.com/avatar/eb29b201fad036c30240613c3bc26f9a?s=110&amp;d=mm&amp;r=g 2x" class="avatar avatar-55 photo" height="55" width="55">          <cite class="fn"><a href="http://phexcel.work/" rel="external nofollow" class="url">PHEXCEL</a></cite> <span class="says">says:</span>      </div>
+      
+      <div class="comment-meta commentmetadata"><a href="https://phexcel.work/hackintosh-mojave/#comment-806">
+          2019年1月18日 11:18 PM</a>      </div>
+
+      <p><del datetime="2019-01-26T03:45:45+00:00">FILESフォルダが隠しフォルダになっている可能性があります。隠しファイル・フォルダの表示の設定を試してみてください。<br>
+また、Multibeast.appはmacOSのインストール後に使用するものですので、別のUSBメモリを使用しても良いかと思います。</del></p>
+
+    </div>
+    <div class="card-action">
+        <a rel="nofollow" class="comment-reply-link" href="https://phexcel.work/hackintosh-mojave/#comment-806" onclick="return addComment.moveForm( &quot;div-comment-806&quot;, &quot;806&quot;, &quot;respond&quot;, &quot;3199&quot; )" aria-label="PHEXCEL に返信">返信</a>    </div>
+        </div>
+        <ul class="children">
+    <li class="comment even depth-3 parent" id="comment-808">
+            <div id="div-comment-808" class="card row comment-body">
+        <div class="card-content">
+      <div class="comment-author vcard">
+          <img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/a9fdb6e7eb9c10abd72059ef5f50fb8d.png" srcset="https://secure.gravatar.com/avatar/a9fdb6e7eb9c10abd72059ef5f50fb8d?s=110&amp;d=mm&amp;r=g 2x" class="avatar avatar-55 photo" height="55" width="55">          <cite class="fn">シライシ</cite> <span class="says">says:</span>      </div>
+      
+      <div class="comment-meta commentmetadata"><a href="https://phexcel.work/hackintosh-mojave/#comment-808">
+          2019年1月19日 12:56 PM</a>      </div>
+
+      <p>問題解決しました、Windows標準ではMACのファイル形式を認識できないからでした。<br>
+MACの経験が無い（浅い）人はここで嵌ります、ですので次のように変更したほうがわかりやすいと思います。<br>
+イメージの準備　step.5の最後に<br>
+書き込み終了後、WindowsからUSBメモリをフォーマットしないと使えないよ、みたいな警告が出ますがキャンセルします、USBメモリがMAC形式のフォーマットとなり、Windowsからは中のファイルが見えないためです。<br>
+step.6<br>
+WindowsからUSBメモリの中のファイルを操作できるよう、「HFS+ for Windows by Paragon Software」をインストールします（有料ソフトですが10日間は試用可）。<br>
+次にtonymacx86.comのサイトに行き、まずは登録します（登録しないとダウンロードできません）、「mojave用のMultiBeast」を探しダウンロードします。このファイルを解凍して得られた「Multibeast.app」をUSBメモリ上の「FILES」フォルダに入れてください（上記のHFS+ for Windowsを使用）。</p>
+
+    </div>
+    <div class="card-action">
+        <a rel="nofollow" class="comment-reply-link" href="https://phexcel.work/hackintosh-mojave/#comment-808" onclick="return addComment.moveForm( &quot;div-comment-808&quot;, &quot;808&quot;, &quot;respond&quot;, &quot;3199&quot; )" aria-label="シライシ に返信">返信</a>    </div>
+        </div>
+        <ul class="children">
+    <li class="comment byuser comment-author-1 bypostauthor odd alt depth-4" id="comment-832">
+            <div id="div-comment-832" class="card row comment-body">
+        <div class="card-content">
+      <div class="comment-author vcard">
+          <img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/eb29b201fad036c30240613c3bc26f9a.png" srcset="https://secure.gravatar.com/avatar/eb29b201fad036c30240613c3bc26f9a?s=110&amp;d=mm&amp;r=g 2x" class="avatar avatar-55 photo" height="55" width="55">          <cite class="fn"><a href="http://phexcel.work/" rel="external nofollow" class="url">PHEXCEL</a></cite> <span class="says">says:</span>      </div>
+      
+      <div class="comment-meta commentmetadata"><a href="https://phexcel.work/hackintosh-mojave/#comment-832">
+          2019年1月26日 12:45 PM</a>      </div>
+
+      <p>ご指摘いただき誠にありがとうございます。<br>
+ご指摘の内容を参考に記事の変更を行いました。</p>
+
+    </div>
+    <div class="card-action">
+        <a rel="nofollow" class="comment-reply-link" href="https://phexcel.work/hackintosh-mojave/#comment-832" onclick="return addComment.moveForm( &quot;div-comment-832&quot;, &quot;832&quot;, &quot;respond&quot;, &quot;3199&quot; )" aria-label="PHEXCEL に返信">返信</a>    </div>
+        </div>
+        </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1 parent" id="comment-811">
+            <div id="div-comment-811" class="card row comment-body">
+        <div class="card-content">
+      <div class="comment-author vcard">
+          <img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/none.png" srcset="https://secure.gravatar.com/avatar/?s=110&amp;d=mm&amp;r=g 2x" class="avatar avatar-55 photo avatar-default" height="55" width="55">          <cite class="fn">匿名</cite> <span class="says">says:</span>      </div>
+      
+      <div class="comment-meta commentmetadata"><a href="https://phexcel.work/hackintosh-mojave/#comment-811">
+          2019年1月19日 7:36 PM</a>      </div>
+
+      <p>ディスクユーティリティでHDD、SSDが見えない(認識されない)です。 皆さまはうまくいってますか？</p>
+
+    </div>
+    <div class="card-action">
+        <a rel="nofollow" class="comment-reply-link" href="https://phexcel.work/hackintosh-mojave/#comment-811" onclick="return addComment.moveForm( &quot;div-comment-811&quot;, &quot;811&quot;, &quot;respond&quot;, &quot;3199&quot; )" aria-label=" に返信">返信</a>    </div>
+        </div>
+        <ul class="children">
+    <li class="comment odd alt depth-2 parent" id="comment-829">
+            <div id="div-comment-829" class="card row comment-body">
+        <div class="card-content">
+      <div class="comment-author vcard">
+          <img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/none.png" srcset="https://secure.gravatar.com/avatar/?s=110&amp;d=mm&amp;r=g 2x" class="avatar avatar-55 photo avatar-default" height="55" width="55">          <cite class="fn">匿名</cite> <span class="says">says:</span>      </div>
+      
+      <div class="comment-meta commentmetadata"><a href="https://phexcel.work/hackintosh-mojave/#comment-829">
+          2019年1月26日 12:32 AM</a>      </div>
+
+      <p>同じ状況です。guidパーティションテーブル方式でないと言われて進めません</p>
+
+    </div>
+    <div class="card-action">
+        <a rel="nofollow" class="comment-reply-link" href="https://phexcel.work/hackintosh-mojave/#comment-829" onclick="return addComment.moveForm( &quot;div-comment-829&quot;, &quot;829&quot;, &quot;respond&quot;, &quot;3199&quot; )" aria-label=" に返信">返信</a>    </div>
+        </div>
+        <ul class="children">
+    <li class="comment byuser comment-author-1 bypostauthor even depth-3" id="comment-830">
+            <div id="div-comment-830" class="card row comment-body">
+        <div class="card-content">
+      <div class="comment-author vcard">
+          <img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/eb29b201fad036c30240613c3bc26f9a.png" srcset="https://secure.gravatar.com/avatar/eb29b201fad036c30240613c3bc26f9a?s=110&amp;d=mm&amp;r=g 2x" class="avatar avatar-55 photo" height="55" width="55">          <cite class="fn"><a href="http://phexcel.work/" rel="external nofollow" class="url">PHEXCEL</a></cite> <span class="says">says:</span>      </div>
+      
+      <div class="comment-meta commentmetadata"><a href="https://phexcel.work/hackintosh-mojave/#comment-830">
+          2019年1月26日 12:36 PM</a>      </div>
+
+      <p>ディスクユーティリティにてディスクの「消去」もできない状況でしょうか。<br>
+上の手順どおりフォーマットしたらguidになると思うのですがいかがでしょうか。</p>
+
+    </div>
+    <div class="card-action">
+        <a rel="nofollow" class="comment-reply-link" href="https://phexcel.work/hackintosh-mojave/#comment-830" onclick="return addComment.moveForm( &quot;div-comment-830&quot;, &quot;830&quot;, &quot;respond&quot;, &quot;3199&quot; )" aria-label="PHEXCEL に返信">返信</a>    </div>
+        </div>
+        </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment byuser comment-author-1 bypostauthor odd alt depth-2" id="comment-831">
+            <div id="div-comment-831" class="card row comment-body">
+        <div class="card-content">
+      <div class="comment-author vcard">
+          <img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/eb29b201fad036c30240613c3bc26f9a.png" srcset="https://secure.gravatar.com/avatar/eb29b201fad036c30240613c3bc26f9a?s=110&amp;d=mm&amp;r=g 2x" class="avatar avatar-55 photo" height="55" width="55">          <cite class="fn"><a href="http://phexcel.work/" rel="external nofollow" class="url">PHEXCEL</a></cite> <span class="says">says:</span>      </div>
+      
+      <div class="comment-meta commentmetadata"><a href="https://phexcel.work/hackintosh-mojave/#comment-831">
+          2019年1月26日 12:42 PM</a>      </div>
+
+      <p>いろいろ調べておりますが、なかなか原因がわかりません。<br>
+NVRAMをリセット（clover画面でF11を押す）する方法もありました。<br>
+よろしければお試しください。</p>
+<p>また、SSDが稀に対応していない場合もありますのでご注意ください。</p>
+
+    </div>
+    <div class="card-action">
+        <a rel="nofollow" class="comment-reply-link" href="https://phexcel.work/hackintosh-mojave/#comment-831" onclick="return addComment.moveForm( &quot;div-comment-831&quot;, &quot;831&quot;, &quot;respond&quot;, &quot;3199&quot; )" aria-label="PHEXCEL に返信">返信</a>    </div>
+        </div>
+        </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			</ol>
+
+			<div class="google-auto-placed" style="text-align: center; width: 100%; height: auto; clear: both;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-8801361072649610" data-adsbygoogle-status="done" style="display: block; margin: 10px auto 16px; background-color: transparent; height: 90px;"><ins id="aswift_8_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:760px;background-color:transparent;"><ins id="aswift_8_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:760px;background-color:transparent;"><iframe width="760" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_8" name="aswift_8" style="left:0;position:absolute;top:0;border:0px;width:760px;height:90px;" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(10).html"></iframe></ins></ins></ins></div><div class="comment-page-link">
+								</div>
+		</section>
+	<aside>	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">コメントをどうぞ <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://phexcel.work/hackintosh-mojave/#respond" style="display:none;">コメントをキャンセル</a></small></h3>			<form action="https://phexcel.work/wp/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment_notes">コメントは管理人による承認後、表示されます。<br>メールアドレスが公開されることはありません。</p><p class="comment-form-comment"><textarea id="comment" class="expanding" name="comment" cols="45" rows="8" aria-required="true" placeholder=""></textarea></p><p class="comment-form-author"><label for="author">名前 <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">メールアドレス <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">サイト</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">新しいコメントをメールで通知</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">新しい投稿をメールで受け取る</label></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="コメントを送信"> <input type="hidden" name="comment_post_ID" value="3199" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="773b0b8d36"></p><p style="display: none;"></p>			<input type="hidden" id="ak_js" name="ak_js" value="1548640112221"></form>
+			</div><!-- #respond -->
+	</aside></div>
+<!-- /comment area -->
+      </div>
+    
+            </div><!-- /#main -->
+          </main>
+        <!-- sidebar -->
+<div id="sidebar" class="col l4 s12 m12" role="complementary">
+    
+  <div id="sidebar-widget">
+  <!-- ウイジェット -->
+  <aside id="search-2" class="widget widget_search"><form method="get" id="searchform" action="https://phexcel.work/">
+	<input type="text" placeholder="ブログ内を検索" name="s" id="s">
+	<input type="submit" id="searchsubmit" value="">
+</form></aside><aside id="new_entries-3" class="widget widget_new_entries"><h3 class="widget_title sidebar_widget_title">New Posts</h3>  <div class="row card new-entry">
+  <div class="col s3 m3 l3">
+    <a href="https://phexcel.work/post-3752/" class="entry-title entry-title-link" title="[IPSWダウンロード] iOS 12.1.3 正式版 (16D39 | 16D40) リリース">
+    <figure class="card-image col l12 m12 s12" style="background:url(https://i2.wp.com/phexcel.work/wp/wp-content/uploads/ios12-6.jpg?fit=1500%2C949&amp;ssl=1)">
+    </figure><!-- /.entry-thumb -->
+  </a>
+  </div><!-- /.new-entry-thumb -->
+
+  <div class="col s9 m9 l9 content-area">
+    <a href="https://phexcel.work/post-3752/" class="new-entry-title" title="[IPSWダウンロード] iOS 12.1.3 正式版 (16D39 | 16D40) リリース">[IPSWダウンロード] iOS 12.1.3 正式版 (16D39 | 16D40) リリース</a>
+  </div><!-- /.new-entry-content -->
+</div><!-- /.card -->
+  <div class="row card new-entry">
+  <div class="col s3 m3 l3">
+    <a href="https://phexcel.work/nubwo-n11-review/" class="entry-title entry-title-link" title="【激安USBヘッドセット】NUBWO  N11 レビュー">
+    <figure class="card-image col l12 m12 s12" style="background:url(https://i2.wp.com/phexcel.work/wp/wp-content/uploads/IMG_4907.png?fit=800%2C600&amp;ssl=1)">
+    </figure><!-- /.entry-thumb -->
+  </a>
+  </div><!-- /.new-entry-thumb -->
+
+  <div class="col s9 m9 l9 content-area">
+    <a href="https://phexcel.work/nubwo-n11-review/" class="new-entry-title" title="【激安USBヘッドセット】NUBWO  N11 レビュー">【激安USBヘッドセット】NUBWO  N11 レビュー</a>
+  </div><!-- /.new-entry-content -->
+</div><!-- /.card -->
+  <div class="row card new-entry">
+  <div class="col s3 m3 l3">
+    <a href="https://phexcel.work/post-3727/" class="entry-title entry-title-link" title="お正月なのでMacを買おう！【Mac整備済製品情報】">
+    <figure class="card-image col l12 m12 s12" style="background:url(https://i2.wp.com/phexcel.work/wp/wp-content/uploads/Macbookpro2017-031_TP_V.jpg?fit=1600%2C1064&amp;ssl=1)">
+    </figure><!-- /.entry-thumb -->
+  </a>
+  </div><!-- /.new-entry-thumb -->
+
+  <div class="col s9 m9 l9 content-area">
+    <a href="https://phexcel.work/post-3727/" class="new-entry-title" title="お正月なのでMacを買おう！【Mac整備済製品情報】">お正月なのでMacを買おう！【Mac整備済製品情報】</a>
+  </div><!-- /.new-entry-content -->
+</div><!-- /.card -->
+  <div class="row card new-entry">
+  <div class="col s3 m3 l3">
+    <a href="https://phexcel.work/iphone-darker/" class="entry-title entry-title-link" title="【Tips】iPhoneで最低輝度をもっと下げる方法">
+    <figure class="card-image col l12 m12 s12" style="background:url(https://i2.wp.com/phexcel.work/wp/wp-content/uploads/71d0686e9fa850119e9de932dd3b247c.png?fit=700%2C526&amp;ssl=1)">
+    </figure><!-- /.entry-thumb -->
+  </a>
+  </div><!-- /.new-entry-thumb -->
+
+  <div class="col s9 m9 l9 content-area">
+    <a href="https://phexcel.work/iphone-darker/" class="new-entry-title" title="【Tips】iPhoneで最低輝度をもっと下げる方法">【Tips】iPhoneで最低輝度をもっと下げる方法</a>
+  </div><!-- /.new-entry-content -->
+</div><!-- /.card -->
+  <div class="row card new-entry">
+  <div class="col s3 m3 l3">
+    <a href="https://phexcel.work/download-yt-video/" class="entry-title entry-title-link" title="iPhoneでYoutube動画をダウンロードする方法【Clipbox代替アプリ・MyMediaの使い方】">
+    <figure class="card-image col l12 m12 s12" style="background:url(https://i2.wp.com/phexcel.work/wp/wp-content/uploads/142c4cf40900512cdf774f355d998f27.png?fit=900%2C600&amp;ssl=1)">
+    </figure><!-- /.entry-thumb -->
+  </a>
+  </div><!-- /.new-entry-thumb -->
+
+  <div class="col s9 m9 l9 content-area">
+    <a href="https://phexcel.work/download-yt-video/" class="new-entry-title" title="iPhoneでYoutube動画をダウンロードする方法【Clipbox代替アプリ・MyMediaの使い方】">iPhoneでYoutube動画をダウンロードする方法【Clipbox代替アプリ・MyMediaの使い方】</a>
+  </div><!-- /.new-entry-content -->
+</div><!-- /.card -->
+  <div class="row card new-entry">
+  <div class="col s3 m3 l3">
+    <a href="https://phexcel.work/review-i7s-tws/" class="entry-title entry-title-link" title="AirPodsのパチモン Bluetoothイヤホンi7S TWS のレビュー【音質・デザイン・性能など】">
+    <figure class="card-image col l12 m12 s12" style="background:url(https://i2.wp.com/phexcel.work/wp/wp-content/uploads/IMG_5091.png?fit=800%2C600&amp;ssl=1)">
+    </figure><!-- /.entry-thumb -->
+  </a>
+  </div><!-- /.new-entry-thumb -->
+
+  <div class="col s9 m9 l9 content-area">
+    <a href="https://phexcel.work/review-i7s-tws/" class="new-entry-title" title="AirPodsのパチモン Bluetoothイヤホンi7S TWS のレビュー【音質・デザイン・性能など】">AirPodsのパチモン Bluetoothイヤホンi7S TWS のレビュー【音質・デザイン・性能など】</a>
+  </div><!-- /.new-entry-content -->
+</div><!-- /.card -->
+<div class="clear"></div>
+</aside>        </div>
+
+  
+  <aside class="widget">
+  <h3 class="widget_title sidebar_widget_title"><i class="fa fa-line-chart"></i> Popular Posts</h3>
+    <div class="card_view">
+                  <article class="card_view_item">
+                <a href="https://phexcel.work/avgle-video-download-pc/">
+                                         <img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/fb12f6fb3017d0dfe619483b6e98b968.png" alt="">
+                                     <span>【2019/01対応版】PCでAvgleの動画を簡単にダウンロードする方法【Chrome拡張機能】</span>
+                  <div class="ranking">1</div>
+                </a>
+              </article>
+                                              <article class="card_view_item">
+                <a href="https://phexcel.work/avgle-download-iphone/">
+                                         <img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/isafeplay.jpg" alt="">
+                                     <span>[2019/01版] iPhoneでAvgleの動画を簡単にDLする方法。</span>
+                  <div class="ranking">2</div>
+                </a>
+              </article>
+                                              <article class="card_view_item">
+                <a href="https://phexcel.work/avgle-download-android/">
+                                         <img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/91ecc1acdc2c4fa37b178b98a8786438_m.jpg" alt="">
+                                     <span>【2019/01〜】AndroidでAvgleの動画を簡単にDLする方法。【iSafe】</span>
+                  <div class="ranking">3</div>
+                </a>
+              </article>
+                                              <article class="card_view_item">
+                <a href="https://phexcel.work/abuguru-downloader-released/">
+                                         <img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/abuguru.png" alt="">
+                                     <span>Avgleダウンローダー「Abuguru Downloader」公開！【Mac/Win対応】</span>
+                  <div class="ranking">4</div>
+                </a>
+              </article>
+                                              <article class="card_view_item">
+                <a href="https://phexcel.work/hackintosh-mojave/">
+                                         <img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/6601c20ab96b9093a51dfbcb55930eae(1).png" alt="">
+                                     <span>【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】</span>
+                  <div class="ranking">5</div>
+                </a>
+              </article>
+                                  <!-- Tab 2 -->
+    </div><div class="google-auto-placed" style="text-align: center; width: 100%; height: auto; clear: both;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-8801361072649610" data-adsbygoogle-status="done" style="display: block; margin: 10px auto; background-color: transparent; height: 298px;"><ins id="aswift_6_expand" style="display: inline-table; border: none; height: 298px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 357px; background-color: transparent;"><ins id="aswift_6_anchor" style="display: block; border: none; height: 298px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 357px; background-color: transparent; overflow: hidden;"><iframe width="357" height="298" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_6" name="aswift_6" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 357px; height: 298px;" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(11).html"></iframe></ins></ins></ins></div> <!-- view-card -->
+  </aside><!-- popular Content -->
+
+</div><!-- /#sidebar -->
+
+        </div><!-- /#body-in -->
+      </div><!-- /#body -->
+
+      <!-- footer -->
+      <footer itemscope="" itemtype="https://schema.org/WPFooter">
+        <div id="footer" class="main-footer">
+          <div class="container">
+
+                        <div class="row">
+               <div class="col s12 m12 l4">
+               <aside id="tag_cloud-4" class="widget widget_tag_cloud"><h3 class="footer_widget_title">タグ</h3><div class="tagcloud"><a href="https://phexcel.work/tag/abugurudownloader/" class="tag-cloud-link tag-link-81 tag-link-position-1" style="font-size: 10.117647058824pt;" aria-label="AbuguruDownloader (2個の項目)">AbuguruDownloader</a>
+<a href="https://phexcel.work/tag/amazon/" class="tag-cloud-link tag-link-123 tag-link-position-2" style="font-size: 10.117647058824pt;" aria-label="Amazon (2個の項目)">Amazon</a>
+<a href="https://phexcel.work/tag/apple/" class="tag-cloud-link tag-link-62 tag-link-position-3" style="font-size: 21.058823529412pt;" aria-label="Apple (25個の項目)">Apple</a>
+<a href="https://phexcel.work/tag/avgle/" class="tag-cloud-link tag-link-34 tag-link-position-4" style="font-size: 15.647058823529pt;" aria-label="avgle (8個の項目)">avgle</a>
+<a href="https://phexcel.work/tag/bundlehunt/" class="tag-cloud-link tag-link-37 tag-link-position-5" style="font-size: 8pt;" aria-label="BUNDLEHUNT (1個の項目)">BUNDLEHUNT</a>
+<a href="https://phexcel.work/tag/finder/" class="tag-cloud-link tag-link-109 tag-link-position-6" style="font-size: 10.117647058824pt;" aria-label="Finder (2個の項目)">Finder</a>
+<a href="https://phexcel.work/tag/howto/" class="tag-cloud-link tag-link-96 tag-link-position-7" style="font-size: 10.117647058824pt;" aria-label="HowTo (2個の項目)">HowTo</a>
+<a href="https://phexcel.work/tag/icloud/" class="tag-cloud-link tag-link-36 tag-link-position-8" style="font-size: 8pt;" aria-label="iCloud (1個の項目)">iCloud</a>
+<a href="https://phexcel.work/tag/ios/" class="tag-cloud-link tag-link-73 tag-link-position-9" style="font-size: 15.058823529412pt;" aria-label="iOS (7個の項目)">iOS</a>
+<a href="https://phexcel.work/tag/ios12/" class="tag-cloud-link tag-link-31 tag-link-position-10" style="font-size: 19.294117647059pt;" aria-label="iOS12 (17個の項目)">iOS12</a>
+<a href="https://phexcel.work/tag/ios12-1/" class="tag-cloud-link tag-link-97 tag-link-position-11" style="font-size: 15.058823529412pt;" aria-label="iOS12.1 (7個の項目)">iOS12.1</a>
+<a href="https://phexcel.work/tag/ios_beta/" class="tag-cloud-link tag-link-74 tag-link-position-12" style="font-size: 14.470588235294pt;" aria-label="iOS_beta (6個の項目)">iOS_beta</a>
+<a href="https://phexcel.work/tag/ipad/" class="tag-cloud-link tag-link-41 tag-link-position-13" style="font-size: 16.705882352941pt;" aria-label="iPad (10個の項目)">iPad</a>
+<a href="https://phexcel.work/tag/ipadpro/" class="tag-cloud-link tag-link-70 tag-link-position-14" style="font-size: 14.470588235294pt;" aria-label="iPadPro (6個の項目)">iPadPro</a>
+<a href="https://phexcel.work/tag/iphone/" class="tag-cloud-link tag-link-50 tag-link-position-15" style="font-size: 20.235294117647pt;" aria-label="iPhone (21個の項目)">iPhone</a>
+<a href="https://phexcel.work/tag/iphone9/" class="tag-cloud-link tag-link-69 tag-link-position-16" style="font-size: 14.470588235294pt;" aria-label="iPhone9 (6個の項目)">iPhone9</a>
+<a href="https://phexcel.work/tag/iphonexr/" class="tag-cloud-link tag-link-85 tag-link-position-17" style="font-size: 12.705882352941pt;" aria-label="iPhoneXr (4個の項目)">iPhoneXr</a>
+<a href="https://phexcel.work/tag/iphonexs/" class="tag-cloud-link tag-link-68 tag-link-position-18" style="font-size: 16.705882352941pt;" aria-label="iPhoneXS (10個の項目)">iPhoneXS</a>
+<a href="https://phexcel.work/tag/iphonexs_max/" class="tag-cloud-link tag-link-82 tag-link-position-19" style="font-size: 12.705882352941pt;" aria-label="iPhoneXs_Max (4個の項目)">iPhoneXs_Max</a>
+<a href="https://phexcel.work/tag/iphone%e5%a3%81%e7%b4%99/" class="tag-cloud-link tag-link-77 tag-link-position-20" style="font-size: 10.117647058824pt;" aria-label="iPhone壁紙 (2個の項目)">iPhone壁紙</a>
+<a href="https://phexcel.work/tag/ipsw/" class="tag-cloud-link tag-link-114 tag-link-position-21" style="font-size: 11.529411764706pt;" aria-label="IPSW (3個の項目)">IPSW</a>
+<a href="https://phexcel.work/tag/jailbreak/" class="tag-cloud-link tag-link-56 tag-link-position-22" style="font-size: 11.529411764706pt;" aria-label="Jailbreak (3個の項目)">Jailbreak</a>
+<a href="https://phexcel.work/tag/mac/" class="tag-cloud-link tag-link-29 tag-link-position-23" style="font-size: 22pt;" aria-label="Mac (30個の項目)">Mac</a>
+<a href="https://phexcel.work/tag/macos/" class="tag-cloud-link tag-link-71 tag-link-position-24" style="font-size: 15.647058823529pt;" aria-label="macOS (8個の項目)">macOS</a>
+<a href="https://phexcel.work/tag/macos_beta/" class="tag-cloud-link tag-link-61 tag-link-position-25" style="font-size: 15.058823529412pt;" aria-label="macOS_beta (7個の項目)">macOS_beta</a>
+<a href="https://phexcel.work/tag/mac%e3%82%a2%e3%83%97%e3%83%aa/" class="tag-cloud-link tag-link-66 tag-link-position-26" style="font-size: 12.705882352941pt;" aria-label="Macアプリ (4個の項目)">Macアプリ</a>
+<a href="https://phexcel.work/tag/mojave/" class="tag-cloud-link tag-link-30 tag-link-position-27" style="font-size: 18.941176470588pt;" aria-label="Mojave (16個の項目)">Mojave</a>
+<a href="https://phexcel.work/tag/niconico/" class="tag-cloud-link tag-link-49 tag-link-position-28" style="font-size: 13.647058823529pt;" aria-label="niconico (5個の項目)">niconico</a>
+<a href="https://phexcel.work/tag/opera/" class="tag-cloud-link tag-link-46 tag-link-position-29" style="font-size: 10.117647058824pt;" aria-label="Opera (2個の項目)">Opera</a>
+<a href="https://phexcel.work/tag/tips/" class="tag-cloud-link tag-link-126 tag-link-position-30" style="font-size: 10.117647058824pt;" aria-label="Tips (2個の項目)">Tips</a>
+<a href="https://phexcel.work/tag/ts-nuki/" class="tag-cloud-link tag-link-59 tag-link-position-31" style="font-size: 10.117647058824pt;" aria-label="TS抜き (2個の項目)">TS抜き</a>
+<a href="https://phexcel.work/tag/vivaldi/" class="tag-cloud-link tag-link-32 tag-link-position-32" style="font-size: 14.470588235294pt;" aria-label="Vivaldi (6個の項目)">Vivaldi</a>
+<a href="https://phexcel.work/tag/windows/" class="tag-cloud-link tag-link-57 tag-link-position-33" style="font-size: 12.705882352941pt;" aria-label="Windows (4個の項目)">Windows</a>
+<a href="https://phexcel.work/tag/wwdc2018/" class="tag-cloud-link tag-link-43 tag-link-position-34" style="font-size: 10.117647058824pt;" aria-label="WWDC2018 (2個の項目)">WWDC2018</a>
+<a href="https://phexcel.work/tag/%e3%82%b9%e3%83%88%e3%83%aa%e3%83%bc%e3%83%a0%e3%83%ac%e3%82%b3%e3%83%bc%e3%83%80%e3%83%bc/" class="tag-cloud-link tag-link-103 tag-link-position-35" style="font-size: 10.117647058824pt;" aria-label="ストリームレコーダー (2個の項目)">ストリームレコーダー</a>
+<a href="https://phexcel.work/tag/download/" class="tag-cloud-link tag-link-35 tag-link-position-36" style="font-size: 18.352941176471pt;" aria-label="ダウンロード (14個の項目)">ダウンロード</a>
+<a href="https://phexcel.work/tag/browser/" class="tag-cloud-link tag-link-33 tag-link-position-37" style="font-size: 16.235294117647pt;" aria-label="ブラウザ (9個の項目)">ブラウザ</a>
+<a href="https://phexcel.work/tag/review/" class="tag-cloud-link tag-link-54 tag-link-position-38" style="font-size: 16.705882352941pt;" aria-label="レビュー (10個の項目)">レビュー</a>
+<a href="https://phexcel.work/tag/works/" class="tag-cloud-link tag-link-111 tag-link-position-39" style="font-size: 12.705882352941pt;" aria-label="作品 (4個の項目)">作品</a>
+<a href="https://phexcel.work/tag/%e5%a3%81%e7%b4%99/" class="tag-cloud-link tag-link-72 tag-link-position-40" style="font-size: 13.647058823529pt;" aria-label="壁紙 (5個の項目)">壁紙</a>
+<a href="https://phexcel.work/tag/%e6%95%b4%e5%82%99%e6%b8%88%e3%81%bf%e5%95%86%e5%93%81%e6%83%85%e5%a0%b1/" class="tag-cloud-link tag-link-112 tag-link-position-41" style="font-size: 12.705882352941pt;" aria-label="整備済み商品情報 (4個の項目)">整備済み商品情報</a>
+<a href="https://phexcel.work/tag/%e6%96%b0%e5%9e%8biphone/" class="tag-cloud-link tag-link-76 tag-link-position-42" style="font-size: 14.470588235294pt;" aria-label="新型iPhone (6個の項目)">新型iPhone</a>
+<a href="https://phexcel.work/tag/kakuyasu/" class="tag-cloud-link tag-link-38 tag-link-position-43" style="font-size: 12.705882352941pt;" aria-label="格安情報 (4個の項目)">格安情報</a>
+<a href="https://phexcel.work/tag/next-ipad/" class="tag-cloud-link tag-link-42 tag-link-position-44" style="font-size: 15.058823529412pt;" aria-label="次期iPad (7個の項目)">次期iPad</a>
+<a href="https://phexcel.work/tag/%e6%ac%a1%e6%9c%9fiphone/" class="tag-cloud-link tag-link-60 tag-link-position-45" style="font-size: 15.058823529412pt;" aria-label="次期iPhone (7個の項目)">次期iPhone</a></div>
+</aside>               </div>
+               <div class="col s12 m12 l4">
+               <aside id="categories-4" class="widget widget_categories"><h3 class="footer_widget_title">カテゴリー</h3>		<ul>
+	<li class="cat-item cat-item-120"><a href="https://phexcel.work/category/amazon-echo/">Amazon Echo</a>
+</li>
+	<li class="cat-item cat-item-99"><a href="https://phexcel.work/category/android/">Android</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://phexcel.work/category/dy-ud200/">DY-UD200</a>
+</li>
+	<li class="cat-item cat-item-106"><a href="https://phexcel.work/category/hackintosh/">Hackintosh</a>
+</li>
+	<li class="cat-item cat-item-93"><a href="https://phexcel.work/category/howto/">HowTo</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="https://phexcel.work/category/ios/">iOS</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="https://phexcel.work/category/ipad/">iPad</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://phexcel.work/category/iphone/">iPhone</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://phexcel.work/category/jailbreak%e3%83%84%e3%83%bc%e3%83%ab/">Jailbreakツール</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://phexcel.work/category/mac/">Mac関連</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="https://phexcel.work/category/windows/">Windows</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://phexcel.work/category/%e3%82%a2%e3%83%97%e3%83%aa/">アプリ</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://phexcel.work/category/%e3%82%a6%e3%82%a7%e3%83%96%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9/">ウェブサービス</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://phexcel.work/category/%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%82%bd%e3%83%bc%e3%82%b9/">オープンソース</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://phexcel.work/category/%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/">お知らせ</a>
+</li>
+	<li class="cat-item cat-item-75"><a href="https://phexcel.work/category/%e3%82%bb%e3%83%bc%e3%83%ab/">セール</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://phexcel.work/category/%e3%82%bb%e3%82%ad%e3%83%a5%e3%83%aa%e3%83%86%e3%82%a3/">セキュリティ</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="https://phexcel.work/category/%e3%82%bd%e3%83%95%e3%83%88%e3%82%a6%e3%82%a7%e3%82%a2/">ソフトウェア</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://phexcel.work/category/%e3%83%87%e3%82%b9%e3%82%af%e3%83%88%e3%83%83%e3%83%97%e9%96%a2%e9%80%a3/">デスクトップ関連</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="https://phexcel.work/category/%e3%81%aa%e3%81%ae%e3%81%af%e5%8f%b7/">なのは号</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://phexcel.work/category/%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0/">プログラミング</a>
+</li>
+	<li class="cat-item cat-item-90"><a href="https://phexcel.work/category/%e3%83%ac%e3%83%93%e3%83%a5%e3%83%bc/">レビュー</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://phexcel.work/category/%e4%be%bf%e5%88%a9%e3%82%bd%e3%83%95%e3%83%88/">便利ソフト</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="https://phexcel.work/category/%e5%88%9d%e9%9f%b3%e3%83%9f%e3%82%af/">初音ミク</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://phexcel.work/category/%e5%8b%95%e7%94%bb/">動画</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://phexcel.work/category/%e5%8b%95%e7%94%bb%e9%96%a2%e9%80%a3/">動画関連</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="https://phexcel.work/category/%e5%ae%87%e5%ae%99%e9%96%a2%e4%bf%82/">宇宙関係</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://phexcel.work/category/%e6%97%a5%e8%a8%98/">日記</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://phexcel.work/category/%e7%94%bb%e5%83%8f/">画像</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://phexcel.work/category/%e8%84%b1%e7%8d%84%e3%82%a2%e3%83%97%e3%83%aa/">脱獄アプリ</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://phexcel.work/category/%e9%9f%b3%e6%a5%bd/">音楽</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="https://phexcel.work/category/%e9%9f%b3%e6%a5%bd%e9%96%a2%e9%80%a3/">音楽関連</a>
+</li>
+		</ul>
+</aside>               </div>
+               <div class="col s12 m12 l4">
+                           <aside id="recent_comments-2" class="widget widget_recent_comments">        <h3 class="footer_widget_title">最近のコメント</h3>        <dl class="recent-comments">
+          <dt><img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/eb29b201fad036c30240613c3bc26f9a(1).png" srcset="https://secure.gravatar.com/avatar/eb29b201fad036c30240613c3bc26f9a?s=76&amp;d=mm&amp;r=g 2x" class="avatar avatar-38 photo" height="38" width="38"></dt><dd><div class="recent-comment-author">PHEXCEL</div><div class="recent-comment-date">2019/1/26</div><div class="recent-comment-title"><a href="https://phexcel.work/hackintosh-mojave/#comment-832">【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】</a></div><div class="recent-comment-content"><span class="fa fa-comment-o"></span>&nbsp;ご指摘いただき誠にありがとうございます。
+ご指摘の内容を参考に記事の変更を行いました。</div></dd><dt><img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/eb29b201fad036c30240613c3bc26f9a(1).png" srcset="https://secure.gravatar.com/avatar/eb29b201fad036c30240613c3bc26f9a?s=76&amp;d=mm&amp;r=g 2x" class="avatar avatar-38 photo" height="38" width="38"></dt><dd><div class="recent-comment-author">PHEXCEL</div><div class="recent-comment-date">2019/1/26</div><div class="recent-comment-title"><a href="https://phexcel.work/hackintosh-mojave/#comment-831">【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】</a></div><div class="recent-comment-content"><span class="fa fa-comment-o"></span>&nbsp;いろいろ調べておりますが、なかなか原因がわかりません。
+NVRAMをリセット（clover画面でF11を押す）する方法もありました。
+よろしければお試しください。
+
+また、SSDが稀に対応して...</div></dd><dt><img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/eb29b201fad036c30240613c3bc26f9a(1).png" srcset="https://secure.gravatar.com/avatar/eb29b201fad036c30240613c3bc26f9a?s=76&amp;d=mm&amp;r=g 2x" class="avatar avatar-38 photo" height="38" width="38"></dt><dd><div class="recent-comment-author">PHEXCEL</div><div class="recent-comment-date">2019/1/26</div><div class="recent-comment-title"><a href="https://phexcel.work/hackintosh-mojave/#comment-830">【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】</a></div><div class="recent-comment-content"><span class="fa fa-comment-o"></span>&nbsp;ディスクユーティリティにてディスクの「消去」もできない状況でしょうか。
+上の手順どおりフォーマットしたらguidになると思うのですがいかがでしょうか。</div></dd><dt><img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/none(1).png" srcset="https://secure.gravatar.com/avatar/?s=76&amp;d=mm&amp;r=g 2x" class="avatar avatar-38 photo avatar-default" height="38" width="38"></dt><dd><div class="recent-comment-author">匿名</div><div class="recent-comment-date">2019/1/26</div><div class="recent-comment-title"><a href="https://phexcel.work/hackintosh-mojave/#comment-829">【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】</a></div><div class="recent-comment-content"><span class="fa fa-comment-o"></span>&nbsp;同じ状況です。guidパーティションテーブル方式でないと言われて進めません</div></dd><dt><img alt="" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/eb29b201fad036c30240613c3bc26f9a(1).png" srcset="https://secure.gravatar.com/avatar/eb29b201fad036c30240613c3bc26f9a?s=76&amp;d=mm&amp;r=g 2x" class="avatar avatar-38 photo" height="38" width="38"></dt><dd><div class="recent-comment-author">PHEXCEL</div><div class="recent-comment-date">2019/1/24</div><div class="recent-comment-title"><a href="https://phexcel.work/avgle-video-download-pc/#comment-825">【2019/01対応版】PCでAvgleの動画を簡単にダウンロードする方法【Chrome拡張機能】</a></div><div class="recent-comment-content"><span class="fa fa-comment-o"></span>&nbsp;情報提供誠にありがとうございます！</div></dd>        </dl>
+      </aside>                   </div>
+            </div>
+          
+          <div class="clear"></div>
+            <div id="copyright" class="wrapper">
+                            <div id="footer-navi">
+                <div id="footer-navi-in">
+                  <div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-3576" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3576"><a href="https://phexcel.work/about/">当サイトについて</a></li>
+<li id="menu-item-3577" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3577"><a href="https://phexcel.work/privacypolicy.pdf">プライバシーポリシー</a></li>
+<li id="menu-item-3578" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3578"><a href="https://goo.gl/forms/weNuCiKEubAeEIar1">お問い合わせ</a></li>
+</ul></div>                  </div>
+              </div>
+                            <div class="credit">
+                © 2009  <a href="https://phexcel.work/">フェクセル.WORK</a>.              </div>
+
+                          </div>
+        </div><!-- /#footer-in -->
+        </div><!-- /#footer -->
+      </footer>
+      <div id="page-top" style="display: block;">
+      <a id="move-page-top"><span class="fa fa-angle-double-up fa-2x"></span></a>
+  
+</div>
+          </div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:0px;height:0px;" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(12).html"></iframe></ins></ins></ins><!-- /#container -->
+    	<div style="display:none">
+	<div class="grofile-hash-map-a9fdb6e7eb9c10abd72059ef5f50fb8d">
+	</div>
+	<div class="grofile-hash-map-eb29b201fad036c30240613c3bc26f9a">
+	</div>
+	</div>
+  <script>
+    (function(){
+        var f = document.querySelectorAll(".video-click");
+        for (var i = 0; i < f.length; ++i) {
+        f[i].onclick = function () {
+          var iframe = this.getAttribute("data-iframe");
+          this.parentElement.innerHTML = '<div class="video">' + iframe + '</div>';
+        }
+        }
+    })();
+  </script>
+  <script src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/comment-reply.min.js.ダウンロード" async=""></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var social_count_config = {"permalink":"https:\/\/phexcel.work\/hackintosh-mojave\/","rss2_url":"https:\/\/phexcel.work\/feed\/","theme_url":"https:\/\/phexcel.work\/wp\/wp-content\/themes\/simplicity2","all_sns_share_btns_visible":"1","all_share_count_visible":"","twitter_btn_visible":"1","twitter_count_visible":"","facebook_btn_visible":"","google_plus_btn_visible":"","hatena_btn_visible":"1","pocket_btn_visible":"1","feedly_btn_visible":"","push7_btn_visible":"","push7_app_no":null};
+/* ]]> */
+</script>
+<script src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/javascript.js.ダウンロード" defer=""></script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/photon.min.js.ダウンロード"></script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/devicepx-jetpack.js.ダウンロード"></script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/highlight.pack.js.ダウンロード"></script>
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/line-numbers.min.js.ダウンロード"></script>
+<script type="text/javascript">
+hljs.initLineNumbersOnLoad({singleLine: true});
+</script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/clipboard.min.js.ダウンロード"></script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/frontend.min.js.ダウンロード"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var tocplus = {"visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/front.min.js.ダウンロード"></script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/jquery.fancybox.1.3.23.min.js.ダウンロード"></script><iframe id="google_osd_static_frame_5610731680257" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(13).html"></iframe>
+<script type="text/javascript">
+var fb_timeout, fb_opts={'overlayShow':true,'hideOnOverlayClick':true,'showCloseButton':true,'margin':20,'centerOnScroll':false,'enableEscapeButton':true,'autoScale':true };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery('.nofancybox,a.wp-block-file__button,a.pin-it-button,a[href*="pinterest.com/pin/create"],a[href*="facebook.com/share"],a[href*="twitter.com/share"]').addClass('nolightbox');
+/* IMG */
+var fb_IMG_select='a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpg"]:not(.nolightbox),a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpeg"]:not(.nolightbox),a[href*=".png"]:not(.nolightbox,li.nolightbox>a),area[href*=".png"]:not(.nolightbox),a[href*=".webp"]:not(.nolightbox,li.nolightbox>a),area[href*=".webp"]:not(.nolightbox)';
+jQuery(fb_IMG_select).addClass('fancybox image');
+var fb_IMG_sections=jQuery('.gallery,.wp-block-gallery,.tiled-gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,li.fancybox a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'transitionIn':'elastic','easingIn':'easeOutBack','transitionOut':'elastic','easingOut':'easeInBack','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false}))});};
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+};
+var easy_fancybox_auto=function(){setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+jQuery(easy_fancybox_auto);
+</script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/jquery.easing.1.4.1.min.js.ダウンロード"></script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/jquery.mousewheel.3.1.13.min.js.ダウンロード"></script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/wp-embed.min.js.ダウンロード"></script>
+<script async="async" type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/form.js.ダウンロード"></script>
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/e-201905.js.ダウンロード" async="async" defer="defer"></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:6.8.1',blog:'147229854',post:'3199',tz:'9',srv:'phexcel.work'} ]);
+	_stq.push([ 'clickTrackerInit', '147229854', '3199' ]);
+</script>
+            <!-- はてブシェアボタン用スクリプト -->
+<script type="text/javascript" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/bookmark_button.js.ダウンロード" charset="utf-8" async="async"></script>
+<script src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/highlight.min.js.ダウンロード"></script><img src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/g.gif" alt=":)" width="6" height="5" id="wpstats">
+<script type="text/javascript">
+(function($){
+ $('.entry-content pre').each(function(i, block) {
+  hljs.highlightBlock(block);
+ });
+})(jQuery);
+</script>
+
+
+    
+
+    
+  
+
+<div class="sidenav-overlay"></div><div class="drag-target"></div><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap" class="fancybox-ie"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/widget_iframe.a600a62a1c92aa33bb89e73fa1e8b3b3.html" title="Twitter settings iframe" style="display: none;"></iframe></body><iframe id="google_shimpl" style="display: none;" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/saved_resource(14).html"></iframe><iframe id="google_esf" name="google_esf" src="./【Hackintosh】Win機にmacOS Mojaveを導入する方法【Mac不要】 - フェクセル.WORK_files/zrt_lookup.html" data-ad-client="ca-pub-8801361072649610" style="display: none;"></iframe></html>

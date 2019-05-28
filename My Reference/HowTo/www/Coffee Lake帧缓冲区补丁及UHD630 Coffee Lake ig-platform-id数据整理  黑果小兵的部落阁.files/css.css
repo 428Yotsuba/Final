@@ -1,0 +1,54 @@
+@font-face {
+	font-family: Noto Serif SC;
+	src: local("Noto Serif SC Light"), local("NotoSerifSC-Light"), url(https://gstatic.loli.net/s/notoserifsc/v2/H4c8BXePl9DZ0Xe7gG9cyOj7mgq0ezdLEA.otf) format("opentype");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Noto Serif SC;
+	src: local("Noto Serif SC"), local("NotoSerifSC-Regular"), url(https://gstatic.loli.net/s/notoserifsc/v2/H4chBXePl9DZ0Xe7gG9cyOj7kqGWbQ.otf) format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Noto Serif SC;
+	src: local("Noto Serif SC Bold"), local("NotoSerifSC-Bold"), url(https://gstatic.loli.net/s/notoserifsc/v2/H4c8BXePl9DZ0Xe7gG9cyOj7mhqzezdLEA.otf) format("opentype");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Roboto Mono;
+	src: local("Roboto Mono Light Italic"), local("RobotoMono-LightItalic"), url(https://gstatic.loli.net/s/robotomono/v6/L0xmDF4xlVMF-BfR8bXMIjhOk9a0T7OjAw.ttf) format("truetype");
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: Roboto Mono;
+	src: local("Roboto Mono Italic"), local("RobotoMono-Italic"), url(https://gstatic.loli.net/s/robotomono/v6/L0x7DF4xlVMF-BfR8bXMIjhOm3OWXw.ttf) format("truetype");
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: Roboto Mono;
+	src: local("Roboto Mono Bold Italic"), local("RobotoMono-BoldItalic"), url(https://gstatic.loli.net/s/robotomono/v6/L0xmDF4xlVMF-BfR8bXMIjhOk8azT7OjAw.ttf) format("truetype");
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: Roboto Mono;
+	src: local("Roboto Mono Light"), local("RobotoMono-Light"), url(https://gstatic.loli.net/s/robotomono/v6/L0xkDF4xlVMF-BfR8bXMIjDgiWq_f7o.ttf) format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Roboto Mono;
+	src: local("Roboto Mono"), local("RobotoMono-Regular"), url(https://gstatic.loli.net/s/robotomono/v6/L0x5DF4xlVMF-BfR8bXMIjhFq3o.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Roboto Mono;
+	src: local("Roboto Mono Bold"), local("RobotoMono-Bold"), url(https://gstatic.loli.net/s/robotomono/v6/L0xkDF4xlVMF-BfR8bXMIjDwjmq_f7o.ttf) format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}

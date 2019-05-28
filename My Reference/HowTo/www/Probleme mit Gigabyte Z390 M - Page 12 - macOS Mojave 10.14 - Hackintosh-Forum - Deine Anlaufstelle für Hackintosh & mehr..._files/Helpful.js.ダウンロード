@@ -1,0 +1,82 @@
+/**
+ * @author    Olaf Braun
+ * @copyright 2013-2017 Olaf Braun - Software Development
+ * @license   WBB-Elite.de License <https://lizenz.wbb-elite.de/lizenz.html>
+ * @package   de.wbb-elite.wbb.helpful.post
+ * @category  Most helpful answer
+ */
+define(["Ajax", "Dom/Util"], function (Ajax, HtmlUtil) {
+    "use strict";
+    return {
+        /**
+         */
+        init: function () {
+            var self = this;
+            elBySelAll('.helpfulPost', null, function (element) {
+                element.addEventListener(WCF_CLICK_EVENT, self._click.bind(self))
+            });
+        },
+        /**
+         * Handle click event
+         *
+         * @param {Event} event
+         * @private
+         */
+        _click: function (event) {
+            var post = event.currentTarget;
+            var self = this;
+            Ajax.apiOnce({
+                data: {
+                    actionName: 'setHelpful',
+                    className: 'wbb\\data\\post\\PostHelpfulAction',
+                    parameters: {
+                        postID: elData(post, 'post-id')
+                    }
+                },
+                success: self._success.bind(self)
+            });
+        },
+        /**
+         * Handle success ajax request
+         *
+         * @param data
+         * @param textStatus
+         * @param jqXHR
+         * @private
+         */
+        _success: function (data, textStatus, jqXHR) {
+            var post = elById('post' + data.returnValues.postID);
+            var firstPost = elById('post' + data.returnValues.firstPostID);
+            var content, message;
+            if (elBySelAll('.helpfulMessageBadge', post).length > 0) {
+                this._removeItems();
+                elBySel('.helpfulPost a.button', post).classList.remove('active');
+            } else {
+                this._removeItems();
+                content = HtmlUtil.createFragmentFromHtml(data.returnValues.template);
+                elBySel('header.messageHeader > .messageHeaderBox > ul.messageStatus', post).appendChild(content);
+                if (firstPost !== undefined) {
+                    message = HtmlUtil.createFragmentFromHtml(data.returnValues.message);
+                    HtmlUtil.insertAfter(message, firstPost);
+                }
+                elBySel('.helpfulPost a.button', post).classList.add('active');
+            }
+        },
+        /**
+         * Remove some elements
+         *
+         * @private
+         */
+        _removeItems: function () {
+            elBySelAll('.helpfulMessageBadge', null, function (element) {
+                elHide(element);
+                elRemove(element);
+            });
+            var help = elById('helpfulMessageLi');
+            if (help) {
+                elHide(help);
+                elRemove(help);
+            }
+        }
+    }
+});

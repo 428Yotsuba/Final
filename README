@@ -1,0 +1,11 @@
+config.plist
+=> OC profile (eight DDR4, Quad Channel nearly 256GB, Adjust 65535Mhz) is Default.
+
+Sierra  Use OSXAptioFix2Drv-2000,efi, especially MSI,ASRock
+Mojave  Generally(95%) Use AptioMemoryFix.efi+AptioInputFix.efi Combo
+	If not work, recommend to try OSXAptioFix2Drv-2000.efi>OSXAptioFixDrv.efi
+
+Warning:
+maybe macOS not supported modified Mining-Board,
+To avoid fail, You need to find a solution that ignores TestNVRAM function of ATIController.
+(Continuing com.apple.displaypolicyd Error, you cannot boot with Mining-Board)
